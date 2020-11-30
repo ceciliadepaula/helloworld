@@ -1,0 +1,38 @@
+// -------------- COLORES -------------------- // 
+
+$colorAmarillo: #fdce30;
+$colorNegro: #181819;
+$colorBlanco: #ffffff; 
+
+// ------------ FONT-WEIGHT ------------------ // 
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
+
+// ----------- GENERALES ---------------------//
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $colorBlanco;
+    font-family: 'Poppins', sans-serif;
+    color: $colorNegro;    
+    max-width: 1400px;
+    margin: auto;
+}
+
+

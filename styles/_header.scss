@@ -1,0 +1,87 @@
+header{
+    background-color: $colorBlanco;
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    a{
+        text-decoration: none;
+        color: $colorNegro;
+    }
+    #barraNavSecciones{
+        position: fixed;
+        right: 5%;
+        z-index: 100;
+        .menu{
+            margin-top: 16px;  
+            align-items: center;
+            #ulHeader{
+                position: relative;
+                top: 0;
+                display: flex;
+                li{
+                    list-style-type: none;  
+                    height: 25px;
+                    .linkInterno{
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        color: $colorNegro;
+                        font-weight: $bold;
+                        margin: 15px;
+                    }   
+                    .linkInterno:hover{
+                        background-color: $colorAmarillo;
+                    } 
+                    .lineaVerticalAmarilla{
+                        font-weight: $bold;
+                        color: $colorAmarillo;
+                        position: relative;
+                        bottom: 22px;
+                        left: 100%;
+                        z-index: -2;
+                    }
+                }               
+            }
+        }
+    }
+    
+    #barraNavRedesSociales{
+        z-index: 100;
+        width: 51px;
+        height: 265px;
+        background-color: $colorAmarillo;
+        position: fixed;
+        top: 177.5px; 
+        right: 0px;
+        border-radius: 20px 0 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .linkExterno{
+            .imgLinkExterno{
+                width: 25px;
+                height: 25px;
+                margin: 4px 4px 4px 8px;
+            }   
+            #logoLinkedin:hover{
+                content: url(../images/linkedin-blanco.svg);
+            } 
+            #logoBehance:hover{
+                content: url(../images/behance-blanco.svg);
+            } 
+            #logoGitHub:hover{
+                content: url(../images/github-blanco.svg);
+            } 
+            #logoFlickr:hover{
+                content: url(../images/flickr-blanco.svg);
+            } 
+            #logoInstagram:hover{
+                content: url(../images/instagram-blanco.svg);
+            } 
+            #logoFacebook:hover{
+                content: url(../images/facebook-blanco.svg);
+            } 
+        }
+    }
+}
