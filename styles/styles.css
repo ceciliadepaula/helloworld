@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +17,14 @@ body {
   color: #181819;
   max-width: 1400px;
   margin: auto;
+}
+
+.titulosSecciones {
+  font-weight: 700;
+  font-size: 220px;
+  line-height: 0.93;
+  -webkit-text-stroke: 4px #fdce30;
+  color: #ffffff;
 }
 
 header {
@@ -135,14 +144,13 @@ header #barraNavRedesSociales .linkExterno #logoFacebook:hover {
 #helloWorld {
   position: relative;
   top: 10px;
-  height: 573px;
+  height: 620px;
 }
 
-#helloWorld #puntitos7 {
+#helloWorld #puntitos1 {
   width: 360px;
   position: relative;
   top: 50px;
-  left: 10px;
   float: left;
 }
 
@@ -199,5 +207,117 @@ header #barraNavRedesSociales .linkExterno #logoFacebook:hover {
   position: relative;
   bottom: 150px;
   left: 50px;
+}
+
+#sobreMi {
+  padding: 80px 0 50px 0;
+}
+
+#sobreMi #grillaSobreMiFoto {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#sobreMi #grillaSobreMiFoto h2 {
+  padding-left: 5%;
+}
+
+#sobreMi #grillaSobreMiFoto #fotoCecilia {
+  height: 350px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#sobreMi #textoPresentación {
+  font-size: 68px;
+  line-height: 80px;
+  margin-left: 350px;
+  margin-top: -310px;
+  font-weight: 600;
+}
+
+#sobreMi #textoPresentación strong {
+  font-weight: 900;
+}
+
+#sobreMi #puntitos2 {
+  position: absolute;
+  top: 560px;
+  right: 0;
+  z-index: -1;
+}
+
+#sobreMi #puntitos3 {
+  position: absolute;
+  left: -100px;
+  top: 1330px;
+}
+
+#sobreMi #unGusto {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#sobreMi #unGusto h3 {
+  font-size: 80px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#sobreMi #unGusto #res3 {
+  margin-left: auto;
+  margin-right: auto;
+  background: #fdce30;
+  height: 50px;
+  width: 900px;
+  position: relative;
+  top: -65px;
+  z-index: -1;
+}
+
+#sobreMi #puntitos4 {
+  position: absolute;
+  top: 1950px;
+  right: 0px;
+}
+
+#curriculumVitae {
+  padding-top: 40px;
+}
+
+#curriculumVitae #grillaCV {
+  padding-top: 20px;
+}
+
+#curriculumVitae #grillaCV #tituloCV {
+  text-align: right;
+  font-size: 208px;
+}
+
+#curriculumVitae #grillaCV #ilustracionCV {
+  height: 488px;
+  position: relative;
+  bottom: 320px;
+  left: 30px;
+}
+
+#curriculumVitae #puntitos5 {
+  position: absolute;
+  top: 2650px;
+  right: 0px;
 }
 /*# sourceMappingURL=styles.css.map */

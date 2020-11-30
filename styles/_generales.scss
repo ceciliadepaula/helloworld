@@ -35,4 +35,12 @@ body{
     margin: auto;
 }
 
+.titulosSecciones{
+    font-weight: $bold;
+    font-size: 220px;
+    line-height: 0.93;
+    -webkit-text-stroke: 4px $colorAmarillo;
+    color: $colorBlanco;
+}
+
 
