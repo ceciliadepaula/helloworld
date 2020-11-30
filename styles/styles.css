@@ -27,6 +27,59 @@ body {
   color: #ffffff;
 }
 
+h4 {
+  font-size: 33px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.textosDescriptivos {
+  width: 900px;
+  font-size: 17px;
+  line-height: 1.7;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.textosDescriptivos strong {
+  font-weight: 400;
+  background-color: #fdce30;
+}
+
+.boton {
+  margin: auto;
+  height: 45px;
+  width: 180px;
+  background-color: #fdce30;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.boton .pBoton {
+  font-size: 14px;
+  font-weight: 500;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.boton:hover {
+  background-color: #181819;
+}
+
+.boton:hover .pBoton {
+  color: #fdce30;
+}
+
 header {
   background-color: #ffffff;
   height: 55px;
@@ -301,6 +354,7 @@ header #barraNavRedesSociales .linkExterno #logoFacebook:hover {
 
 #curriculumVitae #grillaCV {
   padding-top: 20px;
+  height: 730px;
 }
 
 #curriculumVitae #grillaCV #tituloCV {
@@ -319,5 +373,136 @@ header #barraNavRedesSociales .linkExterno #logoFacebook:hover {
   position: absolute;
   top: 2650px;
   right: 0px;
+}
+
+#curriculumVitae #porqueDD #botonCV {
+  margin-bottom: 70px;
+}
+
+#curriculumVitae #misAreasProf {
+  height: 630px;
+  padding: 0 3% 0 3%;
+}
+
+#curriculumVitae #misAreasProf #grillaAreas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0.7fr;
+      grid-template-columns: 1fr 0.7fr;
+  height: 620px;
+}
+
+#curriculumVitae #misAreasProf #grillaAreas #todosCirculos {
+  height: 570px;
+}
+
+#curriculumVitae #misAreasProf #grillaAreas #todosCirculos .circulosIndividuales {
+  background-color: #fdce30;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: left;
+}
+
+#curriculumVitae #misAreasProf #grillaAreas #todosCirculos .circulosIndividuales .tituloArea {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: bold;
+}
+
+#curriculumVitae #misAreasProf #grillaAreas #todosCirculos .circulosIndividuales .tituloArea span {
+  font-weight: 400;
+}
+
+#curriculumVitae #misAreasProf #grillaAreas #descripcionTitulo {
+  background: red;
+  height: 570px;
+}
+
+.jerarquia1 {
+  height: 240px;
+  width: 240px;
+}
+
+.jerarquia1 .tituloArea {
+  font-size: 20px;
+}
+
+.jerarquia2 {
+  height: 150px;
+  width: 150px;
+}
+
+.jerarquia2 .tituloArea {
+  font-size: 16px;
+}
+
+.jerarquia3 {
+  height: 100px;
+  width: 100px;
+}
+
+.jerarquia3 .tituloArea {
+  font-size: 10px;
+}
+
+#ldcv {
+  position: relative;
+  bottom: -150px;
+  left: 150px;
+}
+
+#dwfs {
+  position: relative;
+  bottom: -300px;
+  left: 160px;
+}
+
+#fotografia {
+  position: relative;
+  bottom: -350px;
+  left: -370px;
+}
+
+#uxui {
+  position: relative;
+  bottom: -70px;
+  left: -135px;
+}
+
+#tipografia {
+  position: relative;
+  bottom: 270px;
+  left: 200px;
+}
+
+#semiotica {
+  position: relative;
+  bottom: 180px;
+  left: -120px;
+}
+
+#docencia {
+  position: relative;
+  bottom: -140px;
+  left: -250px;
+}
+
+#investigacion {
+  position: relative;
+  bottom: 250px;
+  left: -290px;
+}
+
+#tecnicatura {
+  position: relative;
+  bottom: 50px;
+  left: 50px;
 }
 /*# sourceMappingURL=styles.css.map */

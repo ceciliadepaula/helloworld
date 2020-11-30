@@ -2,6 +2,7 @@
     padding-top: 40px;
     #grillaCV{
         padding-top: 20px;
+        height: 730px;
         #tituloCV{
             text-align: right;
             font-size: 208px;
@@ -18,4 +19,129 @@
         top: 2650px;
         right: 0px;
     }
+    #porqueDD{
+        #botonCV{
+            margin-bottom: 70px;
+        }
+    }
+    #misAreasProf{
+        height: 630px;
+        padding: 0 3% 0 3%;
+        #grillaAreas{
+            display: grid;
+            grid-template-columns: 1fr 0.7fr;
+            height: 620px;
+            #todosCirculos{
+                height: 570px;
+                .circulosIndividuales{
+                    background-color: $colorAmarillo;
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    float:left;
+                    .tituloArea{
+                        text-align: center;
+                        align-self: center;
+                        font-weight: bold;
+                        span{
+                            font-weight: $regular;
+                        }
+                    }
+                }
+            }
+            #descripcionTitulo{
+                background: red;
+                height: 570px;
+            }
+        }
+    }
+}
+
+//---------- JERARQUÍAS CÍRCULOS -----------// 
+
+.jerarquia1{
+    height: 240px;
+    width: 240px;
+    .tituloArea{
+     font-size: 20px;   
+    }
+}
+
+.jerarquia2{
+    height: 150px;
+    width: 150px;
+    .tituloArea{
+     font-size: 16px;   
+    }
+}
+
+.jerarquia3{
+    height: 100px;
+    width: 100px;
+    .tituloArea{
+        font-size: 10px;
+    }   
+}
+
+//---------- CIRCULOS INDIVIDUALES -----------// 
+
+#ldcv{
+    position: relative;
+    bottom: -150px;
+    left: 150px;
+}
+
+#dwfs{ 
+    position: relative;
+    bottom: -300px;
+    left: 160px;
+}
+
+
+#fotografia{
+    position: relative;
+    bottom: -350px;
+    left: -370px;
+}
+
+
+#uxui{
+    position: relative;
+    bottom: -70px;
+    left: -135px
+}
+
+
+#tipografia{
+    position: relative;
+    bottom: 270px;
+    left: 200px;
+}
+
+
+#semiotica{
+    position: relative;
+    bottom: 180px;
+    left: -120px;
+}
+
+
+#docencia{
+    position: relative;
+    bottom: -140px;
+    left: -250px;
+}
+
+
+#investigacion{
+    position: relative;
+    bottom: 250px;
+    left: -290px;
+}
+
+#tecnicatura{
+    position: relative;
+    bottom: 50px;
+    left: 50px
+    
 }

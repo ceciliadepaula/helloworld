@@ -43,4 +43,43 @@ body{
     color: $colorBlanco;
 }
 
+h4{
+    font-size: 33px;
+    padding-bottom: 30px;
+    text-align: center;
+}
 
+.textosDescriptivos{
+    width: 900px;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: auto;
+    padding-bottom: 30px;
+    strong{
+        font-weight: $regular;
+        background-color: $colorAmarillo;
+    }
+}
+
+.boton{
+    margin: auto;
+    height: 45px;
+    width: 180px;
+    background-color: $colorAmarillo;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .pBoton{
+        font-size: 14px;
+        font-weight: $medium;
+        align-self: center;
+    }
+}
+
+.boton:hover{
+    background-color: $colorNegro;
+    .pBoton{
+        color: $colorAmarillo;
+    }
+}
