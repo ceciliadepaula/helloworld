@@ -269,8 +269,8 @@ header #barraNavRedesSociales .linkExterno #logoFacebook:hover {
 #sobreMi #grillaSobreMiFoto {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 0.8fr;
+      grid-template-columns: 1fr 0.8fr;
 }
 
 #sobreMi #grillaSobreMiFoto h2 {
@@ -287,9 +287,9 @@ header #barraNavRedesSociales .linkExterno #logoFacebook:hover {
 }
 
 #sobreMi #textoPresentación {
-  font-size: 68px;
-  line-height: 80px;
-  margin-left: 350px;
+  font-size: 72px;
+  line-height: 82px;
+  margin-left: 360px;
   margin-top: -310px;
   font-weight: 600;
 }
@@ -344,7 +344,7 @@ header #barraNavRedesSociales .linkExterno #logoFacebook:hover {
 
 #sobreMi #puntitos4 {
   position: absolute;
-  top: 1950px;
+  top: 2000px;
   right: 0px;
 }
 
@@ -359,7 +359,7 @@ header #barraNavRedesSociales .linkExterno #logoFacebook:hover {
 
 #curriculumVitae #grillaCV #tituloCV {
   text-align: right;
-  font-size: 208px;
+  font-size: 228px;
 }
 
 #curriculumVitae #grillaCV #ilustracionCV {
@@ -376,7 +376,7 @@ header #barraNavRedesSociales .linkExterno #logoFacebook:hover {
 }
 
 #curriculumVitae #porqueDD #botonCV {
-  margin-bottom: 70px;
+  margin-bottom: 90px;
 }
 
 #curriculumVitae #misAreasProf {
@@ -420,9 +420,35 @@ header #barraNavRedesSociales .linkExterno #logoFacebook:hover {
   font-weight: 400;
 }
 
-#curriculumVitae #misAreasProf #grillaAreas #descripcionTitulo {
-  background: red;
+#curriculumVitae #misAreasProf #grillaAreas #descripcionAreas {
   height: 570px;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#curriculumVitae #misAreasProf #grillaAreas #descripcionAreas .titulosDescripciones {
+  font-size: 24px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#curriculumVitae #misAreasProf #grillaAreas #descripcionAreas .titulosDescripciones span {
+  background-color: #fdce30;
+}
+
+#curriculumVitae #misAreasProf #grillaAreas #descripcionAreas .textoDescripciones {
+  font-size: 17px;
+  line-height: 28px;
 }
 
 .jerarquia1 {
