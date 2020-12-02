@@ -686,12 +686,12 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
   width: 750px;
 }
 
-#portfolio #grillaPortfolio #botonPortfolio {
+#portfolio #grillaPortfolio #textosPortfolio #botonPortfolio {
   margin-left: 3%;
   float: left;
 }
 
-#portfolio #ilustracionPortfolio {
+#portfolio #grillaPortfolio #ilustracionPortfolio {
   width: 450px;
   position: absolute;
   top: 7980px;
@@ -703,5 +703,142 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
   top: 7900px;
   right: 0;
   z-index: -3;
+}
+
+#portfolio #carruselPortfolio {
+  margin-top: 140px;
+}
+
+#portfolio #carruselPortfolio #ulSeccionesPortfolio {
+  position: relative;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+#portfolio #carruselPortfolio #ulSeccionesPortfolio li {
+  list-style-type: none;
+  height: 25px;
+}
+
+#portfolio #carruselPortfolio #ulSeccionesPortfolio li a {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #181819;
+  font-weight: 700;
+  margin: 15px;
+  text-decoration: none;
+}
+
+#portfolio #carruselPortfolio #ulSeccionesPortfolio li a:hover {
+  background-color: #fdce30;
+}
+
+#portfolio #carruselPortfolio #ulSeccionesPortfolio li .lineaVerticalAmarilla {
+  font-weight: 700;
+  color: #fdce30;
+  position: relative;
+  bottom: 25px;
+  left: 100%;
+  z-index: -2;
+}
+
+#portfolio #contenedorCarrusel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+#portfolio #contenedorCarrusel #irIzquierda {
+  padding-right: 15px;
+}
+
+#portfolio #contenedorCarrusel #irIzquierda #flechaIzquierda:hover {
+  content: url(../images/flecha-izquierda-negro.svg);
+}
+
+#portfolio #contenedorCarrusel #irIzquierda #flechaIzquierda:active {
+  content: url(../images/flecha-izquierda-amarilla.svg);
+}
+
+#portfolio #contenedorCarrusel #irDerecha {
+  padding-left: 15px;
+}
+
+#portfolio #contenedorCarrusel #irDerecha #flechaDerecha:hover {
+  content: url(../images/flecha-derecha-negro.svg);
+}
+
+#portfolio #contenedorCarrusel #irDerecha #flechaDerecha:active {
+  content: url(../images/flecha-derecha-amarillo.svg);
+}
+
+#portfolio #contenedorCarrusel #contenedorImagenes {
+  position: relative;
+  width: 1130px;
+  height: 370px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+#portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales {
+  padding: 5px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales img {
+  height: 360px;
+  z-index: -10;
+}
+
+#portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse {
+  /* display: none; */
+  background-color: #fdce30;
+  opacity: 0.8;
+  z-index: 105;
+  position: relative;
+  /* display: flex;
+                    flex-direction: column; */
+}
+
+#portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse a {
+  text-decoration: underline;
+}
+
+#portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse a .botonImgPort {
+  background-color: #181819;
+}
+
+#portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse a .botonImgPort .pBoton {
+  color: #fdce30;
+}
+
+#portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse a .botonImgPort:hover {
+  background-color: #ffffff;
+}
+
+#portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse a .botonImgPort:hover .pBoton {
+  color: #181819;
 }
 /*# sourceMappingURL=styles.css.map */

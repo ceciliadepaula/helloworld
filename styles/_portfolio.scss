@@ -9,22 +9,129 @@
                 margin-left: 3%;
                 width: 750px; 
             }
+            #botonPortfolio{
+                margin-left: 3%;
+                float: left;
+            }
         }
-        #botonPortfolio{
-            margin-left: 3%;
-            float: left;
+        #ilustracionPortfolio{
+            width: 450px;
+            position: absolute;
+            top: 7980px;
+            right: 50px        
         }
-    }
-    #ilustracionPortfolio{
-        width: 450px;
-        position: absolute;
-        top: 7980px;
-        right: 50px        
     }
     #puntitos7{
         position: absolute;
         top: 7900px;
         right: 0;
         z-index: -3;
+    }
+    #carruselPortfolio{
+        margin-top: 140px;
+        #ulSeccionesPortfolio{
+            position: relative;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            li{
+                list-style-type: none;  
+                height: 25px;
+                a{
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    color: $colorNegro;
+                    font-weight: $bold;
+                    margin: 15px;
+                    text-decoration: none;
+                }
+                a:hover{
+                    background-color: $colorAmarillo;
+                }
+                .lineaVerticalAmarilla{
+                    font-weight: $bold;
+                    color: $colorAmarillo;
+                    position: relative;
+                    bottom: 25px;
+                    left: 100%;
+                    z-index: -2;
+                }
+            }
+        }
+    }
+    #contenedorCarrusel{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        #irIzquierda{
+            padding-right: 15px;
+            #flechaIzquierda:hover{
+                content: url(../images/flecha-izquierda-negro.svg);
+            }
+            #flechaIzquierda:active{
+                content: url(../images/flecha-izquierda-amarilla.svg);
+            }
+        }
+        #irDerecha{
+            padding-left: 15px;
+            #flechaDerecha:hover{
+                content: url(../images/flecha-derecha-negro.svg);
+            }
+            #flechaDerecha:active{
+                content: url(../images/flecha-derecha-amarillo.svg);
+            }
+        }
+        #contenedorImagenes{
+            position: relative;
+            width: 1130px;
+            height: 370px;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            display: inline-flex;
+            .imagenesIndividuales{
+                padding: 5px 8px;
+                display: flex;
+
+
+                img{
+                    height: 360px;
+
+                    z-index: -10;
+                }
+                .pasarMouse{
+                    /* display: none; */
+                    background-color: $colorAmarillo;
+                    opacity: 0.8;
+
+                    z-index: 105;
+
+                    position: relative;
+                    /* display: flex;
+                    flex-direction: column; */
+                    .textoDescriptivo{
+
+                    }
+                    a{
+                        text-decoration: underline;
+                        .botonImgPort{
+                            background-color: $colorNegro;
+                            .pBoton{
+                                color: $colorAmarillo;
+                            }
+                        }
+                        .botonImgPort:hover{
+                            background-color: $colorBlanco;
+                            .pBoton{
+                                color: $colorNegro;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
     }
 }
