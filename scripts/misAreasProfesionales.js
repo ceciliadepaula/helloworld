@@ -96,7 +96,7 @@ function TextoDescriptivo(){
                 <span>TECNICATURA</span>
             </h4>
             <p class="textoDescripciones">
-                Cursé la secundaria en una escuela técnica: la Escuela Industrial Superior. 
+                Cursé la secundaria en una escuela técnica: la <strong>Escuela Industrial Superior</strong>. 
                 Allí me recibí de <strong>Técnica Constructora Nacional</strong> (TCN). Si bien nunca ejercí, 
                 considero que haber terminado en una escuela técnica marcó significativamente 
                 mi forma de ser, de pensar y de trabajar. Por eso cuando empecé a estudiar Desarrollo, 
@@ -147,7 +147,13 @@ function TextoDescriptivo(){
                 <span>SEMIÓTICA</span>
             </h4>
             <p class="textoDescripciones">
-                
+                Una de las disciplinas en las que más se hizo hincapié al estudiar Diseño y, que a su vez, fue la que 
+                posibilitó hacer el abordaje teórico de la Tesina de Grado, fue la <strong>semiótica</strong>. 
+                <br>
+                El análisis semiótico de los signos es el que aún hoy repercute a la hora de analizar o
+                proyectar cualquier pieza de diseño, ya que ofrece las operaciones necesarias para explicar el 
+                <strong>proceso de significación</strong> de la misma.
+            
             </p>        
         `
     } else if (posicion==4){
@@ -172,7 +178,7 @@ function TextoDescriptivo(){
                 <span>DISEÑO UX/UI</span>
             </h4>
             <p class="textoDescripciones">
-                Al terminar mis estudios en Diseño decidí seguir capacitándome en <strong>UX/UI</strong>. 
+                Al terminar mis estudios de grado decidí seguir capacitándome en <strong>UX/UI</strong>. 
                 Por este motivo realicé un curso en <strong>Coder House</strong>, el cual sirvió para potenciar 
                 mis conocimientos en diseño web, tanto en el diseño de interfaces como en la experiencia de usuario. 
                 <br>
@@ -204,7 +210,11 @@ function TextoDescriptivo(){
                 <span>DESARROLLO WEB FULL STACK</span>
             </h4>
             <p class="textoDescripciones">
-                
+                Con mis conocimientos en diseño yo ya podía proyectar el área más superficial y visible de un sitio web, 
+                pero eso no era suficiente: quería ir más allá, quería conocer todo lo que pasaba por detrás. 
+                <br>
+                Por ese motivo decidí estudiar <strong>Desarrollo Web Full Stack</strong> en <strong>Acámica</strong>, 
+                para entender cómo eso que proyectaba con el diseño se podía materializar con código. 
             </p>        
         `
     } else if (posicion==0){
@@ -214,7 +224,9 @@ function TextoDescriptivo(){
                 <span>Lic. DISEÑO COMUNICACIÓN VISUAL</span>
             </h4>
             <p class="textoDescripciones">
-                
+                A finales de 2019 egresé de <strong>FADU UNL</strong> en la carrera de <strong>Lic. en Diseño de la 
+                Comunicación Visual</strong>, obteniendo a su vez la mención de <strong>Cuadro de Honor</strong> por ser 
+                uno de los mejores promedios de la Provincia de Santa Fe en la promoción 2019.
             </p>        
         `
     }

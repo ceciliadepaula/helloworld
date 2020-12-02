@@ -1,0 +1,30 @@
+#portfolio{
+    padding-top: 160px;
+    #grillaPortfolio{
+        #textosPortfolio{
+            #tituloPortfolio{
+                margin-left: 2%;
+            }
+            .textosDescriptivos{
+                margin-left: 3%;
+                width: 750px; 
+            }
+        }
+        #botonPortfolio{
+            margin-left: 3%;
+            float: left;
+        }
+    }
+    #ilustracionPortfolio{
+        width: 450px;
+        position: absolute;
+        top: 7980px;
+        right: 50px        
+    }
+    #puntitos7{
+        position: absolute;
+        top: 7900px;
+        right: 0;
+        z-index: -3;
+    }
+}

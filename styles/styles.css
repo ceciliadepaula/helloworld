@@ -49,7 +49,7 @@ h4 {
 .boton {
   margin: auto;
   height: 45px;
-  width: 180px;
+  width: 200px;
   background-color: #fdce30;
   border-radius: 50px;
   display: -webkit-box;
@@ -451,6 +451,16 @@ header #barraNavRedesSociales .linkExterno #logoFacebook:hover {
   line-height: 28px;
 }
 
+#curriculumVitae #misAreasProf #grillaAreas #puntitos6 {
+  position: relative;
+  top: -30px;
+  left: 920px;
+}
+
+#curriculumVitae #educacion, #curriculumVitae #experienciaLaboral, #curriculumVitae #exposicionesFotograficas, #curriculumVitae #premios, #curriculumVitae #jurado, #curriculumVitae #lenguajes {
+  padding-top: 120px;
+}
+
 .jerarquia1 {
   height: 240px;
   width: 240px;
@@ -530,5 +540,168 @@ header #barraNavRedesSociales .linkExterno #logoFacebook:hover {
   position: relative;
   bottom: 50px;
   left: 50px;
+}
+
+ul.listaCurriculum {
+  max-width: 850px;
+  margin: auto;
+}
+
+ul.listaCurriculum li.elementoListaCV {
+  list-style: url(../images/bullet.svg);
+  list-style-position: outside;
+  padding: 18px;
+}
+
+ul.listaCurriculum li.elementoListaCV h5.titulo {
+  font-size: 27px;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+
+ul.listaCurriculum li.elementoListaCV h5.titulo span {
+  background-color: #fdce30;
+}
+
+ul.listaCurriculum li.elementoListaCV .contenedorLugarFecha {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 1fr;
+      grid-template-columns: 4fr 1fr;
+  padding-bottom: 5px;
+}
+
+ul.listaCurriculum li.elementoListaCV .contenedorLugarFecha .lugar {
+  font-size: 20.7px;
+  font-weight: 700;
+  line-height: 1.41;
+  /* text-transform: uppercase; */
+}
+
+ul.listaCurriculum li.elementoListaCV .contenedorLugarFecha .fecha {
+  font-size: 20.7px;
+  font-weight: 300;
+  text-align: right;
+}
+
+ul.listaCurriculum li.elementoListaCV .aclaracion {
+  font-size: 20.7px;
+  font-weight: 300;
+  line-height: 1.41;
+}
+
+ul.listaLenguajes {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+}
+
+ul.listaLenguajes .elementoLenguaje {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 40px;
+  padding-top: 18px;
+}
+
+ul.listaLenguajes .elementoLenguaje img {
+  padding-bottom: 20px;
+}
+
+ul.listaLenguajes .elementoLenguaje .descripcionIcono {
+  font-size: 18.2px;
+  font-weight: 300;
+  text-align: center;
+}
+
+#iconoIL:hover {
+  content: url(../images/illustrator-amarillo.svg);
+}
+
+#iconoPS:hover {
+  content: url(../images/photoshop-amarillo.svg);
+}
+
+#iconoXD:hover {
+  content: url(../images/xd-amarillo.svg);
+}
+
+#iconoID:hover {
+  content: url(../images/indesign-amarillo.svg);
+}
+
+#iconoAE:hover {
+  content: url(../images/after-effects-amarillo.svg);
+}
+
+#iconoZeplin:hover {
+  content: url(../images/zeplin-amarillo.svg);
+}
+
+#iconoVSC:hover {
+  content: url(../images/vsc-amarillo.svg);
+}
+
+#iconoHTML:hover {
+  content: url(../images/html5-amarillo.svg);
+}
+
+#iconoCSS:hover {
+  content: url(../images/css3-amarillo.svg);
+}
+
+#iconoJS:hover {
+  content: url(../images/javascript-amarillo.svg);
+}
+
+#iconoGit:hover {
+  content: url(../images/git-amarillo.svg);
+}
+
+#iconoSass:hover {
+  content: url(../images/sass-amarillo.svg);
+}
+
+#portfolio {
+  padding-top: 160px;
+}
+
+#portfolio #grillaPortfolio #textosPortfolio #tituloPortfolio {
+  margin-left: 2%;
+}
+
+#portfolio #grillaPortfolio #textosPortfolio .textosDescriptivos {
+  margin-left: 3%;
+  width: 750px;
+}
+
+#portfolio #grillaPortfolio #botonPortfolio {
+  margin-left: 3%;
+  float: left;
+}
+
+#portfolio #ilustracionPortfolio {
+  width: 450px;
+  position: absolute;
+  top: 7980px;
+  right: 50px;
+}
+
+#portfolio #puntitos7 {
+  position: absolute;
+  top: 7900px;
+  right: 0;
+  z-index: -3;
 }
 /*# sourceMappingURL=styles.css.map */

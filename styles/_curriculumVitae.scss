@@ -69,7 +69,15 @@
                     line-height: 28px;
                 }
             }
+            #puntitos6{
+                position: relative;
+                top: -30px;
+                left: 920px;
+            }
         }
+    }
+    #educacion, #experienciaLaboral, #exposicionesFotograficas, #premios, #jurado, #lenguajes{
+        padding-top: 120px;
     }
 }
 
@@ -161,3 +169,117 @@
     left: 50px
     
 }
+
+//---------- LISTA CURRICULUM ---------//
+
+ul.listaCurriculum{
+    max-width: 850px;
+    margin: auto;
+    li.elementoListaCV{
+        list-style: url(../images/bullet.svg);
+        list-style-position: outside;
+        padding: 18px;
+        h5.titulo{
+            font-size: 27px;
+            font-weight: $extrabold;
+            padding-bottom: 10px;
+            span{
+                background-color: $colorAmarillo;
+            }
+        }
+        .contenedorLugarFecha{
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            padding-bottom: 5px;
+            .lugar{
+                font-size: 20.7px;
+                font-weight: $bold;
+                line-height: 1.41;
+                /* text-transform: uppercase; */
+            }
+            .fecha{
+                font-size: 20.7px;
+                font-weight: $light;
+                text-align: right;
+            }
+        }
+        .aclaracion{
+            font-size: 20.7px;
+            font-weight: $light;
+            line-height: 1.41;
+        }
+    }
+}
+
+ul.listaLenguajes{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    list-style-type:none;
+    .elementoLenguaje{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 40px;
+        padding-top: 18px;
+        img{
+            padding-bottom: 20px;
+        }
+        .descripcionIcono{
+            font-size: 18.2px;
+            font-weight: $light;
+            text-align: center;
+        }
+    }
+}
+
+//----- Hover Iconos Lenguajes y Software -------//
+
+#iconoIL:hover{
+    content: url(../images/illustrator-amarillo.svg);
+} 
+
+#iconoPS:hover{
+    content: url(../images/photoshop-amarillo.svg);
+} 
+
+#iconoXD:hover{
+    content: url(../images/xd-amarillo.svg);
+} 
+
+#iconoID:hover{
+    content: url(../images/indesign-amarillo.svg);
+} 
+
+#iconoAE:hover{
+    content: url(../images/after-effects-amarillo.svg);
+} 
+
+#iconoZeplin:hover{
+    content: url(../images/zeplin-amarillo.svg);
+} 
+
+#iconoVSC:hover{
+    content: url(../images/vsc-amarillo.svg);
+} 
+
+#iconoHTML:hover{
+    content: url(../images/html5-amarillo.svg);
+} 
+
+#iconoCSS:hover{
+    content: url(../images/css3-amarillo.svg);
+} 
+
+#iconoJS:hover{
+    content: url(../images/javascript-amarillo.svg);
+} 
+
+#iconoGit:hover{
+    content: url(../images/git-amarillo.svg);
+} 
+
+#iconoSass:hover{
+    content: url(../images/sass-amarillo.svg);
+} 
