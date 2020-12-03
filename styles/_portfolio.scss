@@ -94,28 +94,24 @@
             .imagenesIndividuales{
                 padding: 5px 8px;
                 display: flex;
-
-
                 img{
                     height: 360px;
-
-                    z-index: -10;
                 }
                 .pasarMouse{
-                    /* display: none; */
                     background-color: $colorAmarillo;
-                    opacity: 0.8;
-
-                    z-index: 105;
-
-                    position: relative;
-                    /* display: flex;
-                    flex-direction: column; */
+                    opacity: 0;
+                    position: absolute;
+                    height: 360px;
+                    width: 360px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
                     .textoDescriptivo{
-
+                        text-align: center;
+                        margin: 20px;
                     }
                     a{
-                        text-decoration: underline;
+                        text-decoration: none;
                         .botonImgPort{
                             background-color: $colorNegro;
                             .pBoton{
@@ -130,6 +126,9 @@
                         }
                     }
                     
+                }
+                .pasarMouse:hover{
+                    opacity: 0.9;
                 }
             }
         }

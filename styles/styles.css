@@ -809,21 +809,33 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
 
 #portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales img {
   height: 360px;
-  z-index: -10;
 }
 
 #portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse {
-  /* display: none; */
   background-color: #fdce30;
-  opacity: 0.8;
-  z-index: 105;
-  position: relative;
-  /* display: flex;
-                    flex-direction: column; */
+  opacity: 0;
+  position: absolute;
+  height: 360px;
+  width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse .textoDescriptivo {
+  text-align: center;
+  margin: 20px;
 }
 
 #portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 #portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse a .botonImgPort {
@@ -840,5 +852,9 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
 
 #portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse a .botonImgPort:hover .pBoton {
   color: #181819;
+}
+
+#portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse:hover {
+  opacity: 0.9;
 }
 /*# sourceMappingURL=styles.css.map */
