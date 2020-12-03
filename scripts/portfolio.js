@@ -18,27 +18,9 @@ let flechaIzquierda = document.getElementById("flechaIzquierda");
 const imagenesDisWeb = [
 
     {
-        imagen: "./images/.jpg",
+        imagen: "./images/disweb-wallar1.jpg",
         descripcion: "«Wallar» es una app pensada para conectar a profesionales del mundo de la construcción con personas que necesitan y buscan su servicio. Fue diseñada como Proyecto Final del curso de Diseño UX/UI en Coder House",
         link: "https://www.behance.net/gallery/96709257/Wallar-UIUX",
-    },
-
-    {
-        imagen: "./images/.jpg",
-        descripcion: "«Wallar» es una app pensada para conectar a profesionales del mundo de la construcción con personas que necesitan y buscan su servicio. Fue diseñada como Proyecto Final del curso de Diseño UX/UI en Coder House",
-        link: "https://www.behance.net/gallery/96709257/Wallar-UIUX",
-    },
-
-    {
-        imagen: "./images/desarrollo-alalata1.jpg",
-        descripcion: "Diseño y desarrollo de la página de «Alalata Taller de fotografía estenopeica»",
-        link: "https://ceciliadepaula.github.io/alalata/",
-    },
-
-    {
-        imagen: "./images/desarrollo-alalata2.jpg",
-        descripcion: "Diseño y desarrollo de la página de «Alalata Taller de fotografía estenopeica»",
-        link: "https://ceciliadepaula.github.io/alalata/",
     },
 
     {
@@ -51,6 +33,18 @@ const imagenesDisWeb = [
         imagen: "./images/desarrollo-tecnonews1.jpg",
         descripcion: "«TecnoNews» es un diario de noticias tecnológicas desarrollado como consigna de la clase 10 del curso de Desarrollo Web Full Stack de Acámica.",
         link: "https://github.com/ceciliadepaula/tecnonews",
+    },
+
+    {
+        imagen: "./images/desarrollo-alalata1.jpg",
+        descripcion: "Diseño y desarrollo de la página de «Alalata Taller de fotografía estenopeica»",
+        link: "https://ceciliadepaula.github.io/alalata/",
+    },
+
+    {
+        imagen: "./images/desarrollo-alalata2.jpg",
+        descripcion: "Diseño y desarrollo de la página de «Alalata Taller de fotografía estenopeica»",
+        link: "https://ceciliadepaula.github.io/alalata/",
     },
 
 ]
@@ -159,6 +153,18 @@ const imagenesDisGraf = [
     },
 
     {
+        imagen: "./images/disenio-vientos.jpg",
+        descripcion: "Diseño de identidad de la dietética «Vientos Verdes»",
+        link: "https://www.behance.net/gallery/61224283/Diettica-Vientos-Verdes",
+    },
+
+    {
+        imagen: "./images/disenio-alalata1.jpg",
+        descripcion: "Diseño de logotipo y material publicitario para «Alalata Fotografía Estenopeica»",
+        link: "https://www.behance.net/gallery/96872605/Alalata-Fotografia-Estenopeica",
+    },
+
+    {
         imagen: "./images/disenio-tl1.jpg",
         descripcion: "Diseño de identidad y folletería de la Sexta Bienal de Tipografía Latinoamericana «Tipos Latinos 2014», Sede Santa Fe",
         link: "https://www.behance.net/gallery/61391629/Folleteria-Tipos-Latinos-2014",
@@ -210,6 +216,54 @@ const imagenesFotografia = [
         imagen: "./images/foto-ojosciegos.jpg",
         descripcion: "«Los ojos ciegos bien abiertos» es una obra expuesta en el rubro Visuales de la 9na. Bienal de Arte Joven.",
         link: "",
+    },
+
+    {
+        imagen: "./images/foto-bob.jpg",
+        descripcion: "Cobertura del recital de Bob Dylan en el Gran Rex, Buenos Aires, 27.abr.12",
+        link: "https://www.flickr.com/photos/visionpropia/albums/72157629556394710",
+    },
+
+    {
+        imagen: "./images/foto-bunbury1.jpg",
+        descripcion: "Cobertura del recital de Enrique Bunbury en el Gran Rex, Buenos Aires, 04.nov.10",
+        link: "https://www.flickr.com/photos/visionpropia/albums/72157625195178975",
+    },
+
+    {
+        imagen: "./images/foto-paez.jpg",
+        descripcion: "Cobertura del recital de Fito Paez en ATE Casa España, Santa Fe, 17.sep.10",
+        link: "https://www.flickr.com/photos/visionpropia/albums/72157624854523661",
+    },
+
+    {
+        imagen: "./images/foto-ivan.jpg",
+        descripcion: "Cobertura del recital de Iván Noble en el Centro Cultural Provincial, Santa Fe, 20.may.11",
+        link: "https://www.flickr.com/photos/visionpropia/albums/72157626773333656",
+    },
+
+    {
+        imagen: "./images/foto-calamaro.jpg",
+        descripcion: "Cobertura del recital de Andrés Calamaro en el Club Atlético Unión, Santa Fe, 30.sep.10",
+        link: "https://www.flickr.com/photos/visionpropia/albums/72157625074177050",
+    },
+
+    {
+        imagen: "./images/foto-roberto.jpg",
+        descripcion: "Cobertura del recital de Dr. Roberto, Santa Fe, 05.feb.11",
+        link: "https://www.flickr.com/photos/visionpropia/albums/72157625867561311",
+    },
+
+    {
+        imagen: "./images/foto-cafres.jpg",
+        descripcion: "Cobertura del recital de Los Cafres en Música en el Río, en la Costanera Oeste, Santa Fe, 19.feb.11",
+        link: "https://www.flickr.com/photos/visionpropia/albums/72157625968901825",
+    },
+
+    {
+        imagen: "./images/foto-angeles.jpg",
+        descripcion: "Cobertura del recital de Teen Angels en el Club Atlético Unión, Santa Fe, 27.ago.11",
+        link: "https://www.flickr.com/photos/visionpropia/albums/72157627410467075",
     },
 ]
 
@@ -288,7 +342,6 @@ function MostrarDesarrollo(){
     seleccionDesarrollo.style.backgroundColor = "#fdce30";
     seleccionFotografia.style.backgroundColor = "#ffffff";
 }
-
 
 seleccionDisWeb.addEventListener("click", MostrarDisWeb);
 
