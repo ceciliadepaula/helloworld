@@ -13,6 +13,100 @@ let flechaIzquierda = document.getElementById("flechaIzquierda");
 
 // Arrays de elementos a mostrar
 
+// Diseño web
+
+const imagenesDisWeb = [
+
+    {
+        imagen: "./images/.jpg",
+        descripcion: "«Wallar» es una app pensada para conectar a profesionales del mundo de la construcción con personas que necesitan y buscan su servicio. Fue diseñada como Proyecto Final del curso de Diseño UX/UI en Coder House",
+        link: "https://www.behance.net/gallery/96709257/Wallar-UIUX",
+    },
+
+    {
+        imagen: "./images/.jpg",
+        descripcion: "«Wallar» es una app pensada para conectar a profesionales del mundo de la construcción con personas que necesitan y buscan su servicio. Fue diseñada como Proyecto Final del curso de Diseño UX/UI en Coder House",
+        link: "https://www.behance.net/gallery/96709257/Wallar-UIUX",
+    },
+
+    {
+        imagen: "./images/desarrollo-alalata1.jpg",
+        descripcion: "Diseño y desarrollo de la página de «Alalata Taller de fotografía estenopeica»",
+        link: "https://ceciliadepaula.github.io/alalata/",
+    },
+
+    {
+        imagen: "./images/desarrollo-alalata2.jpg",
+        descripcion: "Diseño y desarrollo de la página de «Alalata Taller de fotografía estenopeica»",
+        link: "https://ceciliadepaula.github.io/alalata/",
+    },
+
+    {
+        imagen: "./images/desarrollo-tecnonews2.jpg",
+        descripcion: "«TecnoNews» es un diario de noticias tecnológicas desarrollado como consigna de la clase 10 del curso de Desarrollo Web Full Stack de Acámica.",
+        link: "https://github.com/ceciliadepaula/tecnonews",
+    },
+
+    {
+        imagen: "./images/desarrollo-tecnonews1.jpg",
+        descripcion: "«TecnoNews» es un diario de noticias tecnológicas desarrollado como consigna de la clase 10 del curso de Desarrollo Web Full Stack de Acámica.",
+        link: "https://github.com/ceciliadepaula/tecnonews",
+    },
+
+]
+
+// Desarrollo web
+
+const imagenesDesarrollo = [
+    {
+        imagen: "./images/desarrollo-gifos.jpg",
+        descripcion: "«Gifos» es una aplicación web interactiva para compartir GIFs animados, desarrollada como Proyecto del Sprint 2: «Javascript», del curso de Desarrollo Web Full Stack de Acámica.",
+        link: "https://gifosdepaula.000webhostapp.com/index.html",
+    },
+
+    {
+        imagen: "./images/desarrollo-gifos1.jpg",
+        descripcion: "«Gifos» es una aplicación web interactiva para compartir GIFs animados, desarrollada como Proyecto del Sprint 2: «Javascript», del curso de Desarrollo Web Full Stack de Acámica.",
+        link: "https://gifosdepaula.000webhostapp.com/index.html",
+    },
+
+    {
+        imagen: "./images/desarrollo-podcast1.jpg",
+        descripcion: "«Podcast Channel» desarrollado para la consigna del Proyecto del Sprint 1: «HTML y CSS» del curso de Desarrollo Web Full Stack de Acámica.",
+        link: "https://github.com/ceciliadepaula/podcast_Hello_pale_blue_dot",
+    },
+
+    {
+        imagen: "./images/desarrollo-podcast2.jpg",
+        descripcion: "«Podcast Channel» desarrollado para la consigna del Proyecto del Sprint 1: «HTML y CSS» del curso de Desarrollo Web Full Stack de Acámica.",
+        link: "https://github.com/ceciliadepaula/podcast_Hello_pale_blue_dot",
+    },
+
+    {
+        imagen: "./images/desarrollo-alalata1.jpg",
+        descripcion: "Diseño y desarrollo de la página de «Alalata Taller de fotografía estenopeica»",
+        link: "https://ceciliadepaula.github.io/alalata/",
+    },
+
+    {
+        imagen: "./images/desarrollo-alalata2.jpg",
+        descripcion: "Diseño y desarrollo de la página de «Alalata Taller de fotografía estenopeica»",
+        link: "https://ceciliadepaula.github.io/alalata/",
+    },
+
+    {
+        imagen: "./images/desarrollo-tecnonews2.jpg",
+        descripcion: "«TecnoNews» es un diario de noticias tecnológicas desarrollado como consigna de la clase 10 del curso de Desarrollo Web Full Stack de Acámica.",
+        link: "https://github.com/ceciliadepaula/tecnonews",
+    },
+
+    {
+        imagen: "./images/desarrollo-tecnonews1.jpg",
+        descripcion: "«TecnoNews» es un diario de noticias tecnológicas desarrollado como consigna de la clase 10 del curso de Desarrollo Web Full Stack de Acámica.",
+        link: "https://github.com/ceciliadepaula/tecnonews",
+    },
+]
+
 // Diseño Gráfico
 
 const imagenesDisGraf = [
@@ -84,37 +178,37 @@ const imagenesDisGraf = [
 const imagenesFotografia = [
     {
         imagen: "./images/foto-pop3.jpg",
-        descripcion: "",
-        link: "",
+        descripcion: "«Pop.Corn» es una obra premiada en el rubro Visuales de la 10ma. Bienal de Arte Joven. Obra compuesta por 25 fotografías independientes que exploran la morfología de diferentes palomitas de maíz. ",
+        link: "https://www.behance.net/gallery/96587339/PopCorn",
     },
 
     {
         imagen: "./images/foto-pop1.jpg",
-        descripcion: "",
-        link: "",
+        descripcion: "«Pop.Corn» es una obra premiada en el rubro Visuales de la 10ma. Bienal de Arte Joven. Obra compuesta por 25 fotografías independientes que exploran la morfología de diferentes palomitas de maíz. ",
+        link: "https://www.behance.net/gallery/96587339/PopCorn",
     },
 
     {
         imagen: "./images/foto-pop0.jpg",
-        descripcion: "",
-        link: "",
+        descripcion: "«Pop.Corn» es una obra premiada en el rubro Visuales de la 10ma. Bienal de Arte Joven. Obra compuesta por 25 fotografías independientes que exploran la morfología de diferentes palomitas de maíz. ",
+        link: "https://www.behance.net/gallery/96587339/PopCorn",
     },
 
     {
         imagen: "./images/foto-encuentro1.jpg",
-        descripcion: "",
+        descripcion: "«En remolinos» es una obra expuesta en el rubro Visuales de la 11va. Bienal de Arte Joven. Explora el momento de encuentro bajo el agua de dos tintas de colores.",
         link: "",
     },
 
     {
         imagen: "./images/foto-encuentro2.jpg",
-        descripcion: "",
+        descripcion: "«El encuentro» es una obra expuesta en el rubro Visuales de la 11va. Bienal de Arte Joven. Explora el momento de encuentro bajo el agua de dos tintas de colores.",
         link: "",
     },
 
     {
         imagen: "./images/foto-ojosciegos.jpg",
-        descripcion: "",
+        descripcion: "«Los ojos ciegos bien abiertos» es una obra expuesta en el rubro Visuales de la 9na. Bienal de Arte Joven.",
         link: "",
     },
 ]
@@ -133,17 +227,17 @@ flechaIzquierda.addEventListener("click", () => {
 
 // For en función
 
-function Iteraciones(arrayInvicado){
-    for (i = 0; i < arrayInvicado.length; i++){
+function Iteraciones(arrayInvocado){
+    for (i = 0; i < arrayInvocado.length; i++){
 
         let contenedorImg = document.createElement("div");
         contenedorImg.classList.add("imagenesIndividuales");
 
         contenedorImg.innerHTML = `
-            <img src="${arrayInvicado[i]["imagen"]}" alt="Trabajo">
+            <img src="${arrayInvocado[i]["imagen"]}" alt="Trabajo">
             <div class='pasarMouse'>
-                <p class="textoDescriptivo">${arrayInvicado[i]["descripcion"]}</p>
-                <a href="${arrayInvicado[i]["link"]}" target="_blank">
+                <p class="textoDescriptivo">${arrayInvocado[i]["descripcion"]}</p>
+                <a href="${arrayInvocado[i]["link"]}" target="_blank">
                     <div class="boton botonImgPort">
                         <p class="pBoton">MÁS INFORMACIÓN</p>
                     </div>
@@ -155,18 +249,55 @@ function Iteraciones(arrayInvicado){
 }
 
 
- // Eventos
+// Eventos para mostrar imágenes de arrays según sección llamada
+
+MostrarDisWeb();
 
 seleccionFotografia.addEventListener("click", MostrarFotos);
 
 function MostrarFotos(){
-    /* boorar primero si hay algo */
+    contenedorImagenes.innerHTML = "";
     Iteraciones(imagenesFotografia);
+
+    seleccionDisGrafico.style.backgroundColor = "#ffffff";
+    seleccionDisWeb.style.backgroundColor = "#ffffff";
+    seleccionDesarrollo.style.backgroundColor = "#ffffff";
+    seleccionFotografia.style.backgroundColor = "#fdce30";
 }
 
 seleccionDisGrafico.addEventListener("click", MostrarDisGra);
 
 function MostrarDisGra(){
-    /* boorar primero si hay algo */
+    contenedorImagenes.innerHTML = "";
     Iteraciones(imagenesDisGraf);
+
+    seleccionDisGrafico.style.backgroundColor = "#fdce30";
+    seleccionDisWeb.style.backgroundColor = "#ffffff";
+    seleccionDesarrollo.style.backgroundColor = "#ffffff";
+    seleccionFotografia.style.backgroundColor = "#ffffff";
+}
+
+seleccionDesarrollo.addEventListener("click", MostrarDesarrollo);
+
+function MostrarDesarrollo(){
+    contenedorImagenes.innerHTML = "";
+    Iteraciones(imagenesDesarrollo);
+
+    seleccionDisGrafico.style.backgroundColor = "#ffffff";
+    seleccionDisWeb.style.backgroundColor = "#ffffff";
+    seleccionDesarrollo.style.backgroundColor = "#fdce30";
+    seleccionFotografia.style.backgroundColor = "#ffffff";
+}
+
+
+seleccionDisWeb.addEventListener("click", MostrarDisWeb);
+
+function MostrarDisWeb(){
+    contenedorImagenes.innerHTML = "";
+    Iteraciones(imagenesDisWeb);
+
+    seleccionDisGrafico.style.backgroundColor = "#ffffff";
+    seleccionDisWeb.style.backgroundColor = "#fdce30";
+    seleccionDesarrollo.style.backgroundColor = "#ffffff";
+    seleccionFotografia.style.backgroundColor = "#ffffff";
 }
