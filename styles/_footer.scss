@@ -1,0 +1,25 @@
+footer{
+    margin-top: 50px;
+    background-color: $colorAmarillo;
+    display: grid;
+    grid-template-columns: 1fr 0.01fr 1fr;
+    p{
+        font-size: 14px;
+        padding: 10px;
+    }
+    #footerRight{
+        text-align: left;
+        margin-right: 10%;
+    }
+    #footerLeft{
+        text-align: right;
+        margin-left: 10%;
+    }
+    #lineaVerticalNegra{
+        width: 1px;
+        background-color: $colorNegro;
+        height: 80%;
+        align-self: center;
+        justify-self: center;
+    }
+}

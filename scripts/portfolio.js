@@ -219,6 +219,12 @@ const imagenesFotografia = [
     },
 
     {
+        imagen: "./images/foto-angeles.jpg",
+        descripcion: "Cobertura del recital de Teen Angels en el Club Atlético Unión, Santa Fe, 27.ago.11",
+        link: "https://www.flickr.com/photos/visionpropia/albums/72157627410467075",
+    },
+
+    {
         imagen: "./images/foto-bob.jpg",
         descripcion: "Cobertura del recital de Bob Dylan en el Gran Rex, Buenos Aires, 27.abr.12",
         link: "https://www.flickr.com/photos/visionpropia/albums/72157629556394710",
@@ -261,10 +267,24 @@ const imagenesFotografia = [
     },
 
     {
-        imagen: "./images/foto-angeles.jpg",
-        descripcion: "Cobertura del recital de Teen Angels en el Club Atlético Unión, Santa Fe, 27.ago.11",
-        link: "https://www.flickr.com/photos/visionpropia/albums/72157627410467075",
+        imagen: "./images/foto-estenopeica1.jpg",
+        descripcion: "Fotografía estenopeica sacada en los talleres de «Alalata Fotografía»",
+        link: "https://www.behance.net/gallery/96872605/Alalata-Fotografia-Estenopeica",
     },
+
+    {
+        imagen: "./images/foto-estenopeica3.jpg",
+        descripcion: "Fotografía estenopeica sacada en los talleres de «Alalata Fotografía»",
+        link: "https://www.behance.net/gallery/96872605/Alalata-Fotografia-Estenopeica",
+    },
+
+    {
+        imagen: "./images/foto-estenopeica2.jpg",
+        descripcion: "Fotografía estenopeica sacada en los talleres de «Alalata Fotografía»",
+        link: "https://www.behance.net/gallery/96872605/Alalata-Fotografia-Estenopeica",
+    },
+
+
 ]
 
 // Ir derecha e izquierda
@@ -303,38 +323,34 @@ function Iteraciones(arrayInvocado){
 }
 
 
+////////////////////////////////////////////////////////////////
+
 // Eventos para mostrar imágenes de arrays según sección llamada
 
 MostrarDisWeb();
 
-seleccionFotografia.addEventListener("click", MostrarFotos);
+// Diseño web
 
-function MostrarFotos(){
+seleccionDisWeb.addEventListener("click", MostrarDisWeb);
+
+function MostrarDisWeb(){
     contenedorImagenes.innerHTML = "";
-    Iteraciones(imagenesFotografia);
+    contenedorImagenes.scrollLeft = 0;
+    Iteraciones(imagenesDisWeb);
 
     seleccionDisGrafico.style.backgroundColor = "#ffffff";
-    seleccionDisWeb.style.backgroundColor = "#ffffff";
-    seleccionDesarrollo.style.backgroundColor = "#ffffff";
-    seleccionFotografia.style.backgroundColor = "#fdce30";
-}
-
-seleccionDisGrafico.addEventListener("click", MostrarDisGra);
-
-function MostrarDisGra(){
-    contenedorImagenes.innerHTML = "";
-    Iteraciones(imagenesDisGraf);
-
-    seleccionDisGrafico.style.backgroundColor = "#fdce30";
-    seleccionDisWeb.style.backgroundColor = "#ffffff";
+    seleccionDisWeb.style.backgroundColor = "#fdce30";
     seleccionDesarrollo.style.backgroundColor = "#ffffff";
     seleccionFotografia.style.backgroundColor = "#ffffff";
 }
+
+// Desarrollo web
 
 seleccionDesarrollo.addEventListener("click", MostrarDesarrollo);
 
 function MostrarDesarrollo(){
     contenedorImagenes.innerHTML = "";
+    contenedorImagenes.scrollLeft = 0;
     Iteraciones(imagenesDesarrollo);
 
     seleccionDisGrafico.style.backgroundColor = "#ffffff";
@@ -343,14 +359,32 @@ function MostrarDesarrollo(){
     seleccionFotografia.style.backgroundColor = "#ffffff";
 }
 
-seleccionDisWeb.addEventListener("click", MostrarDisWeb);
+// Diseño gráfico
 
-function MostrarDisWeb(){
+seleccionDisGrafico.addEventListener("click", MostrarDisGra);
+
+function MostrarDisGra(){
     contenedorImagenes.innerHTML = "";
-    Iteraciones(imagenesDisWeb);
+    contenedorImagenes.scrollLeft = 0;
+    Iteraciones(imagenesDisGraf);
 
-    seleccionDisGrafico.style.backgroundColor = "#ffffff";
-    seleccionDisWeb.style.backgroundColor = "#fdce30";
+    seleccionDisGrafico.style.backgroundColor = "#fdce30";
+    seleccionDisWeb.style.backgroundColor = "#ffffff";
     seleccionDesarrollo.style.backgroundColor = "#ffffff";
     seleccionFotografia.style.backgroundColor = "#ffffff";
+}
+
+// Fotografía
+
+seleccionFotografia.addEventListener("click", MostrarFotos);
+
+function MostrarFotos(){
+    contenedorImagenes.innerHTML = "";
+    contenedorImagenes.scrollLeft = 0;
+    Iteraciones(imagenesFotografia);
+
+    seleccionDisGrafico.style.backgroundColor = "#ffffff";
+    seleccionDisWeb.style.backgroundColor = "#ffffff";
+    seleccionDesarrollo.style.backgroundColor = "#ffffff";
+    seleccionFotografia.style.backgroundColor = "#fdce30";
 }

@@ -452,9 +452,9 @@ header #barraNavRedesSociales .linkExterno #logoFacebook:hover {
 }
 
 #curriculumVitae #misAreasProf #grillaAreas #puntitos6 {
-  position: relative;
-  top: -30px;
-  left: 920px;
+  position: absolute;
+  right: 0;
+  top: 4000px;
 }
 
 #curriculumVitae #educacion, #curriculumVitae #experienciaLaboral, #curriculumVitae #exposicionesFotograficas, #curriculumVitae #premios, #curriculumVitae #jurado, #curriculumVitae #lenguajes {
@@ -856,5 +856,116 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
 
 #portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse:hover {
   opacity: 0.9;
+}
+
+#contacto {
+  margin-top: 80px;
+}
+
+#contacto #tituloContacto {
+  text-align: center;
+  position: relative;
+  top: 70px;
+  z-index: -2;
+}
+
+#contacto #grillaContacto {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: 0 18%;
+}
+
+#contacto #grillaContacto #ilustracionContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#contacto #grillaContacto #ilustracionContacto #dibujoContacto {
+  height: 456px;
+}
+
+#contacto #grillaContacto #datosContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#contacto #grillaContacto #datosContacto div {
+  font-size: 21px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#contacto #grillaContacto #datosContacto div h5 {
+  font-weight: 700;
+}
+
+#contacto #grillaContacto #datosContacto div p {
+  font-weight: 300;
+}
+
+#contacto #grillaContacto #datosContacto div a {
+  text-decoration: none;
+  color: #181819;
+  font-weight: 300;
+}
+
+#contacto #puntitos8 {
+  position: absolute;
+  right: 0px;
+  top: 9570px;
+}
+
+footer {
+  margin-top: 50px;
+  background-color: #fdce30;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0.01fr 1fr;
+      grid-template-columns: 1fr 0.01fr 1fr;
+}
+
+footer p {
+  font-size: 14px;
+  padding: 10px;
+}
+
+footer #footerRight {
+  text-align: left;
+  margin-right: 10%;
+}
+
+footer #footerLeft {
+  text-align: right;
+  margin-left: 10%;
+}
+
+footer #lineaVerticalNegra {
+  width: 1px;
+  background-color: #181819;
+  height: 80%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 /*# sourceMappingURL=styles.css.map */

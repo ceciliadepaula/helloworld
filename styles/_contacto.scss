@@ -1,0 +1,51 @@
+#contacto{
+    margin-top: 80px;
+    #tituloContacto{
+        text-align: center;
+        position: relative;
+        top: 70px;
+        z-index: -2;
+    }
+    #grillaContacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 18%;
+        #ilustracionContacto{
+            display: flex;
+            justify-content: flex-end;
+            align-content: center;
+            #dibujoContacto{
+                height: 456px;
+            }
+        }
+        #datosContacto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            div{
+                font-size: 21px;
+                line-height: 30px;
+                text-align: center;
+                margin-bottom: 30px;
+                h5{
+                    font-weight: $bold;
+                }
+                p{
+                    font-weight: $light;
+                }
+                a{
+                    text-decoration: none;
+                    color: $colorNegro;
+                    font-weight: $light;
+                }
+            }
+
+        }
+    }
+    #puntitos8{
+        position: absolute;
+        right: 0px;
+        top: 9570px;
+    }
+}
