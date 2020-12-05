@@ -6,6 +6,17 @@ footer{
     p{
         font-size: 14px;
         padding: 10px;
+        strong{
+            font-weight: $semibold;
+        }
+        a{
+            text-decoration: none;
+            color: $colorNegro;
+        }
+        a:hover{
+            color: $colorBlanco;
+            font-weight: $medium;
+        }
     }
     #footerRight{
         text-align: left;
