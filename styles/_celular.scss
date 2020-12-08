@@ -127,17 +127,12 @@
     ////////////////////// CV
 
     #curriculumVitae{
-/*         padding-top: 40px; */
         #grillaCV{
-/*             padding-top: 20px;
-            height: 730px; */
             #tituloCV{
                 font-size: 120px;
                 span{
                     display: initial;
                 }
-/*                 text-align: right;
-                font-size: 228px;   */
             }
             #ilustracionCV{
                 width: 400px;
@@ -159,49 +154,26 @@
                 text-align: center;
 
             }
-            #botonCV{
-/*                 margin-bottom: 90px; */
-            }
         }
         #misAreasProf{
-/*             height: 630px;
-            padding: 0 3% 0 3%; */
             #grillaAreas{
-/*                 display: grid;
-                grid-template-columns: 1fr 0.7fr;
-                height: 620px; */
-                #todosCirculos{
-/*                     height: 570px; */
-                    .circulosIndividuales{
-/*                         background-color: $colorAmarillo;
-                        border-radius: 100%;
-                        display: flex;
-                        justify-content: center;
-                        float:left; */
-                        .tituloArea{
-/*                             text-align: center;
-                            align-self: center;
-                            font-weight: bold; */
-                            span{
-/*                                 font-weight: $regular; */
-                            }
-                        }
-                    }
-                }
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 2fr 1fr ;
                 #descripcionAreas{
-/*                     height: 570px;
-                    width: 85%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center; */
+                    /* display: none; */
+                    z-index: 2;
+                    width: 100%;
+                    justify-content: flex-start;
+                    margin-top: 130px;
+                    padding-bottom: 50px;
+                    height: 470px;
+                   /*  background-color: red; */
                     .titulosDescripciones{
 /*                         font-size: 24px;
                         padding-bottom: 0;
                         margin-bottom: 20px;
                         text-align: left; */
-                        span{
-/*                             background-color: $colorAmarillo; */
-                        }
                     }
                     .textoDescripciones{
 /*                         font-size: 17px;
@@ -217,20 +189,255 @@
             }
         }
         #educacion, #experienciaLaboral, #exposicionesFotograficas, #premios, #jurado, #lenguajes{
-/*             padding-top: 120px; */
+            padding-top: 50px;
+        }
+
+        #educacion{
+            margin-top: 600px;
         }
     }
     
+    //---------- CIRCULOS INDIVIDUALES -----------// 
+
+    #ldcv{
+        position: relative;
+        bottom: -100px;
+        left: 50px;
+    }
+
+    #dwfs{ 
+        position: relative;
+        bottom: -150px;
+        right: 0;
+    }
+
+
+    #fotografia{
+        position: relative;
+        bottom: 210px;
+        left: 0px;
+    }
+
+
+    #uxui{
+        position: relative;
+        bottom: 180px;
+        left: 10px;
+    }
+
+
+    #tipografia{
+        position: relative;
+        bottom: 620px;
+        left: 180px;
+    }
+
+
+    #semiotica{
+        position: relative;
+        bottom: 620px;
+        left: -155px;
+    }
+
+
+    #docencia{
+        position: relative;
+        bottom: 385px;
+        left: 0;
+    }
+
+
+    #investigacion{
+        position: relative;
+        bottom: 800px;
+        left: 10px;
+    }
+
+    #tecnicatura{
+        position: relative;
+        bottom: 250px;
+        left: -110px;
+        
+    }
+
+    h4{
+        font-size: 22px;
+    }
+
+
+    //---------- LISTA CURRICULUM ---------//
+
+    ul.listaCurriculum{
+        li.elementoListaCV{
+            h5.titulo{
+                font-size: 22px;
+            }
+            .contenedorLugarFecha{
+                .lugar{
+                    font-size: 17px;
+                }
+                .fecha{
+                    display: none;
+                }
+            }
+            .aclaracion{
+                font-size: 17px;
+            }
+        }
+    }
+
+    ul.listaLenguajes{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+
+    
+    //////// PORTFOLIO
+
+    #portfolio{
+/*         padding-top: 160px; */
+        #grillaPortfolio{
+            #textosPortfolio{
+                #tituloPortfolio{
+                    font-size: 120px;
+                    span{
+                        display: initial;
+                    }
+/*                     margin-left: 2%; */
+                }
+                .textosDescriptivos{
+                    width: 90%;
+                    padding-top: 15px;
+/*                     margin-left: 3%;
+                    width: 750px;  */
+                }
+                #botonPortfolio{
+/*                     margin-left: 3%;
+                    float: left; */
+                }
+            }
+            #ilustracionPortfolio{
+                width: 180px;
+                position: absolute;
+                top: 8480px;
+                right: 5px;
+/*                 width: 450px;
+                position: absolute;
+                top: 7980px;
+                right: 50px  */       
+            }
+        }
+        #puntitos7{
+            display: none;
+/*             position: absolute;
+            top: 7900px;
+            right: 0;
+            z-index: -3; */
+        }
+        #carruselPortfolio{
+/*             margin-top: 140px; */
+            #ulSeccionesPortfolio{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                text-align: center;
+
+                
+                /* text-align: center; */
+
+                
+/*                 position: relative;
+                top: 0;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px; */
+                li{
+/*                     list-style-type: none;  
+                    height: 25px; */
+                    .lineaVerticalAmarilla{
+                        display: none;
+/*                         font-weight: $bold;
+                        color: $colorAmarillo;
+                        position: relative;
+                        bottom: 25px;
+                        left: 100%;
+                        z-index: -2; */
+                    }
+                }
+            }
+        }
+        #contenedorCarrusel{
+            #irIzquierda{
+                display: none;
+            }
+            #irDerecha{
+                display: none;
+            }
+            #contenedorImagenes{
+                overflow: scroll;
+            }
+        }
+    }
 
 
 
+    //////////// CONTACTO
+
+    #contacto{
+        margin-top: 50px;
+        #tituloContacto{
+            font-size: 80px;
+        }
+        #grillaContacto{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr;
+            margin: 0;
+            #ilustracionContacto{
+                padding-top: 75px;
+                justify-content: center;
+                #dibujoContacto{
+                    height: 256px;
+                }
+            }
+            #datosContacto{
+
+                div{
+                    h5{
+                        font-size: 17px;
+                    }
+                    p{
+                        font-size: 17px;
+                    }
+                }
+    
+            }
+        }
+        #puntitos8{
+            display: none;
+        }
+    }
 
 
+    //////// footer
 
+    footer{
+        margin-top: 0;
+        grid-template-columns: 1fr ;
+        p{
+            width: 50%;
+        }
+        #footerRight{
+            text-align: center;
+            margin: auto;
+        }
+        #footerLeft{
+            text-align: center;
+            margin: auto;
+        }
+        #lineaVerticalNegra{
+            width: 20%;
+            height: 1px;
 
-
-
-
-
+        }
+    }
 
 }
