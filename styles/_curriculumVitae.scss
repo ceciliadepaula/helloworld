@@ -6,6 +6,9 @@
         #tituloCV{
             text-align: right;
             font-size: 228px;  
+            span{
+                display: none;
+            }
         }
         #ilustracionCV{
             height: 488px;
@@ -16,7 +19,7 @@
     }
     #puntitos5{
         position: absolute;
-        top: 2650px;
+        top: 2670px;
         right: 0px;
     }
     #porqueDD{
