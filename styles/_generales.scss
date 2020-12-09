@@ -62,14 +62,6 @@ h4{
 }
 
 .boton{
-    margin: auto;
-    height: 45px;
-    width: 200px;
-    background-color: $colorAmarillo;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     .pBoton{
         font-size: 14px;
         font-weight: $medium;
@@ -81,5 +73,36 @@ h4{
     background-color: $colorNegro;
     .pBoton{
         color: $colorAmarillo;
+    }
+}
+
+.boton{
+    margin: auto;
+    height: 45px;
+    width: 200px;
+    background-color: $colorAmarillo;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    a{
+        text-decoration: none;
+        text-align: center;
+        .pBoton{
+            font-size: 14px;
+            font-weight: $medium;
+            text-align: center;
+            color: $colorNegro;
+        }
+    }
+    
+}
+
+.boton:hover{
+    background-color: $colorNegro;
+    a{
+        .pBoton{
+            color: $colorAmarillo;
+        }
     }
 }

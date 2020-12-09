@@ -367,6 +367,9 @@
                     width: 90%;
                     padding-top: 15px;
                 }
+                #botonPortfolio{
+                    margin: 0 25%;
+                }
             }
             #ilustracionPortfolio{
                 width: 230px;
@@ -383,32 +386,12 @@
             top: 7120px;
         }
         #carruselPortfolio{
-/*             margin-top: 140px; */
             #ulSeccionesPortfolio{
                 display: grid;
-                grid-template-columns: 1fr 1fr;
                 text-align: center;
-
-                
-                /* text-align: center; */
-
-                
-/*                 position: relative;
-                top: 0;
-                display: flex;
-                justify-content: center;
-                margin-bottom: 30px; */
                 li{
-/*                     list-style-type: none;  
-                    height: 25px; */
                     .lineaVerticalAmarilla{
                         display: none;
-/*                         font-weight: $bold;
-                        color: $colorAmarillo;
-                        position: relative;
-                        bottom: 25px;
-                        left: 100%;
-                        z-index: -2; */
                     }
                 }
             }
@@ -471,7 +454,7 @@
     }
 
 
-    //////// footer
+    //////// FOOTER
 
     footer{
         margin-top: 0;
