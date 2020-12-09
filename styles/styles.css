@@ -323,16 +323,18 @@ header #checkbox, header .hamburguesa, header .cruz {
 }
 
 #sobreMi #puntitos2 {
-  position: absolute;
-  top: 560px;
-  right: 0;
+  position: relative;
+  top: 450px;
+  left: 1050px;
+  margin-top: -800px;
   z-index: -1;
 }
 
 #sobreMi #puntitos3 {
-  position: absolute;
+  position: relative;
+  top: -320px;
   left: -100px;
-  top: 1330px;
+  margin-bottom: -400px;
 }
 
 #sobreMi #unGusto {
@@ -371,9 +373,10 @@ header #checkbox, header .hamburguesa, header .cruz {
 }
 
 #sobreMi #puntitos4 {
-  position: absolute;
-  top: 2000px;
-  right: 0px;
+  position: relative;
+  top: -280px;
+  left: 960px;
+  margin-bottom: -400px;
 }
 
 #curriculumVitae {
@@ -402,9 +405,10 @@ header #checkbox, header .hamburguesa, header .cruz {
 }
 
 #curriculumVitae #puntitos5 {
-  position: absolute;
-  top: 2670px;
-  right: 0px;
+  position: relative;
+  top: -480px;
+  left: 960px;
+  margin-bottom: -400px;
 }
 
 #curriculumVitae #porqueDD #botonCV {
@@ -484,9 +488,10 @@ header #checkbox, header .hamburguesa, header .cruz {
 }
 
 #curriculumVitae #misAreasProf #grillaAreas #puntitos6 {
-  position: absolute;
-  right: 0;
-  top: 4000px;
+  position: relative;
+  top: -80px;
+  left: 1070px;
+  margin-bottom: -400px;
 }
 
 #curriculumVitae #educacion, #curriculumVitae #experienciaLaboral, #curriculumVitae #exposicionesFotograficas, #curriculumVitae #premios, #curriculumVitae #jurado, #curriculumVitae #lenguajes {
@@ -709,6 +714,10 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
   padding-top: 160px;
 }
 
+#portfolio #grillaPortfolio {
+  margin-bottom: -450px;
+}
+
 #portfolio #grillaPortfolio #textosPortfolio #tituloPortfolio {
   margin-left: 2%;
 }
@@ -729,16 +738,17 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
 
 #portfolio #grillaPortfolio #ilustracionPortfolio {
   width: 450px;
-  position: absolute;
-  top: 7980px;
-  right: 50px;
+  position: relative;
+  top: -450px;
+  left: 600px;
 }
 
 #portfolio #puntitos7 {
-  position: absolute;
-  top: 7900px;
-  right: 0;
+  position: relative;
+  left: 800px;
+  top: -520px;
   z-index: -3;
+  margin-bottom: -540px;
 }
 
 #portfolio #carruselPortfolio {
@@ -965,9 +975,10 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
 }
 
 #contacto #puntitos8 {
-  position: absolute;
-  right: 0px;
-  top: 9570px;
+  position: relative;
+  top: -340px;
+  left: 1110px;
+  margin-bottom: -400px;
 }
 
 footer {
@@ -1032,6 +1043,9 @@ footer #lineaVerticalNegra {
     
 } */
 @media screen and (max-width: 500px) {
+  header {
+    /* max-width: 500px; */
+  }
   header #barraNavRedesSociales {
     display: none;
   }
@@ -1039,6 +1053,11 @@ footer #lineaVerticalNegra {
     display: initial;
     width: 20px;
     height: 20px;
+  }
+  header #barraNavSecciones {
+    /*             position: relative;
+            top: 0;
+            right: 0; */
   }
   header #barraNavSecciones .menu {
     /*---------CHECKBOX TRANSPARENTE-----------*/
@@ -1182,14 +1201,15 @@ footer #lineaVerticalNegra {
   }
   #sobreMi #puntitos2 {
     content: url("../images/puntitos-7lineas-celular.svg");
-    position: absolute;
-    top: 620px;
+    position: relative;
+    top: 0px;
+    left: 260px;
   }
   #sobreMi #puntitos3 {
     content: url("../images/puntitos-7lineas-celular.svg");
-    position: absolute;
-    left: 0;
-    top: 1190px;
+    position: relative;
+    top: -300px;
+    left: 0px;
   }
   #sobreMi #unGusto h3 {
     font-size: 70px;
@@ -1212,9 +1232,9 @@ footer #lineaVerticalNegra {
   }
   #sobreMi #puntitos4 {
     content: url("../images/puntitos-7lineas-celular.svg");
-    position: absolute;
-    right: 0;
-    top: 1550px;
+    position: relative;
+    top: -450px;
+    left: 260px;
   }
   #curriculumVitae #grillaCV #tituloCV {
     font-size: 120px;
@@ -1231,10 +1251,10 @@ footer #lineaVerticalNegra {
   }
   #curriculumVitae #puntitos5 {
     content: url("../images/puntitos-7lineas-celular.svg");
-    position: absolute;
-    left: 0;
-    top: 2250px;
     z-index: -1;
+    position: relative;
+    top: -550px;
+    left: 0px;
   }
   #curriculumVitae #porqueDD .textosDescriptivos {
     width: 90%;
@@ -1264,9 +1284,9 @@ footer #lineaVerticalNegra {
   }
   #curriculumVitae #misAreasProf #grillaAreas #puntitos6 {
     content: url("../images/puntitos-3lineas-celular.svg");
-    position: absolute;
-    right: 0;
-    top: 5070px;
+    position: relative;
+    top: 720px;
+    left: 280px;
   }
   #curriculumVitae #educacion, #curriculumVitae #experienciaLaboral, #curriculumVitae #exposicionesFotograficas, #curriculumVitae #premios, #curriculumVitae #jurado, #curriculumVitae #lenguajes {
     padding-top: 50px;
@@ -1353,24 +1373,26 @@ footer #lineaVerticalNegra {
   }
   #portfolio #grillaPortfolio #textosPortfolio #botonPortfolio {
     margin: 0 25%;
+    margin-bottom: 50px;
   }
   #portfolio #grillaPortfolio #ilustracionPortfolio {
     width: 230px;
-    position: absolute;
-    top: 8375px;
-    right: 0;
+    position: relative;
+    top: -580px;
+    left: 175px;
     z-index: -1;
   }
   #portfolio #puntitos7 {
     content: url("../images/puntitos-3lineas-celular.svg");
-    position: absolute;
-    right: 0;
-    top: 7120px;
+    position: relative;
+    top: -2080px;
+    left: 290px;
   }
   #portfolio #carruselPortfolio #ulSeccionesPortfolio {
     display: -ms-grid;
     display: grid;
     text-align: center;
+    width: 100%;
   }
   #portfolio #carruselPortfolio #ulSeccionesPortfolio li .lineaVerticalAmarilla {
     display: none;
@@ -1419,10 +1441,10 @@ footer #lineaVerticalNegra {
   }
   #contacto #puntitos8 {
     content: url("../images/puntitos-9lineas-celular.svg");
-    position: absolute;
-    right: 0;
-    top: 8325px;
     z-index: -50;
+    position: relative;
+    top: -2050px;
+    left: 290px;
   }
   footer {
     margin-top: 0;

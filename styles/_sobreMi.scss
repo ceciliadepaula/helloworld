@@ -23,15 +23,17 @@
         }
     }
     #puntitos2{
-        position: absolute;
-        top: 560px;
-        right: 0;
+        position: relative;
+        top: 450px;
+        left: 1050px;
+        margin-top: -800px;
         z-index: -1;
     }
     #puntitos3{
-        position: absolute;
+        position: relative;
+        top: -320px;
         left: -100px;
-        top: 1330px;
+        margin-bottom: -400px;
     }
     #unGusto{
         height: 500px;
@@ -59,9 +61,10 @@
 
     }
     #puntitos4{
-        position: absolute;
-        top: 2000px;
-        right: 0px;
+        position: relative;
+        top: -280px;
+        left: 960px;
+        margin-bottom: -400px;
     }
 }
 
