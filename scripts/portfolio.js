@@ -47,6 +47,18 @@ const imagenesDisWeb = [
         link: "https://ceciliadepaula.github.io/alalata/",
     },
 
+    {
+        imagen: "./images/desarrollo-helloworld1.jpg",
+        descripcion: "Diseño y desarrollo de esta página",
+        link: "#",
+    },
+
+    {
+        imagen: "./images/desarrollo-helloworld2.jpg",
+        descripcion: "Diseño y desarrollo de esta página",
+        link: "#",
+    },
+
 ]
 
 // Desarrollo web
@@ -98,6 +110,18 @@ const imagenesDesarrollo = [
         imagen: "./images/desarrollo-tecnonews1.jpg",
         descripcion: "«TecnoNews» es un diario de noticias tecnológicas desarrollado como consigna de la clase 10 del curso de Desarrollo Web Full Stack de Acámica.",
         link: "https://github.com/ceciliadepaula/tecnonews",
+    },
+
+    {
+        imagen: "./images/desarrollo-helloworld1.jpg",
+        descripcion: "Diseño y desarrollo de esta página",
+        link: "#",
+    },
+
+    {
+        imagen: "./images/desarrollo-helloworld2.jpg",
+        descripcion: "Diseño y desarrollo de esta página",
+        link: "#",
     },
 ]
 
@@ -152,6 +176,20 @@ const imagenesDisGraf = [
         link: "https://www.behance.net/gallery/62196545/Once-Mujeres",
     },
 
+
+    {
+        imagen: "./images/disenio-litoral2.jpg",
+        descripcion: "Rediseño sustentable del Diario «El Litoral» con interfaz gráfica de usuario accesible desde smartphone con sistema operativo Android. Proyecto para Taller IV de la carrera de LDCV FADU UNL, realizado junto con Gabriela Lubiano y Gilda Martini.",
+        link: "#portfolio",
+    },
+
+    {
+        imagen: "./images/disenio-litoral1.jpg",
+        descripcion: "Rediseño sustentable del Diario «El Litoral» con interfaz gráfica de usuario accesible desde smartphone con sistema operativo Android. Proyecto para Taller IV de la carrera de LDCV FADU UNL, realizado junto con Gabriela Lubiano y Gilda Martini.",
+        link: "#portfolio",
+    },
+
+
     {
         imagen: "./images/disenio-vientos.jpg",
         descripcion: "Diseño de identidad de la dietética «Vientos Verdes»",
@@ -203,19 +241,19 @@ const imagenesFotografia = [
     {
         imagen: "./images/foto-encuentro1.jpg",
         descripcion: "«En remolinos» es una obra expuesta en el rubro Visuales de la 11va. Bienal de Arte Joven. Explora el momento de encuentro bajo el agua de dos tintas de colores.",
-        link: "",
+        link: "#portfolio",
     },
 
     {
         imagen: "./images/foto-encuentro2.jpg",
         descripcion: "«El encuentro» es una obra expuesta en el rubro Visuales de la 11va. Bienal de Arte Joven. Explora el momento de encuentro bajo el agua de dos tintas de colores.",
-        link: "",
+        link: "#portfolio",
     },
 
     {
         imagen: "./images/foto-ojosciegos.jpg",
         descripcion: "«Los ojos ciegos bien abiertos» es una obra expuesta en el rubro Visuales de la 9na. Bienal de Arte Joven.",
-        link: "",
+        link: "#portfolio",
     },
 
     {
@@ -265,6 +303,34 @@ const imagenesFotografia = [
         descripcion: "Cobertura del recital de Los Cafres en Música en el Río, en la Costanera Oeste, Santa Fe, 19.feb.11",
         link: "https://www.flickr.com/photos/visionpropia/albums/72157625968901825",
     },
+
+
+    {
+        imagen: "./images/foto-bichofeo.jpg",
+        descripcion: "Fotografías de estudio para «Bichofeo Animación»",
+        link: "https://www.instagram.com/bichofeo_studio/",
+    },
+
+    {
+        imagen: "./images/foto-casamiento.jpg",
+        descripcion: "Fotografía de eventos sociales",
+        link: "#portfolio",
+    },
+
+
+    {
+        imagen: "./images/foto-letrae.jpg",
+        descripcion: "Fotografía de productos para venta online para «Librería Letra.e»",
+        link: "http://www.librerialetrae.com.ar/",
+    },
+
+
+    {
+        imagen: "./images/foto-sandracravero.jpg",
+        descripcion: "Fotografías para sitio web de «Sandra Cravero Lenguage Solutions»",
+        link: "http://www.sandracravero.com.ar/index.html",
+    },
+
 
     {
         imagen: "./images/foto-estenopeica1.jpg",

@@ -1,6 +1,75 @@
 @media screen and (max-width: 500px){
     header{
-        display: none;
+        #barraNavRedesSociales{
+            display: none;
+        }
+        #checkbox, .hamburguesa, .cruz{
+            display: initial;
+            width: 20px;
+            height: 20px;
+        }
+        #barraNavSecciones{
+            .menu{
+                .cruz{
+                    display:none;
+                }
+                #ulHeader{
+                    width: 100%;
+                    position: absolute;
+                    top: 55px;
+                    right: -21px;
+                    overflow: hidden;
+                    background-color: $colorAmarillo;
+                    opacity: 0.9;
+                    height: 0px;
+                    display: grid;
+                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;                       
+                    li{
+                        text-align: center;
+                        align-self: center;
+                        height: 50px;  
+                        padding-top: 20px;
+                        .linkInterno{
+                            font-size: 20px;
+                        }
+                        .lineaVerticalAmarilla{
+                            display: none;
+                        }
+                    }
+                    li:hover{
+                        .linkInterno{
+                            color: $colorBlanco;
+                        }
+                    }
+                }
+
+                input[type="checkbox"]:checked ~ #ulHeader {
+                    height: 100vh;
+                    width: 100vw;
+                    margin: auto;
+                } 
+
+                input:checked ~ .hamburguesa {
+                    display: none;
+                }          
+                
+                input:checked ~ .cruz {
+                    display: inherit;
+                }   
+
+                /*---------CHECKBOX TRANSPARENTE-----------*/
+                input{
+                    display: block;
+                    width: 45px; 
+                    height: 45px;
+                    opacity: 0;
+                    z-index: 2;
+                    position: absolute;
+                    top: 5px;
+                    right: 0px;           
+                }
+            }
+        }
     }
 
     //////////////////// HELLO!
@@ -10,6 +79,7 @@
         #puntitos1{
             position: relative;
             top: 120px;
+
         }   
         #contenedorPresentacion{
             display: grid;
@@ -79,19 +149,15 @@
             }
         }
         #puntitos2{
-            border: red 1px solid;
-            display: none;
-/*             position: absolute;
-            top: 560px;
-            right: 0;
-            z-index: -1; */
+            content: url("../images/puntitos-7lineas-celular.svg");
+            position: absolute;
+            top: 620px;
         }
         #puntitos3{
-            border: blue 1px solid;
-            display: none;
-/*             position: absolute;
-            left: -100px;
-            top: 1330px; */
+            content: url("../images/puntitos-7lineas-celular.svg");
+            position: absolute;
+            left: 0;
+            top: 1190px;
         }
         #unGusto{
             h3{
@@ -115,12 +181,11 @@
             }
     
         }
-        #puntitos4{
-            border: green 1px solid;
-            display: none;
-/*             position: absolute;
-            top: 2000px;
-            right: 0px; */
+        #puntitos4{           
+            content: url("../images/puntitos-7lineas-celular.svg");
+            position: absolute;
+            right: 0;
+            top: 1550px;
         }
     }
 
@@ -143,10 +208,11 @@
             }
         }
         #puntitos5{
-            display: none;
-/*             position: absolute;
-            top: 2670px;
-            right: 0px; */
+            content: url("../images/puntitos-7lineas-celular.svg");
+            position: absolute;
+            left: 0;
+            top: 2250px;
+            z-index: -1;
         }
         #porqueDD{
             .textosDescriptivos{
@@ -161,30 +227,24 @@
                 grid-template-columns: 1fr;
                 grid-template-rows: 2fr 1fr ;
                 #descripcionAreas{
-                    /* display: none; */
                     z-index: 2;
                     width: 100%;
-                    justify-content: flex-start;
                     margin-top: 130px;
                     padding-bottom: 50px;
                     height: 470px;
-                   /*  background-color: red; */
                     .titulosDescripciones{
-/*                         font-size: 24px;
-                        padding-bottom: 0;
-                        margin-bottom: 20px;
-                        text-align: left; */
+                        margin: 3%;
                     }
                     .textoDescripciones{
-/*                         font-size: 17px;
-                        line-height: 28px; */
+                        margin: 3%;
+                        font-size: 16px;
                     }
                 }
                 #puntitos6{
-                    display: none;
-/*                     position: absolute;
+                    content: url("../images/puntitos-3lineas-celular.svg");
+                    position: absolute;
                     right: 0;
-                    top: 4000px; */
+                    top: 5070px;
                 }
             }
         }
@@ -294,44 +354,33 @@
     //////// PORTFOLIO
 
     #portfolio{
-/*         padding-top: 160px; */
+        padding-top: 110px;
         #grillaPortfolio{
             #textosPortfolio{
                 #tituloPortfolio{
-                    font-size: 120px;
-                    span{
+                    font-size: 115px;
+                    #span2{
                         display: initial;
                     }
-/*                     margin-left: 2%; */
                 }
                 .textosDescriptivos{
                     width: 90%;
                     padding-top: 15px;
-/*                     margin-left: 3%;
-                    width: 750px;  */
-                }
-                #botonPortfolio{
-/*                     margin-left: 3%;
-                    float: left; */
                 }
             }
             #ilustracionPortfolio{
-                width: 180px;
+                width: 230px;
                 position: absolute;
-                top: 8480px;
-                right: 5px;
-/*                 width: 450px;
-                position: absolute;
-                top: 7980px;
-                right: 50px  */       
+                top: 8375px;
+                right: 0;
+                z-index: -1;    
             }
         }
         #puntitos7{
-            display: none;
-/*             position: absolute;
-            top: 7900px;
+            content: url("../images/puntitos-3lineas-celular.svg");
+            position: absolute;
             right: 0;
-            z-index: -3; */
+            top: 7120px;
         }
         #carruselPortfolio{
 /*             margin-top: 140px; */
@@ -399,7 +448,6 @@
                 }
             }
             #datosContacto{
-
                 div{
                     h5{
                         font-size: 17px;
@@ -407,12 +455,18 @@
                     p{
                         font-size: 17px;
                     }
+                    a{
+                        font-size: 17px;
+                    }
                 }
-    
             }
         }
         #puntitos8{
-            display: none;
+            content: url("../images/puntitos-9lineas-celular.svg");
+            position: absolute;
+            right: 0;
+            top: 8325px;
+            z-index: -50;
         }
     }
 
@@ -422,16 +476,15 @@
     footer{
         margin-top: 0;
         grid-template-columns: 1fr ;
-        p{
-            width: 50%;
-        }
         #footerRight{
             text-align: center;
             margin: auto;
+            width: 60%;
         }
         #footerLeft{
             text-align: center;
             margin: auto;
+            width: 50%;
         }
         #lineaVerticalNegra{
             width: 20%;
@@ -439,5 +492,6 @@
 
         }
     }
+
 
 }

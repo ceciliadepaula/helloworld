@@ -112,10 +112,10 @@ function TextoDescriptivo(){
                 <span>INVESTIGACIÓN</span>
             </h4>
             <p class="textoDescripciones">
-                En 2016 obtuve una <strong>Beca de Iniciación a la Investigación Científica</strong> de la UNL 
-                con la cual he realizado mi primer trabajo de investigación.
+                En 2016 obtuve una <strong>Beca de Iniciación a la Investigación Científica</strong> en la UNL 
+                con la cual realicé mi primer trabajo de investigación.
                 <br>
-                El mismo, posteriormente tuvo continuación con la <strong>Tesina</strong> titulada «Estudio de los procesos 
+                El mismo, posteriormente tuvo continuación con la <strong>Tesina de Grado</strong> titulada «Estudio de los procesos 
                 de hibridación y códigos visuales presentes en las tipografías experimentales latinoamericanas,
                 a través de la relación formal/funcional del signo tipográfico», la cual fue invitada a formar parte 
                 del <strong>Proyecto CAI+D 2016</strong> «Imágenes del Diseño: Cartografía de los modos de visibilizar. 
@@ -147,11 +147,11 @@ function TextoDescriptivo(){
                 <span>SEMIÓTICA</span>
             </h4>
             <p class="textoDescripciones">
-                Una de las disciplinas en las que más se hizo hincapié al estudiar Diseño y, que a su vez, fue la que 
+                Una de las disciplinas en las que más hice hincapié al estudiar Diseño y, que a su vez, fue la que 
                 posibilitó hacer el abordaje teórico de la Tesina de Grado, fue la <strong>semiótica</strong>. 
                 <br>
                 El análisis semiótico de los signos es el que aún hoy repercute a la hora de analizar o
-                proyectar cualquier pieza de diseño, ya que ofrece las operaciones necesarias para explicar el 
+                proyectar cualquier pieza de diseño, ya que permite analizar el 
                 <strong>proceso de significación</strong> de la misma.
             
             </p>        
@@ -193,8 +193,8 @@ function TextoDescriptivo(){
                 <span>FOTOGRAFÍA</span>
             </h4>
             <p class="textoDescripciones">
-                Comencé estudiando fotografía en el Estudio Guidotti y más tarde en la Escuela Alem. Esto me sirvió para 
-                luego desempeñarme como fotógrafa de <strong>recitales</strong> y <strong>eventos varios</strong>, 
+                Comencé estudiando fotografía en el Estudio Guidotti y más tarde en la Escuela Alem. Posteriormente, esto me permitió
+                desempeñarme como fotógrafa de <strong>recitales</strong> y <strong>eventos varios</strong>, 
                 así como para también participar de diferentes <strong>muestras</strong> y <strong>concursos</strong>. 
                 <br>
                 En la actualidad dirijo <strong>Alalata Fotografía</strong>, un taller experimental de fotografía estenopeica 
@@ -214,7 +214,7 @@ function TextoDescriptivo(){
                 pero eso no era suficiente: quería ir más allá, quería conocer todo lo que pasaba por detrás. 
                 <br>
                 Por ese motivo decidí estudiar <strong>Desarrollo Web Full Stack</strong> en <strong>Acámica</strong>, 
-                para entender cómo eso que proyectaba con el diseño se podía materializar con código. 
+                para entender cómo eso que proyectaba con el diseño se podía materializar con el código. 
             </p>        
         `
     } else if (posicion==0){
