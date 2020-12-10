@@ -36,18 +36,6 @@ const imagenesDisWeb = [
     },
 
     {
-        imagen: "./images/desarrollo-alalata1.jpg",
-        descripcion: "Diseño y desarrollo de la página de «Alalata Taller de fotografía estenopeica»",
-        link: "https://ceciliadepaula.github.io/alalata/",
-    },
-
-    {
-        imagen: "./images/desarrollo-alalata2.jpg",
-        descripcion: "Diseño y desarrollo de la página de «Alalata Taller de fotografía estenopeica»",
-        link: "https://ceciliadepaula.github.io/alalata/",
-    },
-
-    {
         imagen: "./images/desarrollo-helloworld1.jpg",
         descripcion: "Diseño y desarrollo de esta página",
         link: "#",
@@ -59,6 +47,30 @@ const imagenesDisWeb = [
         link: "#",
     },
 
+    {
+        imagen: "./images/desarrollo-alalata1.jpg",
+        descripcion: "Diseño y desarrollo de la página de «Alalata Taller de fotografía estenopeica»",
+        link: "https://ceciliadepaula.github.io/alalata/",
+    },
+
+    {
+        imagen: "./images/desarrollo-alalata2.jpg",
+        descripcion: "Diseño y desarrollo de la página de «Alalata Taller de fotografía estenopeica»",
+        link: "https://ceciliadepaula.github.io/alalata/",
+    },
+
+
+    {
+        imagen: "./images/disenio-portfolio1.jpg",
+        descripcion: "Porfolio personal diseñado y desarrollado como consigna de la clase 08 del curso de Desarrollo Web Full Stack de Acámica.",
+        link: "https://ceciliadepaula.github.io/",
+    },
+
+    {
+        imagen: "./images/disenio-portfolio2.jpg",
+        descripcion: "Porfolio personal diseñado y desarrollado como consigna de la clase 08 del curso de Desarrollo Web Full Stack de Acámica.",
+        link: "https://ceciliadepaula.github.io/",
+    },
 ]
 
 // Desarrollo web
@@ -89,6 +101,18 @@ const imagenesDesarrollo = [
     },
 
     {
+        imagen: "./images/desarrollo-helloworld1.jpg",
+        descripcion: "Diseño y desarrollo de esta página",
+        link: "#",
+    },
+
+    {
+        imagen: "./images/desarrollo-helloworld2.jpg",
+        descripcion: "Diseño y desarrollo de esta página",
+        link: "#",
+    },
+
+    {
         imagen: "./images/desarrollo-alalata1.jpg",
         descripcion: "Diseño y desarrollo de la página de «Alalata Taller de fotografía estenopeica»",
         link: "https://ceciliadepaula.github.io/alalata/",
@@ -113,15 +137,15 @@ const imagenesDesarrollo = [
     },
 
     {
-        imagen: "./images/desarrollo-helloworld1.jpg",
-        descripcion: "Diseño y desarrollo de esta página",
-        link: "#",
+        imagen: "./images/disenio-portfolio1.jpg",
+        descripcion: "Porfolio personal diseñado y desarrollado como consigna de la clase 08 del curso de Desarrollo Web Full Stack de Acámica.",
+        link: "https://ceciliadepaula.github.io/",
     },
 
     {
-        imagen: "./images/desarrollo-helloworld2.jpg",
-        descripcion: "Diseño y desarrollo de esta página",
-        link: "#",
+        imagen: "./images/disenio-portfolio2.jpg",
+        descripcion: "Porfolio personal diseñado y desarrollado como consigna de la clase 08 del curso de Desarrollo Web Full Stack de Acámica.",
+        link: "https://ceciliadepaula.github.io/",
     },
 ]
 
