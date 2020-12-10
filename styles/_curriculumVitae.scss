@@ -114,65 +114,60 @@
 
 //---------- CIRCULOS INDIVIDUALES -----------// 
 
+// ABSOLUTOS
+
 #ldcv{
-    position: relative;
-    bottom: -150px;
-    left: 150px;
+    position: absolute;
+    left: 180px;
+    top: 3700px;
 }
 
 #dwfs{ 
-    position: relative;
-    bottom: -300px;
-    left: 160px;
+    position: absolute;
+    left: 450px;
+    top: 3850px;
 }
-
 
 #fotografia{
-    position: relative;
-    bottom: -350px;
-    left: -370px;
+    position: absolute;
+    left: 140px;
+    top: 3890px;
 }
-
 
 #uxui{
-    position: relative;
-    bottom: -70px;
-    left: -135px
+    position: absolute;
+    left: 380px;
+    top: 3780px;
 }
-
 
 #tipografia{
-    position: relative;
-    bottom: 270px;
-    left: 200px;
+    position: absolute;
+    left: 220px;
+    top: 3580px;
 }
-
 
 #semiotica{
-    position: relative;
-    bottom: 180px;
-    left: -120px;
+    position: absolute;
+    left: 70px;
+    top: 3680px;
 }
-
 
 #docencia{
-    position: relative;
-    bottom: -140px;
-    left: -250px;
+    position: absolute;
+    left: 80px;
+    top: 3980px;
 }
 
-
 #investigacion{
-    position: relative;
-    bottom: 250px;
-    left: -290px;
+    position: absolute;
+    left: 140px;
+    top: 3610px;
 }
 
 #tecnicatura{
-    position: relative;
-    bottom: 50px;
-    left: 50px
-    
+    position: absolute; 
+    left: 590px;
+    top: 3800px; 
 }
 
 //---------- LISTA CURRICULUM ---------//

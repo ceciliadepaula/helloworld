@@ -526,57 +526,57 @@ header #checkbox, header .hamburguesa, header .cruz {
 }
 
 #ldcv {
-  position: relative;
-  bottom: -150px;
-  left: 150px;
+  position: absolute;
+  left: 180px;
+  top: 3700px;
 }
 
 #dwfs {
-  position: relative;
-  bottom: -300px;
-  left: 160px;
+  position: absolute;
+  left: 450px;
+  top: 3850px;
 }
 
 #fotografia {
-  position: relative;
-  bottom: -350px;
-  left: -370px;
+  position: absolute;
+  left: 140px;
+  top: 3890px;
 }
 
 #uxui {
-  position: relative;
-  bottom: -70px;
-  left: -135px;
+  position: absolute;
+  left: 380px;
+  top: 3780px;
 }
 
 #tipografia {
-  position: relative;
-  bottom: 270px;
-  left: 200px;
+  position: absolute;
+  left: 220px;
+  top: 3580px;
 }
 
 #semiotica {
-  position: relative;
-  bottom: 180px;
-  left: -120px;
+  position: absolute;
+  left: 70px;
+  top: 3680px;
 }
 
 #docencia {
-  position: relative;
-  bottom: -140px;
-  left: -250px;
+  position: absolute;
+  left: 80px;
+  top: 3980px;
 }
 
 #investigacion {
-  position: relative;
-  bottom: 250px;
-  left: -290px;
+  position: absolute;
+  left: 140px;
+  top: 3610px;
 }
 
 #tecnicatura {
-  position: relative;
-  bottom: 50px;
-  left: 50px;
+  position: absolute;
+  left: 590px;
+  top: 3800px;
 }
 
 ul.listaCurriculum {
@@ -1295,49 +1295,49 @@ footer #lineaVerticalNegra {
     margin-top: 600px;
   }
   #ldcv {
-    position: relative;
-    bottom: -100px;
-    left: 50px;
+    position: absolute;
+    left: 55px;
+    top: 3410px;
   }
   #dwfs {
-    position: relative;
-    bottom: -150px;
-    right: 0;
+    position: absolute;
+    left: 165px;
+    top: 3670px;
   }
   #fotografia {
-    position: relative;
-    bottom: 210px;
-    left: 0px;
+    position: absolute;
+    left: 10px;
+    top: 3570px;
   }
   #uxui {
-    position: relative;
-    bottom: 180px;
-    left: 10px;
+    position: absolute;
+    left: 205px;
+    top: 3570px;
   }
   #tipografia {
-    position: relative;
-    bottom: 620px;
-    left: 180px;
+    position: absolute;
+    left: 185px;
+    top: 3310px;
   }
   #semiotica {
-    position: relative;
-    bottom: 620px;
-    left: -155px;
+    position: absolute;
+    left: 15px;
+    top: 3310px;
   }
   #docencia {
-    position: relative;
-    bottom: 385px;
-    left: 0;
+    position: absolute;
+    left: 10px;
+    top: 3690px;
   }
   #investigacion {
-    position: relative;
-    bottom: 800px;
-    left: 10px;
+    position: absolute;
+    left: 120px;
+    top: 3270px;
   }
   #tecnicatura {
-    position: relative;
-    bottom: 250px;
-    left: -110px;
+    position: absolute;
+    left: 105px;
+    top: 3800px;
   }
   h4 {
     font-size: 22px;
