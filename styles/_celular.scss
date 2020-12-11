@@ -1,6 +1,5 @@
 @media screen and (max-width: 500px){
     header{
-        /* max-width: 500px; */
         #barraNavRedesSociales{
             display: none;
         }
@@ -10,9 +9,6 @@
             height: 20px;
         }
         #barraNavSecciones{
-/*             position: relative;
-            top: 0;
-            right: 0; */
             .menu{
                 .cruz{
                     display:none;
@@ -61,7 +57,8 @@
                     display: inherit;
                 }   
 
-                /*---------CHECKBOX TRANSPARENTE-----------*/
+                // CHECKBOX TRANSPARENTE
+
                 input{
                     display: block;
                     width: 45px; 
@@ -262,9 +259,7 @@
         }
     }
     
-    //---------- CIRCULOS INDIVIDUALES -----------// 
-
-    // ABSOLUTOS
+    // CIRCULOS INDIVIDUALES 
 
     #ldcv{
         position: absolute;
@@ -275,9 +270,8 @@
     #dwfs{ 
         position: absolute;
         left: 165px;
-        top: 3670px;
+        top: 3650px;
     }
-
 
     #fotografia{
         position: absolute;
@@ -285,13 +279,11 @@
         top: 3570px;
     }
 
-
     #uxui{
         position: absolute;
         left: 205px;
-        top: 3570px;
+        top: 3550px;
     }
-
 
     #tipografia{
         position: absolute;
@@ -299,20 +291,17 @@
         top: 3310px;
     }
 
-
     #semiotica{
         position: absolute;
         left: 15px;
         top: 3310px;
     }
 
-
     #docencia{
         position: absolute;
         left: 10px;
         top: 3690px;
     }
-
 
     #investigacion{
         position: absolute;
@@ -323,7 +312,7 @@
     #tecnicatura{
         position: absolute; 
         left: 105px;
-        top: 3800px;
+        top: 3780px;
     }
 
     h4{
@@ -331,7 +320,7 @@
     }
 
 
-    //---------- LISTA CURRICULUM ---------//
+    // LISTA CURRICULUM
 
     ul.listaCurriculum{
         li.elementoListaCV{
@@ -419,7 +408,6 @@
     }
 
 
-
     //////////// CONTACTO
 
     #contacto{
@@ -484,8 +472,4 @@
 
         }
     }
-
-
-
-
 }

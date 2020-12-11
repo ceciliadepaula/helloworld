@@ -15,6 +15,9 @@ body {
   background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
   color: #181819;
+}
+
+main {
   max-width: 1400px;
   margin: auto;
 }
@@ -47,19 +50,9 @@ h4 {
 }
 
 .boton .pBoton {
-  font-size: 14px;
-  font-weight: 500;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-.boton:hover {
-  background-color: #181819;
-}
-
-.boton:hover .pBoton {
-  color: #fdce30;
 }
 
 .boton {
@@ -526,57 +519,57 @@ header #checkbox, header .hamburguesa, header .cruz {
 }
 
 #ldcv {
-  position: absolute;
-  left: 180px;
-  top: 3700px;
+  position: relative;
+  bottom: -150px;
+  left: 150px;
 }
 
 #dwfs {
-  position: absolute;
-  left: 450px;
-  top: 3850px;
+  position: relative;
+  bottom: -300px;
+  left: 160px;
 }
 
 #fotografia {
-  position: absolute;
-  left: 140px;
-  top: 3890px;
+  position: relative;
+  bottom: -350px;
+  left: -370px;
 }
 
 #uxui {
-  position: absolute;
-  left: 380px;
-  top: 3780px;
+  position: relative;
+  bottom: -70px;
+  left: -135px;
 }
 
 #tipografia {
-  position: absolute;
-  left: 220px;
-  top: 3580px;
+  position: relative;
+  bottom: 270px;
+  left: 200px;
 }
 
 #semiotica {
-  position: absolute;
-  left: 70px;
-  top: 3680px;
+  position: relative;
+  bottom: 180px;
+  left: -120px;
 }
 
 #docencia {
-  position: absolute;
-  left: 80px;
-  top: 3980px;
+  position: relative;
+  bottom: -140px;
+  left: -250px;
 }
 
 #investigacion {
-  position: absolute;
-  left: 140px;
-  top: 3610px;
+  position: relative;
+  bottom: 250px;
+  left: -290px;
 }
 
 #tecnicatura {
-  position: absolute;
-  left: 590px;
-  top: 3800px;
+  position: relative;
+  bottom: 50px;
+  left: 50px;
 }
 
 ul.listaCurriculum {
@@ -612,7 +605,6 @@ ul.listaCurriculum li.elementoListaCV .contenedorLugarFecha .lugar {
   font-size: 20.7px;
   font-weight: 700;
   line-height: 1.41;
-  /* text-transform: uppercase; */
 }
 
 ul.listaCurriculum li.elementoListaCV .contenedorLugarFecha .fecha {
@@ -1034,18 +1026,54 @@ footer #lineaVerticalNegra {
   #curriculumVitae #grillaCV #tituloCV {
     font-size: 200px;
   }
+  #ldcv {
+    position: absolute;
+    left: 180px;
+    top: 3700px;
+  }
+  #dwfs {
+    position: absolute;
+    left: 450px;
+    top: 3850px;
+  }
+  #fotografia {
+    position: absolute;
+    left: 140px;
+    top: 3890px;
+  }
+  #uxui {
+    position: absolute;
+    left: 380px;
+    top: 3780px;
+  }
+  #tipografia {
+    position: absolute;
+    left: 220px;
+    top: 3580px;
+  }
+  #semiotica {
+    position: absolute;
+    left: 70px;
+    top: 3680px;
+  }
+  #docencia {
+    position: absolute;
+    left: 80px;
+    top: 3980px;
+  }
+  #investigacion {
+    position: absolute;
+    left: 140px;
+    top: 3610px;
+  }
+  #tecnicatura {
+    position: absolute;
+    left: 590px;
+    top: 3800px;
+  }
 }
 
-/* @media screen and (max-width: 768px){
-    body{
-        background-color: blue;
-    }
-    
-} */
 @media screen and (max-width: 500px) {
-  header {
-    /* max-width: 500px; */
-  }
   header #barraNavRedesSociales {
     display: none;
   }
@@ -1053,14 +1081,6 @@ footer #lineaVerticalNegra {
     display: initial;
     width: 20px;
     height: 20px;
-  }
-  header #barraNavSecciones {
-    /*             position: relative;
-            top: 0;
-            right: 0; */
-  }
-  header #barraNavSecciones .menu {
-    /*---------CHECKBOX TRANSPARENTE-----------*/
   }
   header #barraNavSecciones .menu .cruz {
     display: none;
@@ -1302,7 +1322,7 @@ footer #lineaVerticalNegra {
   #dwfs {
     position: absolute;
     left: 165px;
-    top: 3670px;
+    top: 3650px;
   }
   #fotografia {
     position: absolute;
@@ -1312,7 +1332,7 @@ footer #lineaVerticalNegra {
   #uxui {
     position: absolute;
     left: 205px;
-    top: 3570px;
+    top: 3550px;
   }
   #tipografia {
     position: absolute;
@@ -1337,7 +1357,7 @@ footer #lineaVerticalNegra {
   #tecnicatura {
     position: absolute;
     left: 105px;
-    top: 3800px;
+    top: 3780px;
   }
   h4 {
     font-size: 22px;

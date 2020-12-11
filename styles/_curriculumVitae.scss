@@ -86,7 +86,7 @@
     }
 }
 
-//---------- JERARQUÍAS CÍRCULOS -----------// 
+// JERARQUÍAS CÍRCULOS 
 
 .jerarquia1{
     height: 240px;
@@ -112,65 +112,70 @@
     }   
 }
 
-//---------- CIRCULOS INDIVIDUALES -----------// 
-
-// ABSOLUTOS
+// CIRCULOS INDIVIDUALES
 
 #ldcv{
-    position: absolute;
-    left: 180px;
-    top: 3700px;
+    position: relative;
+    bottom: -150px;
+    left: 150px;
 }
 
 #dwfs{ 
-    position: absolute;
-    left: 450px;
-    top: 3850px;
+    position: relative;
+    bottom: -300px;
+    left: 160px;
 }
+
 
 #fotografia{
-    position: absolute;
-    left: 140px;
-    top: 3890px;
+    position: relative;
+    bottom: -350px;
+    left: -370px;
 }
+
 
 #uxui{
-    position: absolute;
-    left: 380px;
-    top: 3780px;
+    position: relative;
+    bottom: -70px;
+    left: -135px
 }
+
 
 #tipografia{
-    position: absolute;
-    left: 220px;
-    top: 3580px;
+    position: relative;
+    bottom: 270px;
+    left: 200px;
 }
+
 
 #semiotica{
-    position: absolute;
-    left: 70px;
-    top: 3680px;
+    position: relative;
+    bottom: 180px;
+    left: -120px;
 }
+
 
 #docencia{
-    position: absolute;
-    left: 80px;
-    top: 3980px;
+    position: relative;
+    bottom: -140px;
+    left: -250px;
 }
 
+
 #investigacion{
-    position: absolute;
-    left: 140px;
-    top: 3610px;
+    position: relative;
+    bottom: 250px;
+    left: -290px;
 }
 
 #tecnicatura{
-    position: absolute; 
-    left: 590px;
-    top: 3800px; 
+    position: relative;
+    bottom: 50px;
+    left: 50px
+    
 }
 
-//---------- LISTA CURRICULUM ---------//
+// LISTA CURRICULUM
 
 ul.listaCurriculum{
     max-width: 850px;
@@ -195,7 +200,6 @@ ul.listaCurriculum{
                 font-size: 20.7px;
                 font-weight: $bold;
                 line-height: 1.41;
-                /* text-transform: uppercase; */
             }
             .fecha{
                 font-size: 20.7px;
@@ -234,7 +238,7 @@ ul.listaLenguajes{
     }
 }
 
-//----- Hover Iconos Lenguajes y Software -------//
+// HOVER ÍCONOS LENGUAJES Y SOFTWARE
 
 #iconoIL:hover{
     content: url(../images/illustrator-amarillo.svg);
