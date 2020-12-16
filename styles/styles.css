@@ -646,6 +646,7 @@ ul.listaLenguajes .elementoLenguaje {
 
 ul.listaLenguajes .elementoLenguaje img {
   padding-bottom: 20px;
+  height: 101px;
 }
 
 ul.listaLenguajes .elementoLenguaje .descripcionIcono {
@@ -1484,6 +1485,45 @@ footer #lineaVerticalNegra {
   footer #lineaVerticalNegra {
     width: 20%;
     height: 1px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #ldcv {
+    position: absolute;
+    top: 3510px;
+  }
+  #dwfs {
+    position: absolute;
+    top: 3750px;
+  }
+  #fotografia {
+    position: absolute;
+    top: 3670px;
+  }
+  #uxui {
+    position: absolute;
+    top: 3650px;
+  }
+  #tipografia {
+    position: absolute;
+    top: 3410px;
+  }
+  #semiotica {
+    position: absolute;
+    top: 3410px;
+  }
+  #docencia {
+    position: absolute;
+    top: 3790px;
+  }
+  #investigacion {
+    position: absolute;
+    top: 3370px;
+  }
+  #tecnicatura {
+    position: absolute;
+    top: 3880px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
