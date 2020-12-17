@@ -25,7 +25,8 @@
     #puntitos2{
         position: relative;
         top: 450px;
-        left: 1050px;
+        top: 650px;
+        float: right;
         margin-top: -800px;
         z-index: -1;
     }
@@ -60,9 +61,10 @@
         }
     }
     #puntitos4{
+        float: right;
         position: relative;
-        top: -280px;
-        left: 960px;
+        top: -120px;
+        /* left: 960px; */
         margin-bottom: -400px;
     }
 }

@@ -1,9 +1,13 @@
+@media screen and (max-width: 1024px){
 
-@media screen and (max-width: 1300px){
     #curriculumVitae{
         #grillaCV{
             #tituloCV{
-                font-size: 200px; 
+                font-size: 160px; 
+            }
+            #ilustracionCV{
+                height: 388px;
+                bottom: 250px;
             }
         }
     }
@@ -60,5 +64,44 @@
         position: absolute; 
         left: 590px;
         top: 3800px; 
+    }
+
+    //////// PORTFOLIO
+
+    #portfolio{
+        #grillaPortfolio{
+            #textosPortfolio{
+                #tituloPortfolio{
+                    font-size: 165px;
+                }
+                .textosDescriptivos{
+                    width: 48%;
+                }
+            }
+            #ilustracionPortfolio{
+                left: 270px;
+                left: 30%;
+            }
+        }
+    }
+
+
+    //////////// CONTACTO
+
+    #contacto{
+        #tituloContacto{
+            font-size: 145px;
+        }
+        #grillaContacto{
+            padding: 70px 0 0 0;
+            #ilustracionContacto{
+                #dibujoContacto{
+                    height: 350px;
+                }
+            }
+        }
+        #puntitos8{
+            display: none;
+        }
     }
 }

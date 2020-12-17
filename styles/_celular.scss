@@ -1,4 +1,4 @@
-@media screen and (max-width: 500px){
+@media screen and (max-width: 768px){
     header{
         #barraNavRedesSociales{
             display: none;
@@ -10,6 +10,7 @@
         }
         #barraNavSecciones{
             .menu{
+                
                 .cruz{
                     display:none;
                 }
@@ -152,8 +153,8 @@
         #puntitos2{
             content: url("../images/puntitos-7lineas-celular.svg");
             position: relative;
-            top: 0px;
-            left: 260px;
+            top: 680px;
+            /* left: 260px; */
         }
         #puntitos3{
             content: url("../images/puntitos-7lineas-celular.svg");
@@ -186,8 +187,8 @@
         #puntitos4{           
             content: url("../images/puntitos-7lineas-celular.svg");
             position: relative;
-            top: -450px;
-            left: 260px;
+            top: -100px;
+            /* left: 260px; */
         }
     }
 
@@ -213,8 +214,8 @@
             content: url("../images/puntitos-7lineas-celular.svg");
             z-index: -1;
             position: relative;
-            top: -550px;
-            left: 0px;
+            top: -260px;
+            float: left;
         }
         #porqueDD{
             .textosDescriptivos{
@@ -264,56 +265,56 @@
     #ldcv{
         position: absolute;
         left: 55px;
-        top: 3410px;
+        top: 3340px;
     }
 
     #dwfs{ 
         position: absolute;
         left: 165px;
-        top: 3650px;
+        top: 3580px;
     }
 
     #fotografia{
         position: absolute;
         left: 10px;
-        top: 3570px;
+        top: 3500px;
     }
 
     #uxui{
         position: absolute;
         left: 205px;
-        top: 3550px;
+        top: 3480px;
     }
 
     #tipografia{
         position: absolute;
         left: 185px;
-        top: 3310px;
+        top: 3240px;
     }
 
     #semiotica{
         position: absolute;
         left: 15px;
-        top: 3310px;
+        top: 3240px;
     }
 
     #docencia{
         position: absolute;
         left: 10px;
-        top: 3690px;
+        top: 3620px;
     }
 
     #investigacion{
         position: absolute;
         left: 120px;
-        top: 3270px;
+        top: 3200px;
     }
 
     #tecnicatura{
         position: absolute; 
         left: 105px;
-        top: 3780px;
-    }
+        top: 3710px;
+    } 
 
     h4{
         font-size: 22px;
@@ -378,8 +379,8 @@
         #puntitos7{
             content: url("../images/puntitos-3lineas-celular.svg");
             position: relative;
-            top: -2080px;
-            left: 290px;
+            top: -2120px;
+            /* left: 290px; */
             
         }
         #carruselPortfolio{
@@ -420,6 +421,7 @@
             grid-template-rows: 1fr 1fr;
             grid-template-columns: 1fr;
             margin: 0;
+            padding: 20px 0 0 0;
             #ilustracionContacto{
                 padding-top: 75px;
                 justify-content: center;
@@ -445,8 +447,8 @@
             content: url("../images/puntitos-9lineas-celular.svg");
             z-index: -50;
             position: relative;
-            top: -2050px;
-            left: 290px;
+            top: -1900px;
+            /* left: 290px; */
         }
     }
 

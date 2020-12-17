@@ -18,9 +18,9 @@
         }
     }
     #puntitos5{
+        float: right;
         position: relative;
-        top: -480px;
-        left: 960px;
+        top: -250px;
         margin-bottom: -400px;
     }
     #porqueDD{
@@ -34,6 +34,7 @@
         #grillaAreas{
             display: grid;
             grid-template-columns: 1fr 0.7fr;
+            grid-template-rows: 1fr;
             height: 620px;
             #todosCirculos{
                 height: 570px;
@@ -76,7 +77,9 @@
             #puntitos6{
                 position: relative;
                 top: -80px;
-                left: 1070px;
+                right: -140%;
+                /* float: right; */
+                /* left: 1070px; */
                 margin-bottom: -400px;
             }
         }
