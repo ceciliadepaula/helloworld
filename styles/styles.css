@@ -461,7 +461,8 @@ header #barraNavSecciones .menu input {
 }
 
 #curriculumVitae #misAreasProf #grillaAreas #todosCirculos {
-  height: 570px;
+  height: 620px;
+  margin: auto;
 }
 
 #curriculumVitae #misAreasProf #grillaAreas #todosCirculos .circulosIndividuales {
@@ -501,9 +502,8 @@ header #barraNavSecciones .menu input {
           justify-content: center;
   z-index: 2;
   width: 100%;
-  margin-top: 130px;
   padding-bottom: 50px;
-  height: 470px;
+  height: 620px;
 }
 
 #curriculumVitae #misAreasProf #grillaAreas #descripcionAreas .titulosDescripciones {
@@ -562,62 +562,62 @@ header #barraNavSecciones .menu input {
   font-size: 10px;
 }
 
+h4 {
+  font-size: 22px;
+}
+
 #ldcv {
-  position: absolute;
-  left: 55px;
-  top: 3390px;
+  position: relative;
+  left: 0px;
+  top: 120px;
 }
 
 #dwfs {
-  position: absolute;
-  left: 165px;
-  top: 3630px;
+  position: relative;
+  left: 70px;
+  top: 130px;
 }
 
 #fotografia {
-  position: absolute;
-  left: 10px;
-  top: 3550px;
+  position: relative;
+  left: -70px;
+  top: -200px;
 }
 
 #uxui {
-  position: absolute;
-  left: 205px;
-  top: 3530px;
+  position: relative;
+  left: 100px;
+  top: -350px;
 }
 
 #tipografia {
-  position: absolute;
-  left: 185px;
-  top: 3290px;
+  position: relative;
+  left: 90px;
+  top: -770px;
 }
 
 #semiotica {
-  position: absolute;
-  left: 15px;
-  top: 3290px;
+  position: relative;
+  left: -70px;
+  top: -880px;
 }
 
 #docencia {
-  position: absolute;
-  left: 10px;
-  top: 3670px;
+  position: relative;
+  left: -75px;
+  top: -680px;
 }
 
 #investigacion {
-  position: absolute;
-  left: 120px;
-  top: 3250px;
+  position: relative;
+  left: -85px;
+  top: -1080px;
 }
 
 #tecnicatura {
-  position: absolute;
-  left: 105px;
-  top: 3760px;
-}
-
-h4 {
-  font-size: 22px;
+  position: relative;
+  left: 15px;
+  top: -670px;
 }
 
 ul.listaCurriculum {
@@ -1077,42 +1077,6 @@ footer #lineaVerticalNegra {
   #sobreMi #textoPresentación {
     margin-left: 45%;
   }
-  #ldcv {
-    left: 135px;
-    top: 3290px;
-  }
-  #dwfs {
-    left: 245px;
-    top: 3530px;
-  }
-  #fotografia {
-    left: 90px;
-    top: 3450px;
-  }
-  #uxui {
-    left: 285px;
-    top: 3430px;
-  }
-  #tipografia {
-    left: 275px;
-    top: 3190px;
-  }
-  #semiotica {
-    left: 95px;
-    top: 3190px;
-  }
-  #docencia {
-    left: 50px;
-    top: 3550px;
-  }
-  #investigacion {
-    left: 200px;
-    top: 3150px;
-  }
-  #tecnicatura {
-    left: 185px;
-    top: 3660px;
-  }
   #portfolio #grillaPortfolio #ilustracionPortfolio {
     top: -550px;
     left: 275px;
@@ -1122,33 +1086,6 @@ footer #lineaVerticalNegra {
 @media screen and (min-width: 600px) {
   #sobreMi #unGusto #res4 {
     display: none;
-  }
-  #ldcv {
-    top: 3060px;
-  }
-  #dwfs {
-    top: 3300px;
-  }
-  #fotografia {
-    top: 3220px;
-  }
-  #uxui {
-    top: 3200px;
-  }
-  #tipografia {
-    top: 2960px;
-  }
-  #semiotica {
-    top: 2960px;
-  }
-  #docencia {
-    top: 3320px;
-  }
-  #investigacion {
-    top: 2920px;
-  }
-  #tecnicatura {
-    top: 3430px;
   }
   #portfolio #grillaPortfolio #ilustracionPortfolio {
     top: -410px;
@@ -1178,33 +1115,6 @@ footer #lineaVerticalNegra {
 @media screen and (min-width: 700px) {
   #sobreMi #unGusto #res4 {
     display: none;
-  }
-  #ldcv {
-    left: 30%;
-  }
-  #dwfs {
-    left: 50%;
-  }
-  #fotografia {
-    left: 20%;
-  }
-  #uxui {
-    left: 50%;
-  }
-  #tipografia {
-    left: 45%;
-  }
-  #semiotica {
-    left: 23%;
-  }
-  #docencia {
-    left: 13%;
-  }
-  #investigacion {
-    left: 37%;
-  }
-  #tecnicatura {
-    left: 42%;
   }
   #portfolio #carruselPortfolio #ulSeccionesPortfolio {
     display: -webkit-box;
@@ -1526,7 +1436,7 @@ footer #lineaVerticalNegra {
     height: 550px;
   }
   #curriculumVitae #misAreasProf #grillaAreas #todosCirculos {
-    height: 570px;
+    height: 550px;
   }
   #curriculumVitae #misAreasProf #grillaAreas #todosCirculos .circulosIndividuales {
     background-color: #fdce30;
@@ -1562,6 +1472,7 @@ footer #lineaVerticalNegra {
             justify-content: center;
     margin-top: 0;
     padding-bottom: 0;
+    height: 550px;
   }
   #curriculumVitae #misAreasProf #grillaAreas #descripcionAreas .titulosDescripciones {
     font-size: 24px;
@@ -1583,50 +1494,50 @@ footer #lineaVerticalNegra {
   #curriculumVitae #educacion, #curriculumVitae #experienciaLaboral, #curriculumVitae #exposicionesFotograficas, #curriculumVitae #premios, #curriculumVitae #jurado, #curriculumVitae #lenguajes {
     padding-top: 120px;
   }
-  #curriculumVitae #dwfs {
-    position: relative;
-    top: 300px;
-    left: 150px;
-  }
-  #curriculumVitae #tecnicatura {
-    position: relative;
-    top: -50px;
-    left: 50px;
-  }
-  #curriculumVitae #uxui {
-    position: relative;
-    top: 70px;
-    left: -140px;
-  }
   #curriculumVitae #ldcv {
     position: relative;
+    left: -40px;
     top: 120px;
-    left: 150px;
+  }
+  #curriculumVitae #dwfs {
+    position: relative;
+    left: 170px;
+    top: 70px;
   }
   #curriculumVitae #fotografia {
     position: relative;
-    top: 310px;
-    left: -380px;
+    left: -110px;
+    top: -200px;
+  }
+  #curriculumVitae #uxui {
+    position: relative;
+    left: 110px;
+    top: -375px;
   }
   #curriculumVitae #tipografia {
     position: relative;
-    top: -300px;
-    left: 220px;
+    left: 35px;
+    top: -770px;
   }
   #curriculumVitae #semiotica {
     position: relative;
-    top: -220px;
-    left: -100px;
+    left: -130px;
+    top: -850px;
   }
   #curriculumVitae #docencia {
     position: relative;
-    top: 120px;
-    left: -250px;
+    left: -160px;
+    top: -700px;
   }
   #curriculumVitae #investigacion {
     position: relative;
-    top: -280px;
-    left: -265px;
+    left: -150px;
+    top: -1070px;
+  }
+  #curriculumVitae #tecnicatura {
+    position: relative;
+    left: 300px;
+    top: -920px;
   }
   footer {
     width: 100%;

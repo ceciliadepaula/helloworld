@@ -141,7 +141,7 @@
                 grid-template-rows: 1fr;
                 height: 550px;
                 #todosCirculos{
-                    height: 570px;
+                    height: 550px;
                     .circulosIndividuales{
                         background-color: $colorAmarillo;
                         border-radius: 100%;
@@ -164,6 +164,7 @@
                     justify-content: center;
                     margin-top: 0;
                     padding-bottom: 0;
+                    height: 550px;
                     .titulosDescripciones{
                         font-size: 24px;
                         padding-bottom: 0;
@@ -188,63 +189,61 @@
             padding-top: 120px;
         }
 
-        #dwfs{ 
-            position: relative;
-            top: 300px;
-            left: 150px;
-        }
-    
-        #tecnicatura{
-            position: relative;
-            top: -50px;
-            left: 50px;
-            
-        }
-    
-        #uxui{
-            position: relative;
-            top: 70px;
-            left: -140px;
-        }
-    
+        // CIRCULOS INDIVIDUALES 
+
         #ldcv{
             position: relative;
+            left: -40px;
             top: 120px;
-            left: 150px;
         }
-    
-    
+
+        #dwfs{ 
+            position: relative;
+            left: 170px;
+            top: 70px;
+        }
+
         #fotografia{
             position: relative;
-            top: 310px;
-            left: -380px;
+            left: -110px;
+            top: -200px;
         }
-    
-    
+
+        #uxui{
+            position: relative;
+            left: 110px;
+            top: -375px;
+        }
+
         #tipografia{
             position: relative;
-            top: -300px;
-            left: 220px;
+            left: 35px;
+            top: -770px;
         }
-    
-    
+
         #semiotica{
             position: relative;
-            top: -220px;
-            left: -100px;
+            left: -130px;
+            top: -850px;
         }
-    
+
         #docencia{
             position: relative;
-            top: 120px;
-            left: -250px;
+            left: -160px;
+            top: -700px;
         }
-    
+
         #investigacion{
             position: relative;
-            top: -280px;
-            left: -265px;
-        }      
+            left: -150px;
+            top: -1070px;
+        }
+
+        #tecnicatura{
+            position: relative;
+            left: 300px;
+            top: -920px;
+        }
     }
 
     footer{
