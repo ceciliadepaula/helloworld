@@ -1,0 +1,384 @@
+@media screen and (min-width: 1024px){
+    #helloWorld{
+        #puntitos1{ 
+            top: 50px;
+        }   
+        #contenedorPresentacion{
+            position: relative;
+            bottom: 190px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            height: 573px;
+            #ilustracionHello{
+                max-width: 582px;
+            }
+            #contenedorHello{
+                margin: 0;
+                justify-content: flex-end;
+                bottom: 0px;
+                height: 573px;
+                h1{
+                    font-size: 140px;
+                    text-align: left;
+                }
+                .resaltadoAmarillo{
+                    height: 74px;
+                }
+                #res1{
+                    margin: 0;
+                    width: 390px;
+                    bottom: 200px;
+                    left: 15px;
+                }
+                #res2{
+                    margin: 0;
+                    width: 440px;
+                    bottom: 150px;
+                    left: 45px;
+                }
+            }
+        }
+    }
+
+    #sobreMi{
+        padding: 80px 0 50px 0;
+        #grillaSobreMiFoto{
+            grid-template-columns: 1fr 0.8fr;
+            grid-template-rows: 1fr;
+
+            width: 100%;
+            h2{
+                font-size: 220px;
+                line-height: 0.93;
+            }
+            #fotoCecilia{
+                height: 350px;
+                width: 316px;
+                justify-self: center;
+                align-self: center;
+            }
+        }
+        #textoPresentación{
+            font-size: 72px;
+            line-height: 82px;
+            margin-left: 360px;
+            margin-top: -310px;
+            strong{
+                font-size: 72px;
+                line-height: 82px;
+            }
+        }
+        #puntitos2{
+            content: url("../images/puntitos-22lineas.svg");
+            position: relative;
+            top: 620px;
+            margin-top: -800px;
+            z-index: -1;
+        }
+        #puntitos3{
+            content: url("../images/puntitos-14lineas.svg");
+            position: relative;
+            top: 80px;
+            left: -100px;
+            margin-top: -800px;
+        }
+        #unGusto{
+            h3{
+                font-size: 80px;
+            }
+            #res3{
+                width: 900px;
+                position: relative;
+                top: -45px;
+                z-index: -1;
+            }
+            #res4{
+                display:none;
+            }
+        }
+        #puntitos4{      
+            content: url("../images/puntitos-7lineas.svg");    
+            position: relative;
+            top: -100px;
+            margin-bottom: -400px; 
+        }
+    }
+
+    #curriculumVitae{
+        #puntitos5{
+            content: url("../images/puntitos-7lineas.svg");
+            float: right;
+            margin-bottom: -100px;
+        }
+        #grillaCV{
+            height: 730px;
+            #tituloCV{
+                font-size: 175px;  
+                span{
+                    display: none;
+                }
+            }
+            #ilustracionCV{
+                height: 488px;
+                width: 651px;
+                bottom: 320px;
+                left: 30px;
+            }
+        }
+        #porqueDD{
+            padding-top: 180px;
+            .textosDescriptivos{
+                text-align: left;
+    
+            }
+        }
+        #misAreasProf{
+            height: 630px;
+            padding: 0 3% 0 3%;
+            #grillaAreas{
+                display: grid;
+                grid-template-columns: 1fr 0.7fr;
+                grid-template-rows: 1fr;
+                height: 550px;
+                #todosCirculos{
+                    height: 570px;
+                    .circulosIndividuales{
+                        background-color: $colorAmarillo;
+                        border-radius: 100%;
+                        display: flex;
+                        justify-content: center;
+                        float:left;
+                        .tituloArea{
+                            text-align: center;
+                            align-self: center;
+                            font-weight: bold;
+                            span{
+                                font-weight: $regular;
+                            }
+                        }
+                    }
+                }
+                #descripcionAreas{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 0;
+                    padding-bottom: 0;
+                    .titulosDescripciones{
+                        font-size: 24px;
+                        padding-bottom: 0;
+                        margin-bottom: 20px;
+                        text-align: left;
+                        span{
+                            background-color: $colorAmarillo;
+                        }
+                    }
+                    .textoDescripciones{
+                        font-size: 17px;
+                        line-height: 28px;
+                        padding-right: 5%;
+                    }
+                }
+                #puntitos6{
+                    display: none;
+                }
+            }
+        }
+        #educacion, #experienciaLaboral, #exposicionesFotograficas, #premios, #jurado, #lenguajes{
+            padding-top: 120px;
+        }
+
+        #dwfs{ 
+            position: relative;
+            top: 300px;
+            left: 150px;
+        }
+    
+        #tecnicatura{
+            position: relative;
+            top: -50px;
+            left: 50px;
+            
+        }
+    
+        #uxui{
+            position: relative;
+            top: 70px;
+            left: -140px;
+        }
+    
+        #ldcv{
+            position: relative;
+            top: 120px;
+            left: 150px;
+        }
+    
+    
+        #fotografia{
+            position: relative;
+            top: 310px;
+            left: -380px;
+        }
+    
+    
+        #tipografia{
+            position: relative;
+            top: -300px;
+            left: 220px;
+        }
+    
+    
+        #semiotica{
+            position: relative;
+            top: -220px;
+            left: -100px;
+        }
+    
+        #docencia{
+            position: relative;
+            top: 120px;
+            left: -250px;
+        }
+    
+        #investigacion{
+            position: relative;
+            top: -280px;
+            left: -265px;
+        }      
+    }
+
+    footer{
+        width: 100%;
+        margin-top: 50px;
+        grid-template-columns: 1fr 0.01fr 1fr;
+        #footerRight{
+            text-align: left;
+            width: 100%;
+        }
+        #footerLeft{
+            text-align: right;
+            width: 100%;
+        }
+        #lineaVerticalNegra{
+            width: 1px;
+            height: 80%;
+        }
+    }
+
+    #portfolio{
+        #grillaPortfolio{
+            #textosPortfolio{
+                #tituloPortfolio{
+                    font-size: 228px;
+                }
+                .textosDescriptivos{
+                    width: 750px; 
+                }
+            }
+            #ilustracionPortfolio{
+                width: 450px;
+                top: -480px;
+                left: 270px;
+                z-index: 2;
+            }
+        }
+        #puntitos7{
+            content: url(../images/puntitos-22lineas.svg);
+            position: relative;
+            float: right;
+            left: -52px;
+            top: -510px;
+            z-index: -3;
+            margin-bottom: -540px;
+        }
+    }
+
+    #contacto{
+        #tituloContacto{
+            font-size: 215px;
+        }
+        #grillaContacto{
+            margin: 0px 18%;
+            #ilustracionContacto{
+                justify-content: flex-end;
+                padding-top: 0;
+                #dibujoContacto{
+                    height: 456px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1150px){
+    header{
+        #barraNavRedesSociales{
+            z-index: 100;
+            width: 51px;
+            height: 265px;
+            background-color: $colorAmarillo;
+            position: fixed;
+            top: 177.5px; 
+            right: 0px;
+            border-radius: 20px 0 0 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .linkExterno{
+                .imgLinkExterno{
+                    width: 25px;
+                    height: 25px;
+                    margin: 4px 4px 4px 8px;
+                }   
+                #logoLinkedin:hover{
+                    content: url(../images/linkedin-blanco.svg);
+                } 
+                #logoBehance:hover{
+                    content: url(../images/behance-blanco.svg);
+                } 
+                #logoGitHub:hover{
+                    content: url(../images/github-blanco.svg);
+                } 
+                #logoFlickr:hover{
+                    content: url(../images/flickr-blanco.svg);
+                } 
+                #logoInstagram:hover{
+                    content: url(../images/instagram-blanco.svg);
+                } 
+                #logoFacebook:hover{
+                    content: url(../images/facebook-blanco.svg);
+                } 
+            }
+        }
+    }
+
+    #curriculumVitae{
+        #puntitos5{
+            top: -100px;
+        }
+        #grillaCV{
+            #tituloCV{
+                font-size: 192px;  
+            }
+        }
+    }
+
+    #contacto{
+        #tituloContacto{
+            font-size: 228px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1360px){
+    #curriculumVitae{
+        #grillaCV{
+            #tituloCV{
+                font-size: 228px;  
+            }
+        }
+    }
+}

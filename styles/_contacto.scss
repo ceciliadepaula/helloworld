@@ -1,6 +1,8 @@
 #contacto{
-    margin-top: 80px;
+    margin-top: 50px;
     #tituloContacto{
+        font-size: 80px;
+        -webkit-text-stroke: 3px $colorAmarillo;
         text-align: center;
         position: relative;
         top: 70px;
@@ -8,14 +10,16 @@
     }
     #grillaContacto{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 0 18%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        margin: 0;
         #ilustracionContacto{
             display: flex;
-            justify-content: flex-end;
+            padding-top: 75px;
+            justify-content: center;
             align-content: center;
             #dibujoContacto{
-                height: 456px;
+                height: 256px;
             }
         }
         #datosContacto{
@@ -29,12 +33,15 @@
                 text-align: center;
                 margin-bottom: 30px;
                 h5{
+                    font-size: 17px;
                     font-weight: $bold;
                 }
                 p{
-                    font-weight: $light;
+                    font-size: 17px;
+                    font-weight: $light;                    
                 }
                 a{
+                    font-size: 17px;
                     text-decoration: none;
                     color: $colorNegro;
                     font-weight: $light;
@@ -43,9 +50,11 @@
         }
     }
     #puntitos8{
+        content: url("../images/puntitos-9lineas-celular.svg");
+        z-index: -50;
         position: relative;
-        margin-bottom: -400px;
-        top: -120px;
-        float: right;
+        top: -1670px;
+        left: 290px;
+        margin-top: -400px;
     }
 }

@@ -15,6 +15,7 @@ body {
   background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
   color: #181819;
+  margin: auto;
 }
 
 main {
@@ -50,9 +51,19 @@ h4 {
 }
 
 .boton .pBoton {
+  font-size: 14px;
+  font-weight: 500;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.boton:hover {
+  background-color: #181819;
+}
+
+.boton:hover .pBoton {
+  color: #fdce30;
 }
 
 .boton {
@@ -98,7 +109,17 @@ header {
   height: 55px;
   width: 100%;
   position: fixed;
+  left: 0;
   z-index: 100;
+}
+
+header #barraNavRedesSociales {
+  display: none;
+}
+
+header #checkbox, header .hamburguesa, header .cruz {
+  width: 20px;
+  height: 20px;
 }
 
 header a {
@@ -117,130 +138,114 @@ header #barraNavSecciones .menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /*---------CHECKBOX TRANSPARENTE-----------*/
+}
+
+header #barraNavSecciones .menu .cruz {
+  display: none;
 }
 
 header #barraNavSecciones .menu #ulHeader {
-  position: relative;
-  top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 55px;
+  right: -5vw;
+  overflow: hidden;
+  background-color: #fdce30;
+  opacity: 0.9;
+  height: 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 header #barraNavSecciones .menu #ulHeader li {
-  list-style-type: none;
-  height: 25px;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 50px;
+  padding-top: 20px;
 }
 
 header #barraNavSecciones .menu #ulHeader li .linkInterno {
+  font-size: 20px;
   text-transform: uppercase;
-  font-size: 14px;
   color: #181819;
   font-weight: 700;
   margin: 15px;
 }
 
-header #barraNavSecciones .menu #ulHeader li .linkInterno:hover {
-  background-color: #fdce30;
-}
-
 header #barraNavSecciones .menu #ulHeader li .lineaVerticalAmarilla {
-  font-weight: 700;
-  color: #fdce30;
-  position: relative;
-  bottom: 22px;
-  left: 100%;
-  z-index: -2;
-}
-
-header #barraNavRedesSociales {
-  z-index: 100;
-  width: 51px;
-  height: 265px;
-  background-color: #fdce30;
-  position: fixed;
-  top: 177.5px;
-  right: 0px;
-  border-radius: 20px 0 0 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header #barraNavRedesSociales .linkExterno .imgLinkExterno {
-  width: 25px;
-  height: 25px;
-  margin: 4px 4px 4px 8px;
-}
-
-header #barraNavRedesSociales .linkExterno #logoLinkedin:hover {
-  content: url(../images/linkedin-blanco.svg);
-}
-
-header #barraNavRedesSociales .linkExterno #logoBehance:hover {
-  content: url(../images/behance-blanco.svg);
-}
-
-header #barraNavRedesSociales .linkExterno #logoGitHub:hover {
-  content: url(../images/github-blanco.svg);
-}
-
-header #barraNavRedesSociales .linkExterno #logoFlickr:hover {
-  content: url(../images/flickr-blanco.svg);
-}
-
-header #barraNavRedesSociales .linkExterno #logoInstagram:hover {
-  content: url(../images/instagram-blanco.svg);
-}
-
-header #barraNavRedesSociales .linkExterno #logoFacebook:hover {
-  content: url(../images/facebook-blanco.svg);
-}
-
-header #checkbox, header .hamburguesa, header .cruz {
   display: none;
 }
 
+header #barraNavSecciones .menu #ulHeader li:hover .linkInterno {
+  color: #ffffff;
+}
+
+header #barraNavSecciones .menu input[type="checkbox"]:checked ~ #ulHeader {
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+
+header #barraNavSecciones .menu input:checked ~ .hamburguesa {
+  display: none;
+}
+
+header #barraNavSecciones .menu input:checked ~ .cruz {
+  display: inherit;
+}
+
+header #barraNavSecciones .menu input {
+  display: block;
+  width: 45px;
+  height: 45px;
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+  top: 5px;
+  right: 0px;
+}
+
 #helloWorld {
+  width: 100%;
   position: relative;
-  top: 10px;
+  top: 20px;
   height: 620px;
 }
 
 #helloWorld #puntitos1 {
-  width: 360px;
   position: relative;
-  top: 50px;
+  top: 120px;
+  width: 360px;
   float: left;
 }
 
 #helloWorld #contenedorPresentacion {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 0.2fr;
+      grid-template-rows: 1fr 0.2fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   position: relative;
   bottom: 190px;
   width: 100%;
+  height: 732px;
 }
 
 #helloWorld #contenedorPresentacion #ilustracionHello {
-  width: 582px;
+  width: 100vw;
+  max-width: 482px;
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
 #helloWorld #contenedorPresentacion #contenedorHello {
+  margin: 5% 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,87 +253,103 @@ header #checkbox, header .hamburguesa, header .cruz {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  position: relative;
+  bottom: 30px;
 }
 
 #helloWorld #contenedorPresentacion #contenedorHello h1 {
-  font-size: 140px;
+  font-size: 100px;
+  text-align: center;
+  margin-top: none;
   font-weight: 700;
   line-height: 0.91;
 }
 
 #helloWorld #contenedorPresentacion #contenedorHello .resaltadoAmarillo {
-  height: 74px;
+  height: 50px;
   background-color: #fdce30;
   z-index: -1;
 }
 
 #helloWorld #contenedorPresentacion #contenedorHello #res1 {
-  width: 390px;
+  height: 50px;
+  width: 250px;
+  margin: auto;
   position: relative;
-  bottom: 200px;
-  left: 15px;
+  bottom: 140px;
+  left: 10px;
 }
 
 #helloWorld #contenedorPresentacion #contenedorHello #res2 {
-  width: 440px;
+  height: 50px;
+  width: 300px;
+  margin: auto;
   position: relative;
-  bottom: 150px;
-  left: 50px;
+  bottom: 100px;
+  left: 20px;
 }
 
 #sobreMi {
-  padding: 80px 0 50px 0;
+  padding: 130px 0 0 0;
 }
 
 #sobreMi #grillaSobreMiFoto {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 0.8fr;
-      grid-template-columns: 1fr 0.8fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
 }
 
 #sobreMi #grillaSobreMiFoto h2 {
-  padding-left: 5%;
+  font-size: 120px;
 }
 
 #sobreMi #grillaSobreMiFoto #fotoCecilia {
-  height: 350px;
-  -ms-grid-column-align: center;
-      justify-self: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  width: 160px;
+  height: 175px;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  margin-top: -50px;
 }
 
 #sobreMi #textoPresentación {
-  font-size: 72px;
-  line-height: 82px;
-  margin-left: 360px;
-  margin-top: -310px;
+  font-size: 28px;
+  line-height: 38px;
+  margin-left: 44%;
+  margin-top: -390px;
+  width: auto;
   font-weight: 600;
 }
 
 #sobreMi #textoPresentación strong {
+  font-size: 35px;
+  line-height: 42px;
   font-weight: 900;
 }
 
 #sobreMi #puntitos2 {
+  content: url("../images/puntitos-7lineas-celular.svg");
   position: relative;
-  top: 450px;
-  top: 650px;
+  top: 0px;
   float: right;
-  margin-top: -800px;
   z-index: -1;
+  margin-top: -100px;
 }
 
 #sobreMi #puntitos3 {
+  content: url("../images/puntitos-7lineas-celular.svg");
   position: relative;
-  top: -320px;
-  left: -100px;
-  margin-bottom: -400px;
+  top: -20px;
+  left: 0px;
 }
 
 #sobreMi #unGusto {
@@ -346,7 +367,8 @@ header #checkbox, header .hamburguesa, header .cruz {
 }
 
 #sobreMi #unGusto h3 {
-  font-size: 80px;
+  font-size: 70px;
+  line-height: 75px;
   font-weight: 700;
   text-align: center;
 }
@@ -356,22 +378,29 @@ header #checkbox, header .hamburguesa, header .cruz {
   margin-right: auto;
   background: #fdce30;
   height: 50px;
-  width: 900px;
-  position: relative;
-  top: -65px;
   z-index: -1;
+  width: 90%;
+  position: relative;
+  top: -50px;
 }
 
 #sobreMi #unGusto #res4 {
-  display: none;
+  display: inherit;
+  height: 40px;
+  width: 80%;
+  background-color: #fdce30;
+  position: relative;
+  top: -170px;
+  left: 10%;
+  z-index: -1;
 }
 
 #sobreMi #puntitos4 {
-  float: right;
+  content: url("../images/puntitos-7lineas-celular.svg");
   position: relative;
-  top: -120px;
-  /* left: 960px; */
-  margin-bottom: -400px;
+  top: -100px;
+  float: right;
+  margin-bottom: -100px;
 }
 
 #curriculumVitae {
@@ -380,48 +409,54 @@ header #checkbox, header .hamburguesa, header .cruz {
 
 #curriculumVitae #grillaCV {
   padding-top: 20px;
-  height: 730px;
+  height: 530px;
 }
 
 #curriculumVitae #grillaCV #tituloCV {
   text-align: right;
-  font-size: 228px;
-}
-
-#curriculumVitae #grillaCV #tituloCV span {
-  display: none;
+  font-size: 120px;
+  padding-right: 5px;
 }
 
 #curriculumVitae #grillaCV #ilustracionCV {
-  height: 488px;
+  width: 400px;
+  height: 305px;
   position: relative;
-  bottom: 320px;
-  left: 30px;
+  bottom: 65px;
+  left: 0;
 }
 
 #curriculumVitae #puntitos5 {
-  float: right;
+  content: url("../images/puntitos-7lineas-celular.svg");
+  z-index: -1;
   position: relative;
-  top: -250px;
-  margin-bottom: -400px;
+  top: -70px;
+  left: 0px;
 }
 
 #curriculumVitae #porqueDD #botonCV {
   margin-bottom: 90px;
 }
 
+#curriculumVitae #porqueDD .textosDescriptivos {
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
+}
+
 #curriculumVitae #misAreasProf {
-  height: 630px;
+  height: 1240px;
   padding: 0 3% 0 3%;
 }
 
 #curriculumVitae #misAreasProf #grillaAreas {
+  margin-top: 20px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 0.7fr;
-      grid-template-columns: 1fr 0.7fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
   height: 620px;
 }
 
@@ -454,8 +489,6 @@ header #checkbox, header .hamburguesa, header .cruz {
 }
 
 #curriculumVitae #misAreasProf #grillaAreas #descripcionAreas {
-  height: 570px;
-  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -466,12 +499,17 @@ header #checkbox, header .hamburguesa, header .cruz {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 2;
+  width: 100%;
+  margin-top: 130px;
+  padding-bottom: 50px;
+  height: 470px;
 }
 
 #curriculumVitae #misAreasProf #grillaAreas #descripcionAreas .titulosDescripciones {
+  margin: 3%;
   font-size: 24px;
   padding-bottom: 0;
-  margin-bottom: 20px;
   text-align: left;
 }
 
@@ -480,21 +518,21 @@ header #checkbox, header .hamburguesa, header .cruz {
 }
 
 #curriculumVitae #misAreasProf #grillaAreas #descripcionAreas .textoDescripciones {
-  font-size: 17px;
+  margin: 3%;
+  font-size: 16px;
   line-height: 28px;
 }
 
 #curriculumVitae #misAreasProf #grillaAreas #puntitos6 {
+  content: url("../images/puntitos-3lineas-celular.svg");
   position: relative;
-  top: -80px;
-  right: -140%;
-  /* float: right; */
-  /* left: 1070px; */
-  margin-bottom: -400px;
+  top: 720px;
+  left: 74%;
+  z-index: -2;
 }
 
 #curriculumVitae #educacion, #curriculumVitae #experienciaLaboral, #curriculumVitae #exposicionesFotograficas, #curriculumVitae #premios, #curriculumVitae #jurado, #curriculumVitae #lenguajes {
-  padding-top: 120px;
+  padding-top: 50px;
 }
 
 .jerarquia1 {
@@ -525,57 +563,61 @@ header #checkbox, header .hamburguesa, header .cruz {
 }
 
 #ldcv {
-  position: relative;
-  bottom: -150px;
-  left: 150px;
+  position: absolute;
+  left: 55px;
+  top: 3390px;
 }
 
 #dwfs {
-  position: relative;
-  bottom: -300px;
-  left: 160px;
+  position: absolute;
+  left: 165px;
+  top: 3630px;
 }
 
 #fotografia {
-  position: relative;
-  bottom: -350px;
-  left: -370px;
+  position: absolute;
+  left: 10px;
+  top: 3550px;
 }
 
 #uxui {
-  position: relative;
-  bottom: -70px;
-  left: -135px;
+  position: absolute;
+  left: 205px;
+  top: 3530px;
 }
 
 #tipografia {
-  position: relative;
-  bottom: 270px;
-  left: 200px;
+  position: absolute;
+  left: 185px;
+  top: 3290px;
 }
 
 #semiotica {
-  position: relative;
-  bottom: 180px;
-  left: -120px;
+  position: absolute;
+  left: 15px;
+  top: 3290px;
 }
 
 #docencia {
-  position: relative;
-  bottom: -140px;
-  left: -250px;
+  position: absolute;
+  left: 10px;
+  top: 3670px;
 }
 
 #investigacion {
-  position: relative;
-  bottom: 250px;
-  left: -290px;
+  position: absolute;
+  left: 120px;
+  top: 3250px;
 }
 
 #tecnicatura {
-  position: relative;
-  bottom: 50px;
-  left: 50px;
+  position: absolute;
+  left: 105px;
+  top: 3760px;
+}
+
+h4 {
+  font-size: 22px;
 }
 
 ul.listaCurriculum {
@@ -590,7 +632,7 @@ ul.listaCurriculum li.elementoListaCV {
 }
 
 ul.listaCurriculum li.elementoListaCV h5.titulo {
-  font-size: 27px;
+  font-size: 22px;
   font-weight: 800;
   padding-bottom: 10px;
 }
@@ -602,25 +644,23 @@ ul.listaCurriculum li.elementoListaCV h5.titulo span {
 ul.listaCurriculum li.elementoListaCV .contenedorLugarFecha {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 4fr 1fr;
-      grid-template-columns: 4fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   padding-bottom: 5px;
 }
 
 ul.listaCurriculum li.elementoListaCV .contenedorLugarFecha .lugar {
-  font-size: 20.7px;
+  font-size: 17px;
   font-weight: 700;
   line-height: 1.41;
 }
 
 ul.listaCurriculum li.elementoListaCV .contenedorLugarFecha .fecha {
-  font-size: 20.7px;
-  font-weight: 300;
-  text-align: right;
+  display: none;
 }
 
 ul.listaCurriculum li.elementoListaCV .aclaracion {
-  font-size: 20.7px;
+  font-size: 17px;
   font-weight: 300;
   line-height: 1.41;
 }
@@ -630,8 +670,8 @@ ul.listaLenguajes {
   margin-right: 10%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   list-style-type: none;
 }
 
@@ -652,7 +692,6 @@ ul.listaLenguajes .elementoLenguaje {
 
 ul.listaLenguajes .elementoLenguaje img {
   padding-bottom: 20px;
-  height: 101px;
 }
 
 ul.listaLenguajes .elementoLenguaje .descripcionIcono {
@@ -710,7 +749,7 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
 }
 
 #portfolio {
-  padding-top: 160px;
+  padding-top: 110px;
 }
 
 #portfolio #grillaPortfolio {
@@ -718,36 +757,40 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
 }
 
 #portfolio #grillaPortfolio #textosPortfolio #tituloPortfolio {
+  font-size: 115px;
   margin-left: 2%;
 }
 
 #portfolio #grillaPortfolio #textosPortfolio #tituloPortfolio #span2 {
-  display: none;
+  display: initial;
 }
 
 #portfolio #grillaPortfolio #textosPortfolio .textosDescriptivos {
   margin-left: 3%;
-  width: 750px;
+  width: 90%;
+  padding-top: 15px;
 }
 
 #portfolio #grillaPortfolio #textosPortfolio #botonPortfolio {
-  margin-left: 3%;
   float: left;
+  margin: 0 25%;
+  margin-bottom: 50px;
 }
 
 #portfolio #grillaPortfolio #ilustracionPortfolio {
-  width: 450px;
+  width: 230px;
   position: relative;
-  top: -450px;
-  left: 600px;
+  top: -580px;
+  left: 175px;
+  z-index: -1;
 }
 
 #portfolio #puntitos7 {
+  content: url("../images/puntitos-3lineas-celular.svg");
   position: relative;
-  float: right;
-  top: -520px;
-  z-index: -3;
-  margin-bottom: -540px;
+  top: -1600px;
+  left: 80%;
+  z-index: -2;
 }
 
 #portfolio #carruselPortfolio {
@@ -757,13 +800,14 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
 #portfolio #carruselPortfolio #ulSeccionesPortfolio {
   position: relative;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
 }
 
 #portfolio #carruselPortfolio #ulSeccionesPortfolio li {
@@ -785,12 +829,7 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
 }
 
 #portfolio #carruselPortfolio #ulSeccionesPortfolio li .lineaVerticalAmarilla {
-  font-weight: 700;
-  color: #fdce30;
-  position: relative;
-  bottom: 25px;
-  left: 100%;
-  z-index: -2;
+  display: none;
 }
 
 #portfolio #contenedorCarrusel {
@@ -808,30 +847,16 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #portfolio #contenedorCarrusel #irIzquierda {
-  padding-right: 15px;
-}
-
-#portfolio #contenedorCarrusel #irIzquierda #flechaIzquierda:hover {
-  content: url(../images/flecha-izquierda-negro.svg);
-}
-
-#portfolio #contenedorCarrusel #irIzquierda #flechaIzquierda:active {
-  content: url(../images/flecha-izquierda-amarilla.svg);
+  display: none;
 }
 
 #portfolio #contenedorCarrusel #irDerecha {
-  padding-left: 15px;
-}
-
-#portfolio #contenedorCarrusel #irDerecha #flechaDerecha:hover {
-  content: url(../images/flecha-derecha-negro.svg);
-}
-
-#portfolio #contenedorCarrusel #irDerecha #flechaDerecha:active {
-  content: url(../images/flecha-derecha-amarillo.svg);
+  display: none;
 }
 
 #portfolio #contenedorCarrusel #contenedorImagenes {
@@ -843,6 +868,7 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  overflow: scroll;
 }
 
 #portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales {
@@ -904,10 +930,12 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
 }
 
 #contacto {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 #contacto #tituloContacto {
+  font-size: 80px;
+  -webkit-text-stroke: 3px #fdce30;
   text-align: center;
   position: relative;
   top: 70px;
@@ -917,24 +945,27 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
 #contacto #grillaContacto {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  margin: 0 18%;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin: 0;
 }
 
 #contacto #grillaContacto #ilustracionContacto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  padding-top: 75px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
 }
 
 #contacto #grillaContacto #ilustracionContacto #dibujoContacto {
-  height: 456px;
+  height: 256px;
 }
 
 #contacto #grillaContacto #datosContacto {
@@ -960,33 +991,38 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
 }
 
 #contacto #grillaContacto #datosContacto div h5 {
+  font-size: 17px;
   font-weight: 700;
 }
 
 #contacto #grillaContacto #datosContacto div p {
+  font-size: 17px;
   font-weight: 300;
 }
 
 #contacto #grillaContacto #datosContacto div a {
+  font-size: 17px;
   text-decoration: none;
   color: #181819;
   font-weight: 300;
 }
 
 #contacto #puntitos8 {
+  content: url("../images/puntitos-9lineas-celular.svg");
+  z-index: -50;
   position: relative;
-  margin-bottom: -400px;
-  top: -120px;
-  float: right;
+  top: -1670px;
+  left: 290px;
+  margin-top: -400px;
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 0;
   background-color: #fdce30;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 0.01fr 1fr;
-      grid-template-columns: 1fr 0.01fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 footer p {
@@ -1009,19 +1045,21 @@ footer p a:hover {
 }
 
 footer #footerRight {
-  text-align: left;
-  margin-right: 10%;
+  text-align: center;
+  margin: auto;
+  width: 60%;
 }
 
 footer #footerLeft {
-  text-align: right;
-  margin-left: 10%;
+  text-align: center;
+  margin: auto;
+  width: 50%;
 }
 
 footer #lineaVerticalNegra {
-  width: 1px;
+  width: 20%;
+  height: 1px;
   background-color: #181819;
-  height: 80%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1029,534 +1067,684 @@ footer #lineaVerticalNegra {
       justify-self: center;
 }
 
-@media screen and (max-width: 1024px) {
-  #curriculumVitae #grillaCV #tituloCV {
-    font-size: 160px;
+@media screen and (min-width: 480px) {
+  #helloWorld #contenedorPresentacion #contenedorHello {
+    height: 250px;
   }
-  #curriculumVitae #grillaCV #ilustracionCV {
-    height: 388px;
-    bottom: 250px;
+  #sobreMi #grillaSobreMiFoto {
+    padding-left: 4%;
+  }
+  #sobreMi #textoPresentación {
+    margin-left: 45%;
   }
   #ldcv {
-    position: absolute;
-    left: 180px;
-    top: 3700px;
+    left: 135px;
+    top: 3290px;
   }
   #dwfs {
-    position: absolute;
-    left: 450px;
-    top: 3850px;
+    left: 245px;
+    top: 3530px;
   }
   #fotografia {
-    position: absolute;
-    left: 140px;
-    top: 3890px;
+    left: 90px;
+    top: 3450px;
   }
   #uxui {
-    position: absolute;
-    left: 380px;
-    top: 3780px;
+    left: 285px;
+    top: 3430px;
   }
   #tipografia {
-    position: absolute;
-    left: 220px;
-    top: 3580px;
+    left: 275px;
+    top: 3190px;
   }
   #semiotica {
-    position: absolute;
-    left: 70px;
-    top: 3680px;
+    left: 95px;
+    top: 3190px;
   }
   #docencia {
-    position: absolute;
-    left: 80px;
-    top: 3980px;
+    left: 50px;
+    top: 3550px;
   }
   #investigacion {
-    position: absolute;
-    left: 140px;
-    top: 3610px;
+    left: 200px;
+    top: 3150px;
   }
   #tecnicatura {
-    position: absolute;
-    left: 590px;
-    top: 3800px;
-  }
-  #portfolio #grillaPortfolio #textosPortfolio #tituloPortfolio {
-    font-size: 165px;
-  }
-  #portfolio #grillaPortfolio #textosPortfolio .textosDescriptivos {
-    width: 48%;
+    left: 185px;
+    top: 3660px;
   }
   #portfolio #grillaPortfolio #ilustracionPortfolio {
-    left: 270px;
-    left: 30%;
-  }
-  #contacto #tituloContacto {
-    font-size: 145px;
-  }
-  #contacto #grillaContacto {
-    padding: 70px 0 0 0;
-  }
-  #contacto #grillaContacto #ilustracionContacto #dibujoContacto {
-    height: 350px;
-  }
-  #contacto #puntitos8 {
-    display: none;
+    top: -550px;
+    left: 275px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  header #barraNavRedesSociales {
-    display: none;
-  }
-  header #checkbox, header .hamburguesa, header .cruz {
-    display: initial;
-    width: 20px;
-    height: 20px;
-  }
-  header #barraNavSecciones .menu .cruz {
-    display: none;
-  }
-  header #barraNavSecciones .menu #ulHeader {
-    width: 100%;
-    position: absolute;
-    top: 55px;
-    right: -21px;
-    overflow: hidden;
-    background-color: #fdce30;
-    opacity: 0.9;
-    height: 0px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-  header #barraNavSecciones .menu #ulHeader li {
-    text-align: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    height: 50px;
-    padding-top: 20px;
-  }
-  header #barraNavSecciones .menu #ulHeader li .linkInterno {
-    font-size: 20px;
-  }
-  header #barraNavSecciones .menu #ulHeader li .lineaVerticalAmarilla {
-    display: none;
-  }
-  header #barraNavSecciones .menu #ulHeader li:hover .linkInterno {
-    color: #ffffff;
-  }
-  header #barraNavSecciones .menu input[type="checkbox"]:checked ~ #ulHeader {
-    height: 100vh;
-    width: 100vw;
-    margin: auto;
-  }
-  header #barraNavSecciones .menu input:checked ~ .hamburguesa {
-    display: none;
-  }
-  header #barraNavSecciones .menu input:checked ~ .cruz {
-    display: inherit;
-  }
-  header #barraNavSecciones .menu input {
-    display: block;
-    width: 45px;
-    height: 45px;
-    opacity: 0;
-    z-index: 2;
-    position: absolute;
-    top: 5px;
-    right: 0px;
-  }
-  #helloWorld {
-    width: 100%;
-  }
-  #helloWorld #puntitos1 {
-    position: relative;
-    top: 120px;
-  }
-  #helloWorld #contenedorPresentacion {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr 0.2fr;
-        grid-template-rows: 1fr 0.2fr;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  #helloWorld #contenedorPresentacion #ilustracionHello {
-    width: 100vw;
-  }
-  #helloWorld #contenedorPresentacion #contenedorHello {
-    margin: 5%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    position: relative;
-    bottom: 30px;
-  }
-  #helloWorld #contenedorPresentacion #contenedorHello h1 {
-    font-size: 100px;
-    text-align: center;
-    margin-top: none;
-  }
-  #helloWorld #contenedorPresentacion #contenedorHello .resaltadoAmarillo {
-    height: 50px;
-  }
-  #helloWorld #contenedorPresentacion #contenedorHello #res1 {
-    width: 250px;
-    position: relative;
-    bottom: 140px;
-    left: 80px;
-  }
-  #helloWorld #contenedorPresentacion #contenedorHello #res2 {
-    width: 300px;
-    position: relative;
-    bottom: 100px;
-    left: 40px;
-  }
-  #sobreMi {
-    padding: 130px 0 0 0;
-  }
-  #sobreMi #grillaSobreMiFoto {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  #sobreMi #grillaSobreMiFoto h2 {
-    font-size: 120px;
-  }
-  #sobreMi #grillaSobreMiFoto #fotoCecilia {
-    width: 160px;
-    height: 175px;
-    -ms-grid-column-align: left;
-        justify-self: left;
-    margin-left: 5%;
-    margin-top: -50px;
-  }
-  #sobreMi #textoPresentación {
-    font-size: 28px;
-    line-height: 38px;
-    margin-left: 185px;
-    margin-top: -390px;
-    width: auto;
-  }
-  #sobreMi #textoPresentación strong {
-    font-size: 35px;
-    line-height: 42px;
-  }
-  #sobreMi #puntitos2 {
-    content: url("../images/puntitos-7lineas-celular.svg");
-    position: relative;
-    top: 680px;
-    /* left: 260px; */
-  }
-  #sobreMi #puntitos3 {
-    content: url("../images/puntitos-7lineas-celular.svg");
-    position: relative;
-    top: -300px;
-    left: 0px;
-  }
-  #sobreMi #unGusto h3 {
-    font-size: 70px;
-    line-height: 75px;
-  }
-  #sobreMi #unGusto #res3 {
-    width: 90%;
-    position: relative;
-    top: -50px;
-  }
+@media screen and (min-width: 600px) {
   #sobreMi #unGusto #res4 {
-    display: inherit;
-    height: 40px;
-    width: 80%;
-    background-color: #fdce30;
-    position: relative;
-    top: -170px;
-    left: 10%;
-    z-index: -1;
+    display: none;
   }
-  #sobreMi #puntitos4 {
-    content: url("../images/puntitos-7lineas-celular.svg");
-    position: relative;
-    top: -100px;
-    /* left: 260px; */
+  #ldcv {
+    top: 3060px;
   }
-  #curriculumVitae #grillaCV #tituloCV {
-    font-size: 120px;
+  #dwfs {
+    top: 3300px;
   }
-  #curriculumVitae #grillaCV #tituloCV span {
-    display: initial;
+  #fotografia {
+    top: 3220px;
+  }
+  #uxui {
+    top: 3200px;
+  }
+  #tipografia {
+    top: 2960px;
+  }
+  #semiotica {
+    top: 2960px;
+  }
+  #docencia {
+    top: 3320px;
+  }
+  #investigacion {
+    top: 2920px;
+  }
+  #tecnicatura {
+    top: 3430px;
+  }
+  #portfolio #grillaPortfolio #ilustracionPortfolio {
+    top: -410px;
+    left: 5px;
+  }
+  #portfolio #grillaPortfolio #textosPortfolio #tituloPortfolio #span2 {
+    display: none;
+  }
+  #portfolio #grillaPortfolio #textosPortfolio #botonPortfolio {
+    margin-left: 3%;
+  }
+  #curriculumVitae #grillaCV {
+    margin-bottom: -170px;
   }
   #curriculumVitae #grillaCV #ilustracionCV {
     width: 400px;
     height: 305px;
     position: relative;
-    bottom: 65px;
+    bottom: 275px;
     left: 0;
   }
   #curriculumVitae #puntitos5 {
-    content: url("../images/puntitos-7lineas-celular.svg");
-    z-index: -1;
-    position: relative;
-    top: -260px;
-    float: left;
+    top: -100px;
   }
-  #curriculumVitae #porqueDD .textosDescriptivos {
-    width: 90%;
-    text-align: center;
-  }
-  #curriculumVitae #misAreasProf #grillaAreas {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 2fr 1fr;
-        grid-template-rows: 2fr 1fr;
-  }
-  #curriculumVitae #misAreasProf #grillaAreas #descripcionAreas {
-    z-index: 2;
-    width: 100%;
-    margin-top: 130px;
-    padding-bottom: 50px;
-    height: 470px;
-  }
-  #curriculumVitae #misAreasProf #grillaAreas #descripcionAreas .titulosDescripciones {
-    margin: 3%;
-  }
-  #curriculumVitae #misAreasProf #grillaAreas #descripcionAreas .textoDescripciones {
-    margin: 3%;
-    font-size: 16px;
-  }
-  #curriculumVitae #misAreasProf #grillaAreas #puntitos6 {
-    content: url("../images/puntitos-3lineas-celular.svg");
-    position: relative;
-    top: 720px;
-    left: 280px;
-  }
-  #curriculumVitae #educacion, #curriculumVitae #experienciaLaboral, #curriculumVitae #exposicionesFotograficas, #curriculumVitae #premios, #curriculumVitae #jurado, #curriculumVitae #lenguajes {
-    padding-top: 50px;
-  }
-  #curriculumVitae #educacion {
-    margin-top: 600px;
+}
+
+@media screen and (min-width: 700px) {
+  #sobreMi #unGusto #res4 {
+    display: none;
   }
   #ldcv {
-    position: absolute;
-    left: 55px;
-    top: 3340px;
+    left: 30%;
   }
   #dwfs {
-    position: absolute;
-    left: 165px;
-    top: 3580px;
+    left: 50%;
   }
   #fotografia {
-    position: absolute;
-    left: 10px;
-    top: 3500px;
+    left: 20%;
   }
   #uxui {
-    position: absolute;
-    left: 205px;
-    top: 3480px;
+    left: 50%;
   }
   #tipografia {
-    position: absolute;
-    left: 185px;
-    top: 3240px;
+    left: 45%;
   }
   #semiotica {
-    position: absolute;
-    left: 15px;
-    top: 3240px;
+    left: 23%;
   }
   #docencia {
-    position: absolute;
-    left: 10px;
-    top: 3620px;
+    left: 13%;
   }
   #investigacion {
-    position: absolute;
-    left: 120px;
-    top: 3200px;
+    left: 37%;
   }
   #tecnicatura {
-    position: absolute;
-    left: 105px;
-    top: 3710px;
-  }
-  h4 {
-    font-size: 22px;
-  }
-  ul.listaCurriculum li.elementoListaCV h5.titulo {
-    font-size: 22px;
-  }
-  ul.listaCurriculum li.elementoListaCV .contenedorLugarFecha .lugar {
-    font-size: 17px;
-  }
-  ul.listaCurriculum li.elementoListaCV .contenedorLugarFecha .fecha {
-    display: none;
-  }
-  ul.listaCurriculum li.elementoListaCV .aclaracion {
-    font-size: 17px;
-  }
-  ul.listaLenguajes {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-  }
-  #portfolio {
-    padding-top: 110px;
-  }
-  #portfolio #grillaPortfolio #textosPortfolio #tituloPortfolio {
-    font-size: 115px;
-  }
-  #portfolio #grillaPortfolio #textosPortfolio #tituloPortfolio #span2 {
-    display: initial;
-  }
-  #portfolio #grillaPortfolio #textosPortfolio .textosDescriptivos {
-    width: 90%;
-    padding-top: 15px;
-  }
-  #portfolio #grillaPortfolio #textosPortfolio #botonPortfolio {
-    margin: 0 25%;
-    margin-bottom: 50px;
-  }
-  #portfolio #grillaPortfolio #ilustracionPortfolio {
-    width: 230px;
-    position: relative;
-    top: -580px;
-    left: 175px;
-    z-index: -1;
-  }
-  #portfolio #puntitos7 {
-    content: url("../images/puntitos-3lineas-celular.svg");
-    position: relative;
-    top: -2120px;
-    /* left: 290px; */
+    left: 42%;
   }
   #portfolio #carruselPortfolio #ulSeccionesPortfolio {
-    display: -ms-grid;
-    display: grid;
-    text-align: center;
-    width: 100%;
-  }
-  #portfolio #carruselPortfolio #ulSeccionesPortfolio li .lineaVerticalAmarilla {
-    display: none;
-  }
-  #portfolio #contenedorCarrusel #irIzquierda {
-    display: none;
-  }
-  #portfolio #contenedorCarrusel #irDerecha {
-    display: none;
-  }
-  #portfolio #contenedorCarrusel #contenedorImagenes {
-    overflow: scroll;
-  }
-  #contacto {
-    margin-top: 50px;
-  }
-  #contacto #tituloContacto {
-    font-size: 80px;
-  }
-  #contacto #grillaContacto {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    margin: 0;
-    padding: 20px 0 0 0;
-  }
-  #contacto #grillaContacto #ilustracionContacto {
-    padding-top: 75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #contacto #grillaContacto #ilustracionContacto #dibujoContacto {
-    height: 256px;
+  #portfolio #carruselPortfolio #ulSeccionesPortfolio li {
+    height: 25px;
   }
-  #contacto #grillaContacto #datosContacto div h5 {
-    font-size: 17px;
-  }
-  #contacto #grillaContacto #datosContacto div p {
-    font-size: 17px;
-  }
-  #contacto #grillaContacto #datosContacto div a {
-    font-size: 17px;
-  }
-  #contacto #puntitos8 {
-    content: url("../images/puntitos-9lineas-celular.svg");
-    z-index: -50;
+  #portfolio #carruselPortfolio #ulSeccionesPortfolio li .lineaVerticalAmarilla {
+    display: initial;
+    font-weight: 700;
+    color: #fdce30;
     position: relative;
-    top: -1900px;
-    /* left: 290px; */
-  }
-  footer {
-    margin-top: 0;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  footer #footerRight {
-    text-align: center;
-    margin: auto;
-    width: 60%;
-  }
-  footer #footerLeft {
-    text-align: center;
-    margin: auto;
-    width: 50%;
-  }
-  footer #lineaVerticalNegra {
-    width: 20%;
-    height: 1px;
+    z-index: -2;
   }
 }
 
-@media screen and (max-width: 380px) {
-  #ldcv {
-    position: absolute;
-    top: 3510px;
+@media screen and (min-width: 768px) {
+  header #checkbox, header .hamburguesa, header .cruz {
+    display: none;
   }
-  #dwfs {
-    position: absolute;
-    top: 3750px;
+  header #barraNavSecciones .menu input {
+    display: none;
   }
-  #fotografia {
-    position: absolute;
-    top: 3670px;
+  header #barraNavSecciones .menu #ulHeader {
+    position: relative;
+    top: -16px;
+    right: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+    height: 55px;
+    background-color: #ffffff;
   }
-  #uxui {
-    position: absolute;
-    top: 3650px;
+  header #barraNavSecciones .menu #ulHeader li {
+    list-style-type: none;
+    height: 25px;
+    padding-top: 0;
   }
-  #tipografia {
-    position: absolute;
-    top: 3410px;
+  header #barraNavSecciones .menu #ulHeader li .linkInterno {
+    font-size: 14px;
   }
-  #semiotica {
-    position: absolute;
-    top: 3410px;
+  header #barraNavSecciones .menu #ulHeader li .linkInterno:hover {
+    background-color: #fdce30;
   }
-  #docencia {
-    position: absolute;
-    top: 3790px;
+  header #barraNavSecciones .menu #ulHeader li .lineaVerticalAmarilla {
+    display: inherit;
+    width: 0px;
+    font-weight: 700;
+    color: #fdce30;
+    position: relative;
+    bottom: 24px;
+    left: 100%;
   }
-  #investigacion {
-    position: absolute;
-    top: 3370px;
+  header #barraNavSecciones .menu #ulHeader li:hover .linkInterno {
+    color: #181819;
   }
-  #tecnicatura {
-    position: absolute;
-    top: 3880px;
+  #curriculumVitae #grillaCV {
+    margin-bottom: -170px;
+  }
+  #curriculumVitae #grillaCV #ilustracionCV {
+    width: 493px;
+    height: 370px;
+    bottom: 340px;
+  }
+  #curriculumVitae ul.listaCurriculum li.elementoListaCV {
+    list-style: url(../images/bullet.svg);
+    list-style-position: outside;
+    padding: 18px;
+  }
+  #curriculumVitae ul.listaCurriculum li.elementoListaCV h5.titulo {
+    font-size: 27px;
+  }
+  #curriculumVitae ul.listaCurriculum li.elementoListaCV .contenedorLugarFecha {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 4fr 1fr;
+        grid-template-columns: 4fr 1fr;
+  }
+  #curriculumVitae ul.listaCurriculum li.elementoListaCV .contenedorLugarFecha .lugar {
+    font-size: 20.7px;
+  }
+  #curriculumVitae ul.listaCurriculum li.elementoListaCV .contenedorLugarFecha .fecha {
+    display: inherit;
+    font-size: 20.7px;
+    font-weight: 300;
+    text-align: right;
+  }
+  #curriculumVitae ul.listaCurriculum li.elementoListaCV .aclaracion {
+    font-size: 20.7px;
+  }
+  #curriculumVitae ul.listaLenguajes {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  #curriculumVitae ul.listaLenguajes .elementoLenguaje img {
+    padding-bottom: 20px;
+    height: 101px;
+  }
+  h4 {
+    font-size: 33px;
+  }
+  #portfolio {
+    padding-top: 180px;
+  }
+  #portfolio #grillaPortfolio #textosPortfolio #tituloPortfolio {
+    font-size: 155px;
+  }
+  #portfolio #grillaPortfolio #ilustracionPortfolio {
+    top: -400px;
+    left: 175px;
+  }
+  #portfolio #contenedorCarrusel #irIzquierda {
+    padding-right: 15px;
+    display: initial;
+  }
+  #portfolio #contenedorCarrusel #irIzquierda #flechaIzquierda:hover {
+    content: url(../images/flecha-izquierda-negro.svg);
+  }
+  #portfolio #contenedorCarrusel #irIzquierda #flechaIzquierda:active {
+    content: url(../images/flecha-izquierda-amarilla.svg);
+  }
+  #portfolio #contenedorCarrusel #irDerecha {
+    display: initial;
+    padding-left: 15px;
+  }
+  #portfolio #contenedorCarrusel #irDerecha #flechaDerecha:hover {
+    content: url(../images/flecha-derecha-negro.svg);
+  }
+  #portfolio #contenedorCarrusel #irDerecha #flechaDerecha:active {
+    content: url(../images/flecha-derecha-amarillo.svg);
+  }
+  #portfolio #contenedorCarrusel #contenedorImagenes {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  #contacto #tituloContacto {
+    font-size: 155px;
+    -webkit-text-stroke: 4px #fdce30;
+  }
+  #contacto #grillaContacto {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    margin: 80px 18%;
+  }
+  #contacto #grillaContacto #ilustracionContacto {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-top: 0;
+  }
+  #contacto #grillaContacto #ilustracionContacto #dibujoContacto {
+    height: 300px;
+  }
+  #contacto #puntitos8 {
+    content: url(../images/puntitos-7lineasCorto.svg);
+    position: relative;
+    top: 250px;
+    left: 0px;
+    float: right;
+    margin-bottom: -400px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #helloWorld #puntitos1 {
+    top: 50px;
+  }
+  #helloWorld #contenedorPresentacion {
+    position: relative;
+    bottom: 190px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    height: 573px;
+  }
+  #helloWorld #contenedorPresentacion #ilustracionHello {
+    max-width: 582px;
+  }
+  #helloWorld #contenedorPresentacion #contenedorHello {
+    margin: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    bottom: 0px;
+    height: 573px;
+  }
+  #helloWorld #contenedorPresentacion #contenedorHello h1 {
+    font-size: 140px;
+    text-align: left;
+  }
+  #helloWorld #contenedorPresentacion #contenedorHello .resaltadoAmarillo {
+    height: 74px;
+  }
+  #helloWorld #contenedorPresentacion #contenedorHello #res1 {
+    margin: 0;
+    width: 390px;
+    bottom: 200px;
+    left: 15px;
+  }
+  #helloWorld #contenedorPresentacion #contenedorHello #res2 {
+    margin: 0;
+    width: 440px;
+    bottom: 150px;
+    left: 45px;
+  }
+  #sobreMi {
+    padding: 80px 0 50px 0;
+  }
+  #sobreMi #grillaSobreMiFoto {
+    -ms-grid-columns: 1fr 0.8fr;
+        grid-template-columns: 1fr 0.8fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    width: 100%;
+  }
+  #sobreMi #grillaSobreMiFoto h2 {
+    font-size: 220px;
+    line-height: 0.93;
+  }
+  #sobreMi #grillaSobreMiFoto #fotoCecilia {
+    height: 350px;
+    width: 316px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #sobreMi #textoPresentación {
+    font-size: 72px;
+    line-height: 82px;
+    margin-left: 360px;
+    margin-top: -310px;
+  }
+  #sobreMi #textoPresentación strong {
+    font-size: 72px;
+    line-height: 82px;
+  }
+  #sobreMi #puntitos2 {
+    content: url("../images/puntitos-22lineas.svg");
+    position: relative;
+    top: 620px;
+    margin-top: -800px;
+    z-index: -1;
+  }
+  #sobreMi #puntitos3 {
+    content: url("../images/puntitos-14lineas.svg");
+    position: relative;
+    top: 80px;
+    left: -100px;
+    margin-top: -800px;
+  }
+  #sobreMi #unGusto h3 {
+    font-size: 80px;
+  }
+  #sobreMi #unGusto #res3 {
+    width: 900px;
+    position: relative;
+    top: -45px;
+    z-index: -1;
+  }
+  #sobreMi #unGusto #res4 {
+    display: none;
+  }
+  #sobreMi #puntitos4 {
+    content: url("../images/puntitos-7lineas.svg");
+    position: relative;
+    top: -100px;
+    margin-bottom: -400px;
+  }
+  #curriculumVitae #puntitos5 {
+    content: url("../images/puntitos-7lineas.svg");
+    float: right;
+    margin-bottom: -100px;
+  }
+  #curriculumVitae #grillaCV {
+    height: 730px;
+  }
+  #curriculumVitae #grillaCV #tituloCV {
+    font-size: 175px;
+  }
+  #curriculumVitae #grillaCV #tituloCV span {
+    display: none;
+  }
+  #curriculumVitae #grillaCV #ilustracionCV {
+    height: 488px;
+    width: 651px;
+    bottom: 320px;
+    left: 30px;
+  }
+  #curriculumVitae #porqueDD {
+    padding-top: 180px;
+  }
+  #curriculumVitae #porqueDD .textosDescriptivos {
+    text-align: left;
+  }
+  #curriculumVitae #misAreasProf {
+    height: 630px;
+    padding: 0 3% 0 3%;
+  }
+  #curriculumVitae #misAreasProf #grillaAreas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 0.7fr;
+        grid-template-columns: 1fr 0.7fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    height: 550px;
+  }
+  #curriculumVitae #misAreasProf #grillaAreas #todosCirculos {
+    height: 570px;
+  }
+  #curriculumVitae #misAreasProf #grillaAreas #todosCirculos .circulosIndividuales {
+    background-color: #fdce30;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    float: left;
+  }
+  #curriculumVitae #misAreasProf #grillaAreas #todosCirculos .circulosIndividuales .tituloArea {
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-weight: bold;
+  }
+  #curriculumVitae #misAreasProf #grillaAreas #todosCirculos .circulosIndividuales .tituloArea span {
+    font-weight: 400;
+  }
+  #curriculumVitae #misAreasProf #grillaAreas #descripcionAreas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+  #curriculumVitae #misAreasProf #grillaAreas #descripcionAreas .titulosDescripciones {
+    font-size: 24px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  #curriculumVitae #misAreasProf #grillaAreas #descripcionAreas .titulosDescripciones span {
+    background-color: #fdce30;
+  }
+  #curriculumVitae #misAreasProf #grillaAreas #descripcionAreas .textoDescripciones {
+    font-size: 17px;
+    line-height: 28px;
+    padding-right: 5%;
+  }
+  #curriculumVitae #misAreasProf #grillaAreas #puntitos6 {
+    display: none;
+  }
+  #curriculumVitae #educacion, #curriculumVitae #experienciaLaboral, #curriculumVitae #exposicionesFotograficas, #curriculumVitae #premios, #curriculumVitae #jurado, #curriculumVitae #lenguajes {
+    padding-top: 120px;
+  }
+  #curriculumVitae #dwfs {
+    position: relative;
+    top: 300px;
+    left: 150px;
+  }
+  #curriculumVitae #tecnicatura {
+    position: relative;
+    top: -50px;
+    left: 50px;
+  }
+  #curriculumVitae #uxui {
+    position: relative;
+    top: 70px;
+    left: -140px;
+  }
+  #curriculumVitae #ldcv {
+    position: relative;
+    top: 120px;
+    left: 150px;
+  }
+  #curriculumVitae #fotografia {
+    position: relative;
+    top: 310px;
+    left: -380px;
+  }
+  #curriculumVitae #tipografia {
+    position: relative;
+    top: -300px;
+    left: 220px;
+  }
+  #curriculumVitae #semiotica {
+    position: relative;
+    top: -220px;
+    left: -100px;
+  }
+  #curriculumVitae #docencia {
+    position: relative;
+    top: 120px;
+    left: -250px;
+  }
+  #curriculumVitae #investigacion {
+    position: relative;
+    top: -280px;
+    left: -265px;
+  }
+  footer {
+    width: 100%;
+    margin-top: 50px;
+    -ms-grid-columns: 1fr 0.01fr 1fr;
+        grid-template-columns: 1fr 0.01fr 1fr;
+  }
+  footer #footerRight {
+    text-align: left;
+    width: 100%;
+  }
+  footer #footerLeft {
+    text-align: right;
+    width: 100%;
+  }
+  footer #lineaVerticalNegra {
+    width: 1px;
+    height: 80%;
+  }
+  #portfolio #grillaPortfolio #textosPortfolio #tituloPortfolio {
+    font-size: 228px;
+  }
+  #portfolio #grillaPortfolio #textosPortfolio .textosDescriptivos {
+    width: 750px;
+  }
+  #portfolio #grillaPortfolio #ilustracionPortfolio {
+    width: 450px;
+    top: -480px;
+    left: 270px;
+    z-index: 2;
+  }
+  #portfolio #puntitos7 {
+    content: url(../images/puntitos-22lineas.svg);
+    position: relative;
+    float: right;
+    left: -52px;
+    top: -510px;
+    z-index: -3;
+    margin-bottom: -540px;
+  }
+  #contacto #tituloContacto {
+    font-size: 215px;
+  }
+  #contacto #grillaContacto {
+    margin: 0px 18%;
+  }
+  #contacto #grillaContacto #ilustracionContacto {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-top: 0;
+  }
+  #contacto #grillaContacto #ilustracionContacto #dibujoContacto {
+    height: 456px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  header #barraNavRedesSociales {
+    z-index: 100;
+    width: 51px;
+    height: 265px;
+    background-color: #fdce30;
+    position: fixed;
+    top: 177.5px;
+    right: 0px;
+    border-radius: 20px 0 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header #barraNavRedesSociales .linkExterno .imgLinkExterno {
+    width: 25px;
+    height: 25px;
+    margin: 4px 4px 4px 8px;
+  }
+  header #barraNavRedesSociales .linkExterno #logoLinkedin:hover {
+    content: url(../images/linkedin-blanco.svg);
+  }
+  header #barraNavRedesSociales .linkExterno #logoBehance:hover {
+    content: url(../images/behance-blanco.svg);
+  }
+  header #barraNavRedesSociales .linkExterno #logoGitHub:hover {
+    content: url(../images/github-blanco.svg);
+  }
+  header #barraNavRedesSociales .linkExterno #logoFlickr:hover {
+    content: url(../images/flickr-blanco.svg);
+  }
+  header #barraNavRedesSociales .linkExterno #logoInstagram:hover {
+    content: url(../images/instagram-blanco.svg);
+  }
+  header #barraNavRedesSociales .linkExterno #logoFacebook:hover {
+    content: url(../images/facebook-blanco.svg);
+  }
+  #curriculumVitae #puntitos5 {
+    top: -100px;
+  }
+  #curriculumVitae #grillaCV #tituloCV {
+    font-size: 192px;
+  }
+  #contacto #tituloContacto {
+    font-size: 228px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  #curriculumVitae #grillaCV #tituloCV {
+    font-size: 228px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

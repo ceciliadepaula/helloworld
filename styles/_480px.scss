@@ -1,0 +1,222 @@
+@media screen and (min-width: 480px){
+    #helloWorld{ 
+        #contenedorPresentacion{
+            #contenedorHello{
+                height: 250px;
+            }
+        }
+    }
+
+    #sobreMi{ 
+        #grillaSobreMiFoto{
+           padding-left: 4%;
+        }
+        #textoPresentación{   
+            margin-left: 45%;
+        }
+    }
+
+    #ldcv{
+        left: 135px;
+        top: 3290px;
+    }
+
+    #dwfs{ 
+        left: 245px;
+        top: 3530px;
+    }
+
+    #fotografia{
+        left: 90px;
+        top: 3450px;
+    }
+
+    #uxui{
+        left: 285px;
+        top: 3430px;
+    }
+
+    #tipografia{
+        left: 275px;
+        top: 3190px;
+    }
+
+    #semiotica{
+        left: 95px;
+        top: 3190px;
+    }
+
+    #docencia{
+        left: 50px;
+        top: 3550px;
+    }
+
+    #investigacion{
+        left: 200px;
+        top: 3150px;
+    }
+
+    #tecnicatura{
+        left: 185px;
+        top: 3660px;
+    }
+
+    #portfolio{
+        #grillaPortfolio{
+            #ilustracionPortfolio{
+                top: -550px;
+                left: 275px;  
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 600px){
+
+    #sobreMi{
+        #unGusto{
+            #res4{
+                display: none;
+            }
+        }
+    }
+    
+    #ldcv{
+        top: 3060px;
+    }
+
+    #dwfs{ 
+        top: 3300px;
+    }
+
+    #fotografia{
+        top: 3220px;
+    }
+
+    #uxui{
+        top: 3200px;
+    }
+
+    #tipografia{
+        top: 2960px;
+    }
+
+    #semiotica{
+        top: 2960px;
+    }
+
+    #docencia{
+        top: 3320px;
+    }
+
+    #investigacion{
+        top: 2920px;
+    }
+
+    #tecnicatura{
+        top: 3430px;
+    }
+
+    #portfolio{
+        #grillaPortfolio{
+            #ilustracionPortfolio{
+                top: -410px;
+                left: 5px;
+            }
+            #textosPortfolio{
+                #tituloPortfolio{
+                    #span2{
+                        display:none;
+                    }
+                }
+                #botonPortfolio{
+                    margin-left: 3%;
+                }
+            }
+        }
+    }
+
+    #curriculumVitae{
+        #grillaCV{
+            margin-bottom: -170px;
+            #ilustracionCV{
+                width: 400px;
+                height: 305px;
+                position: relative;
+                bottom: 275px;
+                left: 0;
+            }
+        }
+        #puntitos5{
+            top: -100px;
+        }
+    }
+ 
+}
+
+@media screen and (min-width: 700px){
+
+    #sobreMi{
+        #unGusto{
+            #res4{
+                display: none;
+            }
+        }
+    }
+
+    #ldcv{
+        left: 30%;
+    }
+
+    #dwfs{ 
+        left: 50%;
+    }
+
+    #fotografia{
+        left: 20%;
+    }
+
+    #uxui{
+        left: 50%
+    }
+
+    #tipografia{
+        left: 45%;
+    }
+
+    #semiotica{
+        left: 23%;
+    }
+
+    #docencia{
+        left: 13%;
+    }
+
+    #investigacion{
+        left: 37%;
+    }
+
+    #tecnicatura{
+        left: 42%;
+    }
+
+    #portfolio{
+        #carruselPortfolio{
+            #ulSeccionesPortfolio{
+                display: flex;
+                justify-content: center;
+                li{
+                    height: 25px;
+                    .lineaVerticalAmarilla{
+                        display: initial;
+                        font-weight: $bold;
+                        color: $colorAmarillo;
+                        position: relative;
+                        z-index: -2;
+                    }
+                }
+            }
+        }
+    }
+}

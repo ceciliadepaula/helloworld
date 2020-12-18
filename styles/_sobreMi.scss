@@ -1,40 +1,48 @@
 #sobreMi{
-    padding: 80px 0 50px 0;
+    padding: 130px 0 0 0;
     #grillaSobreMiFoto{
         display: grid;
-        grid-template-columns: 1fr 0.8fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        width: fit-content;
+        margin: auto;
         h2{
-            padding-left: 5%;
+            font-size: 120px;
         }
         #fotoCecilia{
-            height: 350px;
-            justify-self: center;
             align-self: center;
+            width: 160px;
+            height: 175px;
+            justify-self: left;
+            margin-top: -50px;
         }
     }
     #textoPresentación{
-        font-size: 72px;
-        line-height: 82px;
-        margin-left: 360px;
-        margin-top: -310px;
+        font-size: 28px;
+        line-height: 38px;
+        margin-left: 44%;
+        margin-top: -390px;
+        width: auto;
         font-weight: $semibold;
         strong{
+            font-size: 35px;
+            line-height: 42px;
             font-weight: $black;
         }
     }
     #puntitos2{
+        content: url("../images/puntitos-7lineas-celular.svg");
         position: relative;
-        top: 450px;
-        top: 650px;
-        float: right;
-        margin-top: -800px;
+        top: 0px;
+        float:right;
         z-index: -1;
+        margin-top: -100px;
     }
     #puntitos3{
+        content: url("../images/puntitos-7lineas-celular.svg");
         position: relative;
-        top: -320px;
-        left: -100px;
-        margin-bottom: -400px;
+        top: -20px;
+        left: 0px;
     }
     #unGusto{
         height: 500px;
@@ -42,7 +50,8 @@
         flex-direction: column;
         justify-content: center;
         h3{
-            font-size: 80px;
+            font-size: 70px;
+            line-height: 75px;
             font-weight: $bold;
             text-align: center;
         }
@@ -50,21 +59,28 @@
             margin-left: auto;
             margin-right: auto;
             background: $colorAmarillo;
-            height: 50px;
-            width: 900px;
-            position: relative;
-            top: -65px;
+            height: 50px;            
             z-index: -1;
+            width: 90%;
+            position: relative;
+            top: -50px;
         }
         #res4{
-            display:none;
+            display: inherit;
+            height: 40px;
+            width: 80%;
+            background-color: $colorAmarillo;
+            position: relative;
+            top: -170px;
+            left: 10%;
+            z-index: -1;
         }
     }
-    #puntitos4{
-        float: right;
+    #puntitos4{           
+        content: url("../images/puntitos-7lineas-celular.svg");
         position: relative;
-        top: -120px;
-        /* left: 960px; */
-        margin-bottom: -400px;
+        top: -100px;
+        float:right;
+        margin-bottom: -100px;
     }
 }

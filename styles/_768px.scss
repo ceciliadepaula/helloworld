@@ -1,0 +1,174 @@
+@media screen and (min-width: 768px){
+    header{      
+        #checkbox, .hamburguesa, .cruz{
+            display: none;
+        }
+        #barraNavSecciones{
+            .menu{
+                input{
+                    display:none;
+                }
+                #ulHeader{
+                    position: relative;
+                    top: -16px;
+                    right: 5%;
+                    display: flex;
+                    opacity: 1;
+                    height: 55px;
+                    background-color: $colorBlanco;
+                    li{ 
+                        list-style-type: none;  
+                        height: 25px;
+                        padding-top: 0;
+                        .linkInterno{
+                            font-size: 14px;
+                        }
+                        .linkInterno:hover{
+                            background-color: $colorAmarillo;
+                        } 
+                        .lineaVerticalAmarilla{
+                            display: inherit;
+                            width: 0px;
+                            font-weight: $bold;
+                            color: $colorAmarillo;
+                            position: relative;
+                            bottom: 24px;
+                            left: 100%;
+                        }
+                    }
+                    li:hover{
+                        .linkInterno{
+                            color: $colorNegro;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+
+    #curriculumVitae{
+        #grillaCV{
+            margin-bottom: -170px;
+            #ilustracionCV{
+                width: 493px;
+                height: 370px;
+                bottom: 340px;
+            }
+        }
+
+        // LISTA CURRICULUM
+
+        ul.listaCurriculum{
+            li.elementoListaCV{
+                list-style: url(../images/bullet.svg);
+                list-style-position: outside;
+                padding: 18px;
+                h5.titulo{
+                    font-size: 27px;
+                }
+                .contenedorLugarFecha{
+                    display: grid;
+                    grid-template-columns: 4fr 1fr;
+                    .lugar{
+                        font-size: 20.7px;
+                    }
+                    .fecha{
+                        display: inherit;
+                        font-size: 20.7px;
+                        font-weight: $light;
+                        text-align: right;
+                    }
+                }
+                .aclaracion{
+                    font-size: 20.7px;
+                }
+            }
+        }
+
+        ul.listaLenguajes{
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            .elementoLenguaje{
+                img{
+                    padding-bottom: 20px;
+                    height: 101px;
+                }
+            }
+        }
+    }
+
+    h4{
+        font-size: 33px;
+    }
+
+
+    #portfolio{
+        padding-top: 180px;
+        #grillaPortfolio{
+            #textosPortfolio{
+                #tituloPortfolio{
+                    font-size: 155px;
+                }
+            }
+            #ilustracionPortfolio{
+                top: -400px;
+                left: 175px;
+            }
+        }
+
+        #contenedorCarrusel{
+            #irIzquierda{
+                padding-right: 15px;
+                display: initial;
+                #flechaIzquierda:hover{
+                    content: url(../images/flecha-izquierda-negro.svg);
+                }
+                #flechaIzquierda:active{
+                    content: url(../images/flecha-izquierda-amarilla.svg);
+                }
+            }
+            #irDerecha{
+                display: initial;
+                padding-left: 15px;
+                #flechaDerecha:hover{
+                    content: url(../images/flecha-derecha-negro.svg);
+                }
+                #flechaDerecha:active{
+                    content: url(../images/flecha-derecha-amarillo.svg);
+                }
+            }
+
+            #contenedorImagenes{
+                overflow-y: hidden;
+                overflow-x: hidden;
+            }
+        }
+    }
+
+    #contacto{
+        #tituloContacto{
+            font-size: 155px;
+            -webkit-text-stroke: 4px $colorAmarillo;
+        }
+        #grillaContacto{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            margin: 80px 18%;
+            #ilustracionContacto{
+                justify-content: flex-end;
+                padding-top: 0;
+                #dibujoContacto{
+                    height: 300px;
+                }
+            }
+        }
+        #puntitos8{
+            content: url(../images/puntitos-7lineasCorto.svg);
+            position: relative;
+            top: 250px;
+            left: 0px;
+            float: right;
+            margin-bottom: -400px;
+        }
+    }
+}

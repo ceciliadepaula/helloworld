@@ -1,10 +1,10 @@
-// COLORES 
+// -------------- COLORES -------------------- // 
 
 $colorAmarillo: #fdce30;
 $colorNegro: #181819;
 $colorBlanco: #ffffff; 
 
-// FONT-WEIGHT  
+// ------------ FONT-WEIGHT ------------------ // 
 
 $light: 300;
 $regular: 400;
@@ -14,7 +14,7 @@ $bold: 700;
 $extrabold: 800;
 $black: 900;
 
-// GENERALES
+// ----------- GENERALES ---------------------//
 
 *{
     margin: 0;
@@ -31,6 +31,7 @@ body{
     background-color: $colorBlanco;
     font-family: 'Poppins', sans-serif;
     color: $colorNegro;    
+    margin: auto;
 }
 
 main{
@@ -66,7 +67,16 @@ h4{
 
 .boton{
     .pBoton{
+        font-size: 14px;
+        font-weight: $medium;
         align-self: center;
+    }
+}
+
+.boton:hover{
+    background-color: $colorNegro;
+    .pBoton{
+        color: $colorAmarillo;
     }
 }
 
@@ -89,6 +99,7 @@ h4{
             color: $colorNegro;
         }
     }
+    
 }
 
 .boton:hover{
