@@ -108,10 +108,11 @@
                 #tituloPortfolio{
                     font-size: 155px;
                 }
-            }
-            #ilustracionPortfolio{
-                top: -400px;
-                left: 175px;
+                #contenedorImagenPortfolio{
+                    #ilustracionPortfolio{
+                        top: -50px;
+                    }
+                }
             }
         }
 

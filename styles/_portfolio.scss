@@ -3,6 +3,22 @@
     #grillaPortfolio{
         margin-bottom: -450px;
         #textosPortfolio{
+            position: relative;
+            top: -200px;
+            #contenedorImagenPortfolio{
+                width: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                position: relative;
+                top: 200px;
+                z-index: -1; 
+                #ilustracionPortfolio{
+                    width: 230px;
+                    height: 237px;
+                }
+            }
+
             #tituloPortfolio{
                 font-size: 115px;
                 margin-left: 2%;
@@ -17,33 +33,26 @@
             }
             #botonPortfolio{
                 float: left;
-                margin: 0 25%;
+                margin: 0 3%;
                 margin-bottom: 50px;
             }
         }
-        #ilustracionPortfolio{
-            width: 230px;
-            position: relative;
-            top: -580px;
-            left: 175px;
-            z-index: -1;  
-        }
     }
     #puntitos7{
-        content: url("../images/puntitos-3lineas-celular.svg");
+        content: url("../images/puntitos-3lineas-celular.svg");        
         position: relative;
         top: -1600px;
         left: 80%;   
-        z-index: -2;     
+        z-index: -2;
     }
     #carruselPortfolio{
-        margin-top: 140px;
+        margin-bottom: -100px;    
         #ulSeccionesPortfolio{
+            margin-top: 260px;
             position: relative;
             top: 0;
             display: grid;
             justify-content: center;
-            margin-bottom: 30px;           
             text-align: center;
             width: 100%;
             li{
@@ -72,8 +81,9 @@
         justify-content: center;
         align-items: center;
         overflow: hidden;        
-        overflow-x: hidden;
-        overflow-y: hidden;
+        width: 100%;
+        position: relative;
+        top: -60px;
         #irIzquierda{
             display: none;
         }
@@ -84,7 +94,6 @@
             position: relative;
             width: 1130px;
             height: 370px;
-
             overflow-y: hidden;
             overflow-x: hidden;
             display: inline-flex;

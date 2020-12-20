@@ -14,17 +14,7 @@
         #textoPresentación{   
             margin-left: 45%;
         }
-    }
-
-    #portfolio{
-        #grillaPortfolio{
-            #ilustracionPortfolio{
-                top: -550px;
-                left: 275px;  
-            }
-        }
-    }
-    
+    }    
 }
 
 @media screen and (min-width: 600px){
@@ -39,20 +29,25 @@
     
     #portfolio{
         #grillaPortfolio{
-            #ilustracionPortfolio{
-                top: -410px;
-                left: 5px;
-            }
             #textosPortfolio{
                 #tituloPortfolio{
                     #span2{
                         display:none;
                     }
                 }
-                #botonPortfolio{
-                    margin-left: 3%;
+                #contenedorImagenPortfolio{
+                    #ilustracionPortfolio{
+                        position: relative;
+                        top: -90px;
+                    }
                 }
             }
+        }
+    }
+
+    #contacto{
+        #puntitos8{
+            top: -1550px;
         }
     }
 
@@ -100,6 +95,16 @@
                     }
                 }
             }
+        }
+        #contenedorCarrusel{
+            top: -130px;
+        }
+    }
+
+    #contacto{
+        #puntitos8{
+            top: -1510px;
+            left: 83%;
         }
     }
 }
