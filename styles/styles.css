@@ -688,6 +688,7 @@ ul.listaLenguajes .elementoLenguaje {
           justify-content: center;
   padding-bottom: 40px;
   padding-top: 18px;
+  z-index: 1;
 }
 
 ul.listaLenguajes .elementoLenguaje img {
