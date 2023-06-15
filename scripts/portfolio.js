@@ -18,6 +18,12 @@ let flechaIzquierda = document.getElementById("flechaIzquierda");
 const imagenesDisWeb = [
 
     {
+        imagen: "./images/desarrollo-kausana.jpg",
+        descripcion: "Diseño UI y desarrollo front-end de web oficial de «Kausana», empresa de Desarrollo de Software de Viña del Mar, Chile",
+        link: "https://kausana.cl/",
+    },
+
+    {
         imagen: "./images/disweb-wallar1.jpg",
         descripcion: "«Wallar» es una app pensada para conectar a profesionales del mundo de la construcción con personas que necesitan y buscan su servicio. Fue diseñada como Proyecto Final del curso de Diseño UX/UI en Coder House",
         link: "https://www.behance.net/gallery/96709257/Wallar-UIUX",
@@ -77,15 +83,27 @@ const imagenesDisWeb = [
 
 const imagenesDesarrollo = [
     {
-        imagen: "./images/desarrollo-gifos.jpg",
-        descripcion: "«Gifos» es una aplicación web interactiva para compartir GIFs animados, desarrollada como Proyecto del Sprint 2: «Javascript», del curso de Desarrollo Web Full Stack de Acámica.",
-        link: "https://gifosdepaula.000webhostapp.com/index.html",
+        imagen: "./images/desarrollo-kausana.jpg",
+        descripcion: "Diseño UI y desarrollo front-end de web oficial de «Kausana», empresa de Desarrollo de Software de Viña del Mar, Chile",
+        link: "https://kausana.cl/",
     },
-
+    
     {
         imagen: "./images/desarrollo-gifos1.jpg",
         descripcion: "«Gifos» es una aplicación web interactiva para compartir GIFs animados, desarrollada como Proyecto del Sprint 2: «Javascript», del curso de Desarrollo Web Full Stack de Acámica.",
         link: "https://gifosdepaula.000webhostapp.com/index.html",
+    },
+    
+    {
+        imagen: "./images/desarrollo-gifos.jpg",
+        descripcion: "«Gifos» es una aplicación web interactiva para compartir GIFs animados, desarrollada como Proyecto del Sprint 2: «Javascript», del curso de Desarrollo Web Full Stack de Acámica.",
+        link: "https://gifosdepaula.000webhostapp.com/index.html",
+    },    
+
+    {
+        imagen: "./images/desarrollo-podcast2.jpg",
+        descripcion: "«Podcast Channel» desarrollado para la consigna del Proyecto del Sprint 1: «HTML y CSS» del curso de Desarrollo Web Full Stack de Acámica.",
+        link: "https://github.com/ceciliadepaula/podcast_Hello_pale_blue_dot",
     },
 
     {
@@ -95,11 +113,11 @@ const imagenesDesarrollo = [
     },
 
     {
-        imagen: "./images/desarrollo-podcast2.jpg",
-        descripcion: "«Podcast Channel» desarrollado para la consigna del Proyecto del Sprint 1: «HTML y CSS» del curso de Desarrollo Web Full Stack de Acámica.",
-        link: "https://github.com/ceciliadepaula/podcast_Hello_pale_blue_dot",
+        imagen: "./images/desarrollo-helloworld2.jpg",
+        descripcion: "Diseño y desarrollo de esta página",
+        link: "#",
     },
-
+    
     {
         imagen: "./images/desarrollo-helloworld1.jpg",
         descripcion: "Diseño y desarrollo de esta página",
@@ -107,11 +125,11 @@ const imagenesDesarrollo = [
     },
 
     {
-        imagen: "./images/desarrollo-helloworld2.jpg",
-        descripcion: "Diseño y desarrollo de esta página",
-        link: "#",
+        imagen: "./images/desarrollo-alalata2.jpg",
+        descripcion: "Diseño y desarrollo de la página de «Alalata Taller de fotografía estenopeica»",
+        link: "https://ceciliadepaula.github.io/alalata/",
     },
-
+    
     {
         imagen: "./images/desarrollo-alalata1.jpg",
         descripcion: "Diseño y desarrollo de la página de «Alalata Taller de fotografía estenopeica»",
@@ -119,11 +137,11 @@ const imagenesDesarrollo = [
     },
 
     {
-        imagen: "./images/desarrollo-alalata2.jpg",
-        descripcion: "Diseño y desarrollo de la página de «Alalata Taller de fotografía estenopeica»",
-        link: "https://ceciliadepaula.github.io/alalata/",
+        imagen: "./images/desarrollo-tecnonews1.jpg",
+        descripcion: "«TecnoNews» es un diario de noticias tecnológicas desarrollado como consigna de la clase 10 del curso de Desarrollo Web Full Stack de Acámica.",
+        link: "https://github.com/ceciliadepaula/tecnonews",
     },
-
+    
     {
         imagen: "./images/desarrollo-tecnonews2.jpg",
         descripcion: "«TecnoNews» es un diario de noticias tecnológicas desarrollado como consigna de la clase 10 del curso de Desarrollo Web Full Stack de Acámica.",
@@ -131,19 +149,13 @@ const imagenesDesarrollo = [
     },
 
     {
-        imagen: "./images/desarrollo-tecnonews1.jpg",
-        descripcion: "«TecnoNews» es un diario de noticias tecnológicas desarrollado como consigna de la clase 10 del curso de Desarrollo Web Full Stack de Acámica.",
-        link: "https://github.com/ceciliadepaula/tecnonews",
-    },
-
-    {
-        imagen: "./images/disenio-portfolio1.jpg",
+        imagen: "./images/disenio-portfolio2.jpg",
         descripcion: "Porfolio personal diseñado y desarrollado como consigna de la clase 08 del curso de Desarrollo Web Full Stack de Acámica.",
         link: "https://ceciliadepaula.github.io/",
     },
-
+    
     {
-        imagen: "./images/disenio-portfolio2.jpg",
+        imagen: "./images/disenio-portfolio1.jpg",
         descripcion: "Porfolio personal diseñado y desarrollado como consigna de la clase 08 del curso de Desarrollo Web Full Stack de Acámica.",
         link: "https://ceciliadepaula.github.io/",
     },
@@ -417,7 +429,7 @@ function Iteraciones(arrayInvocado){
 
 // Eventos para mostrar imágenes de arrays según sección llamada
 
-MostrarDisWeb();
+MostrarDesarrollo();
 
 // Diseño web
 
