@@ -3,8 +3,7 @@
   margin: 0;
   padding: 0;
   border: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -13,7 +12,7 @@ html {
 
 body {
   background-color: #ffffff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #181819;
   margin: auto;
 }
@@ -44,7 +43,6 @@ h4 {
   margin: auto;
   padding-bottom: 30px;
 }
-
 .textosDescriptivos strong {
   font-weight: 400;
   background-color: #fdce30;
@@ -53,15 +51,12 @@ h4 {
 .boton .pBoton {
   font-size: 14px;
   font-weight: 500;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 .boton:hover {
   background-color: #181819;
 }
-
 .boton:hover .pBoton {
   color: #fdce30;
 }
@@ -72,23 +67,14 @@ h4 {
   width: 200px;
   background-color: #fdce30;
   border-radius: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
-
 .boton a {
   text-decoration: none;
   text-align: center;
 }
-
 .boton a .pBoton {
   font-size: 14px;
   font-weight: 500;
@@ -99,7 +85,6 @@ h4 {
 .boton:hover {
   background-color: #181819;
 }
-
 .boton:hover a .pBoton {
   color: #fdce30;
 }
@@ -112,39 +97,30 @@ header {
   left: 0;
   z-index: 100;
 }
-
 header #barraNavRedesSociales {
   display: none;
 }
-
 header #checkbox, header .hamburguesa, header .cruz {
   width: 20px;
   height: 20px;
 }
-
 header a {
   text-decoration: none;
   color: #181819;
 }
-
 header #barraNavSecciones {
   position: fixed;
   right: 5%;
   z-index: 100;
 }
-
 header #barraNavSecciones .menu {
   margin-top: 16px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   /*---------CHECKBOX TRANSPARENTE-----------*/
 }
-
 header #barraNavSecciones .menu .cruz {
   display: none;
 }
-
 header #barraNavSecciones .menu #ulHeader {
   width: 100%;
   position: absolute;
@@ -154,21 +130,15 @@ header #barraNavSecciones .menu #ulHeader {
   background-color: #fdce30;
   opacity: 0.9;
   height: 0px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-
 header #barraNavSecciones .menu #ulHeader li {
   text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   height: 50px;
   padding-top: 20px;
 }
-
 header #barraNavSecciones .menu #ulHeader li .linkInterno {
   font-size: 20px;
   text-transform: uppercase;
@@ -176,29 +146,23 @@ header #barraNavSecciones .menu #ulHeader li .linkInterno {
   font-weight: 700;
   margin: 15px;
 }
-
 header #barraNavSecciones .menu #ulHeader li .lineaVerticalAmarilla {
   display: none;
 }
-
 header #barraNavSecciones .menu #ulHeader li:hover .linkInterno {
   color: #ffffff;
 }
-
-header #barraNavSecciones .menu input[type="checkbox"]:checked ~ #ulHeader {
+header #barraNavSecciones .menu input[type=checkbox]:checked ~ #ulHeader {
   height: 100vh;
   width: 100vw;
   margin: auto;
 }
-
 header #barraNavSecciones .menu input:checked ~ .hamburguesa {
   display: none;
 }
-
 header #barraNavSecciones .menu input:checked ~ .cruz {
   display: inherit;
 }
-
 header #barraNavSecciones .menu input {
   display: block;
   width: 45px;
@@ -216,47 +180,33 @@ header #barraNavSecciones .menu input {
   top: 20px;
   height: 620px;
 }
-
 #helloWorld #puntitos1 {
   position: relative;
   top: 120px;
   width: 360px;
   float: left;
 }
-
 #helloWorld #contenedorPresentacion {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 0.2fr;
-      grid-template-rows: 1fr 0.2fr;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.2fr;
+  grid-template-columns: 1fr;
   position: relative;
   bottom: 190px;
   width: 100%;
   height: 732px;
 }
-
 #helloWorld #contenedorPresentacion #ilustracionHello {
   width: 100vw;
   max-width: 482px;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
 }
-
 #helloWorld #contenedorPresentacion #contenedorHello {
   margin: 5% 0 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: relative;
   bottom: 30px;
 }
-
 #helloWorld #contenedorPresentacion #contenedorHello h1 {
   font-size: 100px;
   text-align: center;
@@ -264,13 +214,11 @@ header #barraNavSecciones .menu input {
   font-weight: 700;
   line-height: 0.91;
 }
-
 #helloWorld #contenedorPresentacion #contenedorHello .resaltadoAmarillo {
   height: 50px;
   background-color: #fdce30;
   z-index: -1;
 }
-
 #helloWorld #contenedorPresentacion #contenedorHello #res1 {
   height: 50px;
   width: 250px;
@@ -279,7 +227,6 @@ header #barraNavSecciones .menu input {
   bottom: 140px;
   left: 10px;
 }
-
 #helloWorld #contenedorPresentacion #contenedorHello #res2 {
   height: 50px;
   width: 300px;
@@ -292,35 +239,24 @@ header #barraNavSecciones .menu input {
 #sobreMi {
   padding: 130px 0 0 0;
 }
-
 #sobreMi #grillaSobreMiFoto {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  width: -webkit-fit-content;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
 }
-
 #sobreMi #grillaSobreMiFoto h2 {
   font-size: 120px;
 }
-
 #sobreMi #grillaSobreMiFoto #fotoCecilia {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   width: 160px;
   height: 175px;
-  -ms-grid-column-align: left;
-      justify-self: left;
+  justify-self: left;
   margin-top: -50px;
 }
-
 #sobreMi #textoPresentación {
   font-size: 28px;
   line-height: 38px;
@@ -329,13 +265,11 @@ header #barraNavSecciones .menu input {
   width: auto;
   font-weight: 600;
 }
-
 #sobreMi #textoPresentación strong {
   font-size: 35px;
   line-height: 42px;
   font-weight: 900;
 }
-
 #sobreMi #puntitos2 {
   content: url("../images/puntitos-7lineas-celular.svg");
   position: relative;
@@ -344,35 +278,24 @@ header #barraNavSecciones .menu input {
   z-index: -1;
   margin-top: -100px;
 }
-
 #sobreMi #puntitos3 {
   content: url("../images/puntitos-7lineas-celular.svg");
   position: relative;
   top: -20px;
   left: 0px;
 }
-
 #sobreMi #unGusto {
   height: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
-
 #sobreMi #unGusto h3 {
   font-size: 70px;
   line-height: 75px;
   font-weight: 700;
   text-align: center;
 }
-
 #sobreMi #unGusto #res3 {
   margin-left: auto;
   margin-right: auto;
@@ -383,7 +306,6 @@ header #barraNavSecciones .menu input {
   position: relative;
   top: -50px;
 }
-
 #sobreMi #unGusto #res4 {
   display: inherit;
   height: 40px;
@@ -394,7 +316,6 @@ header #barraNavSecciones .menu input {
   left: 10%;
   z-index: -1;
 }
-
 #sobreMi #puntitos4 {
   content: url("../images/puntitos-7lineas-celular.svg");
   position: relative;
@@ -406,18 +327,15 @@ header #barraNavSecciones .menu input {
 #curriculumVitae {
   padding-top: 40px;
 }
-
 #curriculumVitae #grillaCV {
   padding-top: 20px;
   height: 530px;
 }
-
 #curriculumVitae #grillaCV #tituloCV {
   text-align: right;
   font-size: 120px;
   padding-right: 5px;
 }
-
 #curriculumVitae #grillaCV #ilustracionCV {
   width: 400px;
   height: 305px;
@@ -425,7 +343,6 @@ header #barraNavSecciones .menu input {
   bottom: 65px;
   left: 0;
 }
-
 #curriculumVitae #puntitos5 {
   content: url("../images/puntitos-7lineas-celular.svg");
   z-index: -1;
@@ -433,96 +350,68 @@ header #barraNavSecciones .menu input {
   top: -70px;
   left: 0px;
 }
-
 #curriculumVitae #porqueDD #botonCV {
   margin-bottom: 90px;
 }
-
 #curriculumVitae #porqueDD .textosDescriptivos {
   width: 90%;
   max-width: 900px;
   text-align: center;
 }
-
 #curriculumVitae #misAreasProf {
   height: 1240px;
   padding: 0 3% 0 3%;
 }
-
 #curriculumVitae #misAreasProf #grillaAreas {
   margin-top: 20px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 2fr 1fr;
-      grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
   height: 620px;
 }
-
 #curriculumVitae #misAreasProf #grillaAreas #todosCirculos {
   height: 620px;
   margin: auto;
 }
-
 #curriculumVitae #misAreasProf #grillaAreas #todosCirculos .circulosIndividuales {
   background-color: #fdce30;
   border-radius: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   float: left;
+  cursor: pointer;
 }
-
 #curriculumVitae #misAreasProf #grillaAreas #todosCirculos .circulosIndividuales .tituloArea {
   text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   font-weight: bold;
 }
-
 #curriculumVitae #misAreasProf #grillaAreas #todosCirculos .circulosIndividuales .tituloArea span {
   font-weight: 400;
 }
-
 #curriculumVitae #misAreasProf #grillaAreas #descripcionAreas {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   z-index: 2;
   width: 100%;
   padding-bottom: 50px;
   height: 620px;
 }
-
 #curriculumVitae #misAreasProf #grillaAreas #descripcionAreas .titulosDescripciones {
   margin: 3%;
   font-size: 24px;
   padding-bottom: 0;
   text-align: left;
 }
-
 #curriculumVitae #misAreasProf #grillaAreas #descripcionAreas .titulosDescripciones span {
   background-color: #fdce30;
 }
-
 #curriculumVitae #misAreasProf #grillaAreas #descripcionAreas .textoDescripciones {
   margin: 3%;
   font-size: 16px;
   line-height: 28px;
 }
-
 #curriculumVitae #misAreasProf #grillaAreas #puntitos6 {
   content: url("../images/puntitos-3lineas-celular.svg");
   position: relative;
@@ -530,16 +419,35 @@ header #barraNavSecciones .menu input {
   left: 74%;
   z-index: -2;
 }
-
 #curriculumVitae #educacion, #curriculumVitae #experienciaLaboral, #curriculumVitae #exposicionesFotograficas, #curriculumVitae #premios, #curriculumVitae #jurado, #curriculumVitae #lenguajes {
   padding-top: 50px;
+}
+
+a.yellow-link {
+  color: #181819;
+  position: relative;
+  text-decoration-color: #fdce30;
+  text-decoration-thickness: 3px;
+}
+a.yellow-link::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 0;
+  height: 15px;
+  background-color: #fdce30;
+  transition: width 0.3s ease-in-out;
+  z-index: -1;
+}
+a.yellow-link:hover::before {
+  width: 100%;
 }
 
 .jerarquia1 {
   height: 240px;
   width: 240px;
 }
-
 .jerarquia1 .tituloArea {
   font-size: 20px;
 }
@@ -548,7 +456,6 @@ header #barraNavSecciones .menu input {
   height: 150px;
   width: 150px;
 }
-
 .jerarquia2 .tituloArea {
   font-size: 16px;
 }
@@ -557,7 +464,6 @@ header #barraNavSecciones .menu input {
   height: 100px;
   width: 100px;
 }
-
 .jerarquia3 .tituloArea {
   font-size: 10px;
 }
@@ -624,41 +530,32 @@ ul.listaCurriculum {
   max-width: 850px;
   margin: auto;
 }
-
 ul.listaCurriculum li.elementoListaCV {
   list-style: url(../images/bullet.svg);
   list-style-position: outside;
   padding: 18px;
 }
-
 ul.listaCurriculum li.elementoListaCV h5.titulo {
   font-size: 22px;
   font-weight: 800;
   padding-bottom: 10px;
 }
-
 ul.listaCurriculum li.elementoListaCV h5.titulo span {
   background-color: #fdce30;
 }
-
 ul.listaCurriculum li.elementoListaCV .contenedorLugarFecha {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   padding-bottom: 5px;
 }
-
 ul.listaCurriculum li.elementoListaCV .contenedorLugarFecha .lugar {
   font-size: 17px;
   font-weight: 700;
   line-height: 1.41;
 }
-
 ul.listaCurriculum li.elementoListaCV .contenedorLugarFecha .fecha {
   display: none;
 }
-
 ul.listaCurriculum li.elementoListaCV .aclaracion {
   font-size: 17px;
   font-weight: 300;
@@ -668,34 +565,22 @@ ul.listaCurriculum li.elementoListaCV .aclaracion {
 ul.listaLenguajes {
   margin-left: 10%;
   margin-right: 10%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style-type: none;
 }
-
 ul.listaLenguajes .elementoLenguaje {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   padding-bottom: 40px;
   padding-top: 18px;
   z-index: 1;
 }
-
 ul.listaLenguajes .elementoLenguaje img {
   padding-bottom: 20px;
   height: 101px;
 }
-
 ul.listaLenguajes .elementoLenguaje .descripcionIcono {
   font-size: 18.2px;
   font-weight: 300;
@@ -753,59 +638,43 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
 #portfolio {
   padding-top: 110px;
 }
-
 #portfolio #grillaPortfolio {
   margin-bottom: -450px;
 }
-
 #portfolio #grillaPortfolio #textosPortfolio {
   position: relative;
   top: -200px;
 }
-
 #portfolio #grillaPortfolio #textosPortfolio #contenedorImagenPortfolio {
   width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
   position: relative;
   top: 200px;
   z-index: -1;
 }
-
 #portfolio #grillaPortfolio #textosPortfolio #contenedorImagenPortfolio #ilustracionPortfolio {
   width: 230px;
   height: 237px;
 }
-
 #portfolio #grillaPortfolio #textosPortfolio #tituloPortfolio {
   font-size: 115px;
   margin-left: 2%;
 }
-
 #portfolio #grillaPortfolio #textosPortfolio #tituloPortfolio #span2 {
   display: initial;
 }
-
 #portfolio #grillaPortfolio #textosPortfolio .textosDescriptivos {
   margin-left: 3%;
   width: 90%;
   padding-top: 15px;
 }
-
 #portfolio #grillaPortfolio #textosPortfolio #botonPortfolio {
   float: left;
   margin: 0 3%;
   margin-bottom: 50px;
 }
-
 #portfolio #puntitos7 {
   content: url("../images/puntitos-3lineas-celular.svg");
   position: relative;
@@ -813,29 +682,22 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
   left: 70%;
   z-index: -2;
 }
-
 #portfolio #carruselPortfolio {
   margin-bottom: -100px;
 }
-
 #portfolio #carruselPortfolio #ulSeccionesPortfolio {
   margin-top: 260px;
   position: relative;
   top: 0;
-  display: -ms-grid;
   display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
   width: 100%;
 }
-
 #portfolio #carruselPortfolio #ulSeccionesPortfolio li {
   list-style-type: none;
   height: 25px;
 }
-
 #portfolio #carruselPortfolio #ulSeccionesPortfolio li a {
   text-transform: uppercase;
   font-size: 14px;
@@ -843,110 +705,77 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
   font-weight: 700;
   margin: 15px;
   text-decoration: none;
+  cursor: pointer;
 }
-
 #portfolio #carruselPortfolio #ulSeccionesPortfolio li a:hover {
-  background-color: #fdce30;
+  background-color: #fdce30 !important;
 }
-
 #portfolio #carruselPortfolio #ulSeccionesPortfolio li .lineaVerticalAmarilla {
   display: none;
 }
-
 #portfolio #contenedorCarrusel {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   width: 100%;
   position: relative;
   top: -60px;
 }
-
 #portfolio #contenedorCarrusel #irIzquierda {
   display: none;
+  cursor: pointer;
 }
-
 #portfolio #contenedorCarrusel #irDerecha {
   display: none;
+  cursor: pointer;
 }
-
 #portfolio #contenedorCarrusel #contenedorImagenes {
   position: relative;
   width: 1130px;
   height: 370px;
   overflow-y: hidden;
   overflow-x: hidden;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   overflow: scroll;
 }
-
 #portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales {
   padding: 5px 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 #portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales img {
   height: 360px;
 }
-
 #portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse {
   background-color: #fdce30;
   opacity: 0;
   position: absolute;
   height: 360px;
   width: 360px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
-
 #portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse .textoDescriptivo {
   text-align: center;
   margin: 20px;
 }
-
 #portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse a {
   text-decoration: none;
 }
-
 #portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse a .botonImgPort {
   background-color: #181819;
 }
-
 #portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse a .botonImgPort .pBoton {
   color: #fdce30;
 }
-
 #portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse a .botonImgPort:hover {
   background-color: #ffffff;
 }
-
 #portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse a .botonImgPort:hover .pBoton {
   color: #181819;
 }
-
 #portfolio #contenedorCarrusel #contenedorImagenes .imagenesIndividuales .pasarMouse:hover {
   opacity: 0.9;
 }
@@ -954,7 +783,6 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
 #contacto {
   margin-top: 50px;
 }
-
 #contacto #tituloContacto {
   font-size: 80px;
   -webkit-text-stroke: 3px #fdce30;
@@ -963,72 +791,47 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
   top: 70px;
   z-index: -2;
 }
-
 #contacto #grillaContacto {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
   margin: 0;
 }
-
 #contacto #grillaContacto #ilustracionContacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-top: 75px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  justify-content: center;
+  align-content: center;
 }
-
 #contacto #grillaContacto #ilustracionContacto #dibujoContacto {
   height: 256px;
 }
-
 #contacto #grillaContacto #datosContacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
-
 #contacto #grillaContacto #datosContacto div {
   font-size: 21px;
   line-height: 30px;
   text-align: center;
   margin-bottom: 30px;
 }
-
 #contacto #grillaContacto #datosContacto div h5 {
   font-size: 17px;
   font-weight: 700;
 }
-
 #contacto #grillaContacto #datosContacto div p {
   font-size: 17px;
   font-weight: 300;
 }
-
 #contacto #grillaContacto #datosContacto div a {
   font-size: 17px;
   text-decoration: none;
   color: #181819;
   font-weight: 300;
 }
-
 #contacto #puntitos8 {
   content: url("../images/puntitos-9lineas-celular.svg");
   z-index: -50;
@@ -1041,52 +844,40 @@ ul.listaLenguajes .elementoLenguaje .descripcionIcono {
 footer {
   margin-top: 0;
   background-color: #fdce30;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
 }
-
 footer p {
   font-size: 14px;
   padding: 10px;
 }
-
 footer p strong {
   font-weight: 600;
 }
-
 footer p a {
   text-decoration: none;
   color: #181819;
 }
-
 footer p a:hover {
   color: #ffffff;
   font-weight: 500;
 }
-
 footer #footerRight {
   text-align: center;
   margin: auto;
   width: 60%;
 }
-
 footer #footerLeft {
   text-align: center;
   margin: auto;
   width: 50%;
 }
-
 footer #lineaVerticalNegra {
   width: 20%;
   height: 1px;
   background-color: #181819;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  align-self: center;
+  justify-self: center;
 }
 
 @media screen and (min-width: 480px) {
@@ -1100,7 +891,6 @@ footer #lineaVerticalNegra {
     margin-left: 45%;
   }
 }
-
 @media screen and (min-width: 600px) {
   #sobreMi #unGusto #res4 {
     display: none;
@@ -1129,18 +919,13 @@ footer #lineaVerticalNegra {
     top: -100px;
   }
 }
-
 @media screen and (min-width: 700px) {
   #sobreMi #unGusto #res4 {
     display: none;
   }
   #portfolio #carruselPortfolio #ulSeccionesPortfolio {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   #portfolio #carruselPortfolio #ulSeccionesPortfolio li {
     height: 25px;
@@ -1160,7 +945,6 @@ footer #lineaVerticalNegra {
     left: 83%;
   }
 }
-
 @media screen and (min-width: 768px) {
   header #checkbox, header .hamburguesa, header .cruz {
     display: none;
@@ -1172,8 +956,6 @@ footer #lineaVerticalNegra {
     position: relative;
     top: -16px;
     right: 5%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     opacity: 1;
     height: 55px;
@@ -1219,10 +1001,8 @@ footer #lineaVerticalNegra {
     font-size: 27px;
   }
   #curriculumVitae ul.listaCurriculum li.elementoListaCV .contenedorLugarFecha {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 4fr 1fr;
-        grid-template-columns: 4fr 1fr;
+    grid-template-columns: 4fr 1fr;
   }
   #curriculumVitae ul.listaCurriculum li.elementoListaCV .contenedorLugarFecha .lugar {
     font-size: 20.7px;
@@ -1237,8 +1017,7 @@ footer #lineaVerticalNegra {
     font-size: 20.7px;
   }
   #curriculumVitae ul.listaLenguajes {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
   #curriculumVitae ul.listaLenguajes .elementoLenguaje img {
     padding-bottom: 20px;
@@ -1285,18 +1064,13 @@ footer #lineaVerticalNegra {
     -webkit-text-stroke: 4px #fdce30;
   }
   #contacto #grillaContacto {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     margin: 80px 18%;
   }
   #contacto #grillaContacto #ilustracionContacto {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
     padding-top: 0;
   }
   #contacto #grillaContacto #ilustracionContacto #dibujoContacto {
@@ -1311,7 +1085,6 @@ footer #lineaVerticalNegra {
     margin-bottom: -400px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   #helloWorld #puntitos1 {
     top: 50px;
@@ -1319,10 +1092,8 @@ footer #lineaVerticalNegra {
   #helloWorld #contenedorPresentacion {
     position: relative;
     bottom: 190px;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     height: 573px;
   }
   #helloWorld #contenedorPresentacion #ilustracionHello {
@@ -1330,9 +1101,7 @@ footer #lineaVerticalNegra {
   }
   #helloWorld #contenedorPresentacion #contenedorHello {
     margin: 0;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
     bottom: 0px;
     height: 573px;
   }
@@ -1359,10 +1128,8 @@ footer #lineaVerticalNegra {
     padding: 80px 0 50px 0;
   }
   #sobreMi #grillaSobreMiFoto {
-    -ms-grid-columns: 1fr 0.8fr;
-        grid-template-columns: 1fr 0.8fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
+    grid-template-columns: 1fr 0.8fr;
+    grid-template-rows: 1fr;
     width: 100%;
   }
   #sobreMi #grillaSobreMiFoto h2 {
@@ -1372,11 +1139,8 @@ footer #lineaVerticalNegra {
   #sobreMi #grillaSobreMiFoto #fotoCecilia {
     height: 350px;
     width: 316px;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
   }
   #sobreMi #textoPresentación {
     font-size: 72px;
@@ -1451,12 +1215,9 @@ footer #lineaVerticalNegra {
     padding: 0 3% 0 3%;
   }
   #curriculumVitae #misAreasProf #grillaAreas {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 0.7fr;
-        grid-template-columns: 1fr 0.7fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
+    grid-template-columns: 1fr 0.7fr;
+    grid-template-rows: 1fr;
     height: 550px;
   }
   #curriculumVitae #misAreasProf #grillaAreas #todosCirculos {
@@ -1465,35 +1226,22 @@ footer #lineaVerticalNegra {
   #curriculumVitae #misAreasProf #grillaAreas #todosCirculos .circulosIndividuales {
     background-color: #fdce30;
     border-radius: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     float: left;
   }
   #curriculumVitae #misAreasProf #grillaAreas #todosCirculos .circulosIndividuales .tituloArea {
     text-align: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     font-weight: bold;
   }
   #curriculumVitae #misAreasProf #grillaAreas #todosCirculos .circulosIndividuales .tituloArea span {
     font-weight: 400;
   }
   #curriculumVitae #misAreasProf #grillaAreas #descripcionAreas {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 0;
     padding-bottom: 0;
     height: 550px;
@@ -1566,8 +1314,7 @@ footer #lineaVerticalNegra {
   footer {
     width: 100%;
     margin-top: 50px;
-    -ms-grid-columns: 1fr 0.01fr 1fr;
-        grid-template-columns: 1fr 0.01fr 1fr;
+    grid-template-columns: 1fr 0.01fr 1fr;
   }
   footer #footerRight {
     text-align: left;
@@ -1626,9 +1373,7 @@ footer #lineaVerticalNegra {
     margin: 0px 18%;
   }
   #contacto #grillaContacto #ilustracionContacto {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
     padding-top: 0;
   }
   #contacto #grillaContacto #ilustracionContacto #dibujoContacto {
@@ -1638,7 +1383,6 @@ footer #lineaVerticalNegra {
     margin-bottom: -100px;
   }
 }
-
 @media screen and (min-width: 1150px) {
   header #barraNavRedesSociales {
     z-index: 100;
@@ -1649,19 +1393,10 @@ footer #lineaVerticalNegra {
     top: 177.5px;
     right: 0px;
     border-radius: 20px 0 0 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   header #barraNavRedesSociales .linkExterno .imgLinkExterno {
     width: 25px;
@@ -1696,10 +1431,8 @@ footer #lineaVerticalNegra {
     font-size: 228px;
   }
 }
-
 @media screen and (min-width: 1360px) {
   #curriculumVitae #grillaCV #tituloCV {
     font-size: 228px;
   }
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

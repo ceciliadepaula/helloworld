@@ -51,6 +51,7 @@
                     display: flex;
                     justify-content: center;
                     float:left;
+                    cursor: pointer;
                     .tituloArea{
                         text-align: center;
                         align-self: center;
@@ -95,6 +96,27 @@
     }
     #educacion, #experienciaLaboral, #exposicionesFotograficas, #premios, #jurado, #lenguajes{
         padding-top: 50px;
+    }
+}
+
+a.yellow-link {
+    color: $colorNegro;
+    position: relative;
+    text-decoration-color: $colorAmarillo; 
+    text-decoration-thickness: 3px; 
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        width: 0;
+        height: 15px;
+        background-color: $colorAmarillo;
+        transition: width 0.3s ease-in-out;
+        z-index: -1; 
+    }
+    &:hover::before {
+        width: 100%;
     }
 }
 

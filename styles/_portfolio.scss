@@ -63,9 +63,10 @@
                     font-weight: $bold;
                     margin: 15px;
                     text-decoration: none;
+                    cursor: pointer;
                 }
                 a:hover{
-                    background-color: $colorAmarillo;
+                    background-color: $colorAmarillo !important;
                 }
                 list-style-type: none;  
                 height: 25px;
@@ -86,9 +87,11 @@
         top: -60px;
         #irIzquierda{
             display: none;
+            cursor: pointer;
         }
         #irDerecha{
             display: none;
+            cursor: pointer;
         }
         #contenedorImagenes{
             position: relative;
